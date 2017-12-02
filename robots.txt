@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /images/
+Disallow: /gallery/
+Disallow: /resume/
+Disallow: /badges/
+#Begin Attracta SEO Tools Sitemap. Do not remove
+sitemap: http://cdn.attracta.com/sitemap/2881700.xml.gz
+#End Attracta SEO Tools Sitemap. Do not remove

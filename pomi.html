@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title>Kevin Aktug | 3D Environment Artist</title>
+<meta name="keywords" content="Kevin Aktug, Kevin, Aktug, Environment Artist, 3D, Game Design, Game Art, Environmental, Artist, Digital Artist, Portfolio" />
+<meta name="description" content="Kevin Aktug's 3D Environment Art Portfolio" />
+<meta name="rating" content="general" />
+<meta name="expires" content="never" />
+<meta name="robots" content="index, follow" />
+<meta name="distribution" content="global" />
+<meta name="email" content="kmaktug@kmagameguy.com" />
+<meta name="author" content="Kevin Aktug" />
+<meta name="publisher" content="Kevin Aktug" />
+<meta name="copyright" content="Copyright 2012 - Kevin Aktug" />
+
+<link rel="stylesheet" href="main.css" type="text/css" />
+<link rel="icon" type="images/png" href="images/favicon.png" />
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-35435067-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+
+<body>
+<div id="mainpage">
+	<div id="header">
+		<div id="subheader">
+			<a href="http://www.kmagameguy.com" id="bLogo" class="MonkeyLogo"></a>
+			<div id="bInfo">
+				<a href="http://www.kmagameguy.com" id="label"></a>
+				<div id="navbar">
+					<ul class="toolbar">
+					<li><a href="about.html" id="aboutme"></a></li>
+					<li><a href="resume.html" id="resume"></a></li>
+					<li><a href="http://kmagameguy.blogspot.com" target="_blank" id="blog"></a></li>
+					<li><a href="pomiGame.html" id="games"></a></li>
+					<li><a href="http://www.society6.com/Kmagameguy" target="_blank" id="shop"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="portfolioContent">
+		<div class="pageTitle">Peril on Monster Island 2 1/3</div>
+		<h4>Indie game developed by myself over the course of 6 months during my time as an undergrad.</h4>
+		<h4>Unreal Development Kit, 3ds Max, Photoshop, Modo, Speedtree utilized.</h4>
+			<div id="gallery">
+				<img src="gallery/pomi/beauty.jpg" alt="" /><br></br>
+				<div class="pageHeading">Riverboat</div>
+				<h4>Detail shot of the Riverboat Environment. This is the where the player begins the game, and must create a signal fire in hopes of rescue.</h4>
+				<img src="gallery/pomi/riverboatE.jpg" alt="" /><br></br>
+				<img src="gallery/pomi/riverboatI.jpg" alt="" /><br></br>
+				<div class="pageHeading">Quest Breakdown - Signal Fire</div>
+				<h4>To complete the quest, the player has to find 4-5 wood planks to deploy as kindling for a signal fire.  Doing so initiates a cutscene.</h4>
+				<h4>Each trigger adds to the quest record, and checks if the player has all the wood.  If they do, then they are prompted accordingly.</h4>
+				<h4>If they still have collecting to do, the event and wood mesh are removed from the game to prevent the player from picking it up again.</h4>
+				<h4>Finally, once they've completed the quest they are rewarded with a cutscene that allows them further access to the island.</h4>
+				<h5>Click image for expanded view of the quest Kismet</h5>
+				<a href="gallery/pomi/signalfireSrc.jpg" target="_blank"><img src="gallery/pomi/signalfireSrc-p.jpg" alt="" /></a><br></br>
+				
+				<div class="pageHeading">Lodge</div>
+				<h4>Quick view of the Lodge environment.  This is where the brunt of the game's story is delivered.</h4>
+				<img src="gallery/pomi/lodgeE.jpg" alt="" /><br></br>
+				<img src="gallery/pomi/lodgeI.jpg" alt="" /><br></br>
+				<div class="pageHeading">Level Management Breakdown - Transitions</div><br></br>
+				<h4>One of the earliest problems I had with the UDK was figuring out a decent way to preserve game data between level transitions.</h4>
+				<h4>I opted to use level streaming, as I didn't have the time or knowhow to code a kismet method to serialize the game data for read/write access.</h4>
+				<h4>It turned out to work pretty well, so below I've included my method for transitioning the player between environments.</h4>
+				<h4>Because level streaming largely depends on the hardware being used to run the game, I gave it a little flair by fading the screen to black,</h4>
+				<h4>then overlaying a scaleform indeterminate loading screen to hide the geometry swapping and player teleportation.</h4>
+				<h5>Click image for expanded view of the transitions kismet</h5>
+				<a href="gallery/pomi/leveltransitionsSrc.jpg" target="_blank"><img src="gallery/pomi/leveltransitionsSrc-p.jpg" alt="" /></a><br></br>
+				
+				<div class="pageHeading">Wilderness</div>
+				<h4>As a bonus to the curious players, tiki tokens are hidden throughout each environment.  If they're all collected, the player is rewarded</h4>
+				<h4>with an extended "good" ending, vs. the standard "bad" ending if the tiki's are not all collected.</h4>
+				<img src="gallery/pomi/wilderness.jpg" alt="" /><br></br>
+				<div class="pageHeading">Regeneration Quest Breakdown - Cinematic</div>
+				<h4>I didn't want to overburden the player with text or tedious, pixel-hunt-y game mechanics, so I opted to use cinematics in these places.</h4>
+				<h4>I was fortunate that the Matinee feature in Kismet was so powerful - I was able to layer a lot of things like camera motion, particle FX,</h4>
+				<h4>shader triggers, sounds, events, etc, with ease.  The regeneration cinematic was fun because it required a bunch of events to fire off just</h4>
+				<h4>in the right sequence.  I also wanted modularity to the quests - this one in particular was one that could either be completed last, or first.</h4>
+				<h5>Click image for expanded view of the regeneration cinematic's matinee sequence</h5>
+				<a href="gallery/pomi/wildernessCinematic.jpg" target="_blank"><img src="gallery/pomi/wildernessCinematic-p.jpg" alt="" /></a><br></br>
+				
+				<div class="pageHeading">Crypt</div>
+				<h4>The crypt deviated from the rest of the design a bit by introducing the potential for the player to fail.</h4>
+				<img src="gallery/pomi/crypt.jpg" alt="" /><br></br>
+				<div class="pageHeading">Crypt Quest Breakdown - The Trap</div>
+				<h4>From the beginning I struggled with the idea of having fatal traps in the game.  There were certain technical issues behind it,</h4>
+				<h4>the biggest being the aforementioned inability to serialize game data out to a file.  Without this ability, killing a player would</h4>
+				<h4>mean they'd have to start the game over from the beginning - which would be a huge deterrent for them to continue playing.</h4>
+				<h4>I decided on a compromise in the form of a chamber that locks the player inside, and if they don't solve the puzzle within the time-limit</h4>
+				<h4>the chamber resets and they have to start over.  It turned out to be not as punishing as starting from scratch, but still difficult enough</h4>
+				<h4>to present a challenge.  To escape, the player has to rotate 4 pedestals so that they are facing the proper direction.  Each pedestal</h4>
+				<h4>influences a different pedestal, which upped the ante in terms of difficulty.  To add to the tensions, the chamber fills with a fog</h4>
+				<h4>volume, making everything more difficult to maneuver/see through.  As a tip that they were about to run out of time, the screen</h4>
+				<h4>flashes red in growing intensity during the last few seconds of the countdown to simulate that the player can't get any oxygen.</h4>
+				<h5>A quick demonstration of some of the key gameplay elements of Peril on Monster Island 2 1/3</h5>
+				<iframe width="800" height="600" id="pomiGameplay" src="http://www.youtube-nocookie.com/embed/45rH60HPKMc?rel=0" frameborder="0" allowfullscreen></iframe><br></br>
+				
+			</div>
+			<div id="gameLink">
+			<h5>Click the link below to go to Peril On Monster Island 2 1/3's download page</h5>
+			<a href="pomiGame.html" target="_blank"><img src="images/POMIDL.png" alt="" /></a><br></br>
+			</div>
+	</div>
+</div>
+<div id="footer">
+		<div id="footerContent">
+			<a href="http://www.kmagameguy.com" id="gohome">Home</a>
+		</div>
+		<div id="copyright">
+			&copy; Copyright <a href="mailto:kmaktug@kmagameguy.com">Kevin Aktug</a> 2012.  All Rights Reserved.
+		</div>
+	</div>
+</body>
+</html>
