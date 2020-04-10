@@ -8,7 +8,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 #
-# If you need help with YAML syntax, here are some quick references for you: 
+# If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 #
@@ -18,21 +18,60 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
+title: Kevin Aktug &#124; 3D Environment Artist
 email: kmaktug@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description: >- # this means to ignore newlines until "author:"
+  Kevin Aktug's 3D Portfolio
+author: Kevin Aktug
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+lang: "en_US"
+
+# For Pages
+social_links:
+  - icon: fas fa-envelope-square
+    link: mailto:kmaktug@gmail.com
+  - icon: fab fa-facebook-square
+    link: &facebook_link https://www.facebook.com/kmagameguy
+  - icon: fab fa-linkedin
+    link: &linkedin_link https://www.linkedin.com/in/kmagameguy
+  - icon: fab fa-github-square
+    link: &github_link https://github.com/kmagameguy
+  - icon: fab fa-instagram-square
+    link: &instagram_link https://www.instagram.com/kmagameguy
+  - icon: fab fa-youtube-square
+    link: &youtube_link https://www.youtube.com/kmagameguy
+  - icon: fab fa-steam-square
+    link: &steam_link https://steamcommunity.com/id/sgt_jerky
+  - icon: fab fa-twitch
+    link: &twitch_link https://twitch.tv/kmagameguy
+
+# SEO
+social:
+  links:
+    - *facebook_link
+    - *linkedin_link
+    - *github_link
+    - *instagram_link
+    - *youtube_link
+    - *steam_link
+    - *twitch_link
+
+employer:
+  name: Custom Ink
+  job: Customer Care Technology Specialist
+  url: https://www.customink.com
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-autoprefixer
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+sass:
+  sass_dir: assets/css
 
 # Exclude from processing.
 # The following items will not be processed, by default.
