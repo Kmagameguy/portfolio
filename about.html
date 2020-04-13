@@ -3,65 +3,62 @@ layout: home
 permalink: /about/
 ---
 
-<div class="container-fluid">
-  <div class="row px-3">
-    <div class="card-group">
-      <div class="card">
-        <img src="/assets/images/prof.jpg" class="card-img-top" alt="it's me">
-        <div class="card-body">
-          <p class="card-text">Hello, it's me!</p>
-        </div>
+<div class="row px-3">
+  <div class="card-group">
+    <div class="card">
+      <img src="/assets/images/prof.jpg" class="card-img-top px-4 pt-4" alt="it's me">
+      <div class="card-body">
+        <p class="card-text pl-1">Hello, it's me!</p>
       </div>
-      <div class="card">
-        <div class="card-body">
-          <p class="card-text">
-            My name is {{ site.author }}, and I am a 3D Environment Artist.
-            I have 2 years of experience working in the gaming industry,
-            which is backed by 6+ years of experience in digital freelance work.
-            I graduated with honors from The Art Institute of Washington,
-            where I attained my BFA in Game Art and Design.
-          </p>
-          <p class="card-text">
-            I currently serve as the {{ site.employer.job }} at <a href="{{ site.employer.url }}" target="_blank">{{ site.employer.name }}</a>.
-            I'm always on the lookout for the next big thing. I specialize in many aspects of 3D design,
-            with my current, primary duties being:
-          </p>
-          <ul class="card-text">
-            <li>Hard Surface Modeling</li>
-            <li>Hi-poly to low-poly normal/spec map baking</li>
-            <li>Level &amp; Environmental Design</li>
-            <li>UDK/UE3 Level &amp; asset creation</li>
-            <li>Unwrapping &amp; texturing</li>
-            <li>Material & Shader creation</li>
-            <li>Lighting</li>
-          </ul>
-        </div>
+    </div>
+    <div class="card p-5">
+      <div class="card-body">
+        <p class="card-text">
+          My name is {{ site.author }}, and I am a 3D Environment Artist.
+          I have 2 years of experience working in the gaming industry,
+          which is backed by 6+ years of experience in digital freelance work.
+          I graduated with honors from The Art Institute of Washington,
+          where I attained my BFA in Game Art and Design.
+        </p>
+        <p class="card-text">
+          I currently serve as the {{ site.employer.job }} at <a href="{{ site.employer.url }}" target="_blank">{{ site.employer.name }}</a>.
+          I'm always on the lookout for the next big thing. I specialize in many aspects of 3D design,
+          with my current, primary duties being:
+        </p>
+        <ul class="card-text">
+          <li>Hard Surface Modeling</li>
+          <li>Hi-poly to low-poly normal/spec map baking</li>
+          <li>Level &amp; Environmental Design</li>
+          <li>UDK/UE3 Level &amp; asset creation</li>
+          <li>Unwrapping &amp; texturing</li>
+          <li>Material & Shader creation</li>
+          <li>Lighting</li>
+        </ul>
       </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col">
-      <div class="card">
-        <div class="card-body">
-          <div class="container-fluid">
-            <div class="row justify-content-center align-items-center text-align-center">
-              <p>I'm also all over the web!  Connect with me!</p>
-            </div>
-            {% for item in site.social_links %}
-              {% assign remainder = forloop.index | minus: 1 | modulo: 4 %}
-              {% if forloop.index == 0 %}
-                <div class="row justify-content-center align-items-center">
-              {% elsif remainder == 0 %}
-                </div>
-                <div class="row justify-content-center align-items-center">
-              {% endif %}
-              <div class="col-xs-3 px-1">
-                <a href="{{ item.link }}" target="_blank"><i class="{{ item.icon }} fa-3x"></i></a>
-              </div>
-            {% endfor %}
-            </div>
-            </div>
+</div>
+<div class="row mt-2">
+  <div class="col">
+    <div class="card">
+      <div class="card-body">
+        <div class="container-fluid">
+          <div class="row justify-content-center align-items-center text-align-center">
+            <p>I'm also all over the web!  Connect with me!</p>
           </div>
+          {% for item in site.social_links %}
+            {% assign remainder = forloop.index | minus: 1 | modulo: 4 %}
+            {% if forloop.index == 1 %}
+              <div class="row justify-content-center align-items-center">
+            {% elsif remainder == 0 %}
+              </div>
+              <div class="row justify-content-center align-items-center">
+            {% endif %}
+            <div class="col-xs-3 px-1">
+              <a class="text-secondary" href="{{ item.link }}" target="_blank"><i class="{{ item.icon }} fa-3x"></i></a>
+            </div>
+          {% endfor %}
+        </div>
         </div>
       </div>
     </div>
