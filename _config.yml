@@ -45,6 +45,10 @@ social_links:
     link: &steam_link https://steamcommunity.com/id/sgt_jerky
   - icon: fab fa-twitch
     link: &twitch_link https://twitch.tv/kmagameguy
+  - icon: fab fa-spotify
+    link: &spotify_link https://open.spotify.com/user/kmagameguy
+  - icon: fab fa-soundcloud
+    link: &soundcloud_link https://soundcloud.com/serpent_scales
 
 # SEO
 social:
