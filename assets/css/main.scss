@@ -11,6 +11,24 @@ h1, h2, h3, h4, h5, h6, .navbar {
   font-weight: 500;
 }
 
-.footer-copyright{
+.navbar-brand {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -user-select: none;
+  cursor: default;
+}
+
+.footer-copyright {
   font-size: 0.75rem;
+}
+
+.hover-image {
+  opacity: 1;
+  transition: .5s ease;
+}
+
+.hover-image:hover {
+  opacity: 0.3;
+  transition: .5s ease;
 }

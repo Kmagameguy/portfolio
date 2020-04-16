@@ -1,80 +1,29 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+---
+layout: home
+---
 
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-
-<title>Kevin Aktug | 3D Environment Artist</title>
-<meta name="keywords" content="Kevin Aktug, Kevin, Aktug, Environment Artist, 3D, Game Design, Game Art, Environmental, Artist, Digital Artist, Portfolio" />
-<meta name="description" content="Kevin Aktug's 3D Environment Art Portfolio" />
-<meta name="rating" content="general" />
-<meta name="expires" content="never" />
-<meta name="robots" content="index, follow" />
-<meta name="distribution" content="global" />
-<meta name="email" content="kmaktug@gmail.com" />
-<meta name="author" content="Kevin Aktug" />
-<meta name="publisher" content="Kevin Aktug" />
-<meta name="copyright" content="Copyright 2020 - Kevin Aktug" />
-
-<link rel="stylesheet" href="main.css" type="text/css" />
-<link rel="icon" type="images/png" href="images/favicon.png" />
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-35435067-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-
-</head>
-
-<body>
-<div id="mainpage">
-	<div id="header">
-		<div id="subheader">
-			<a href="http://kmagameguy.com" id="bLogo" class="MonkeyLogo"></a>
-			<div id="bInfo">
-				<a href="http://kmagameguy.com" id="label"></a>
-				<div id="navbar">
-					<ul class="toolbar">
-					<li><a href="about.html" id="aboutme"></a></li>
-					<li><a href="resume.html" id="resume"></a></li>
-					<li><a href="http://kmagameguy.blogspot.com" target="_blank" id="blog"></a></li>
-					<li><a href="pomiGame.html" id="games"></a></li>
-					<li><a href="http://www.society6.com/Kmagameguy" target="_blank" id="shop"></a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div id="portfolioContent">
-		<div id="portfolioWrapper">
-			<ul>
-				<li><a href="chernobyl.html"><img src="gallery/chernobyl/chernobyl-p.png" alt="" /></a></li>
-				<li><a href="lighthouse.html"><img src="gallery/lighthouse/lighthouse-p.png" alt="" /></a></li>
-				<li><a href="wardesk.html"><img src="gallery/wardesk/wardesk-p.png" alt="" /></a></li>
-				<li><a href="mech.html"><img src="gallery/mech/mech-p.png" alt="" /></a></li>
-				<li><a href="pomi.html"><img src="gallery/pomi/pomi-p.png" alt="" /></a></li>
-				<li><a href="2D.html"><img src="gallery/2d/2d-p.png" alt="" /></a></li>
-			</ul>
-		</div>
-		<div class="push"></div>
-	</div>
+<div class="row justify-content-center align-items-center text-center">
+  <div class="col-sm">
+    <img src="{{ "assets/images/jumbo.png" | relative_url }}" class="img-fluid" alt="banner image">
+    <p class="mb-0 mt-3">Hello! my name is Kevin Aktug.  Welcome to my page!</p>
+    <p>Check out a selection of my scribbles below:</p>
+  </div>
 </div>
-<div id="footer">
-		<div id="footerContent">
-			<a href="http://kmagameguy.com" id="gohome">Home</a>
-		</div>
-		<div id="copyright">
-			&copy; Copyright <a href="mailto:kmaktug@gmail.com">Kevin Aktug</a> 2020.  All Rights Reserved.
-		</div>
-	</div>
-</body>
-</html>
+{% assign counter = 0 %}
+{% for image in site.static_files %}
+  {% if image.path contains 'images/scribbles' %}
+    {% assign remainder = counter | modulo: 4 %}
+      {% if counter == 0 %}
+       <div class="row">
+      {% elsif remainder == 0 %}
+        </div>
+        <div class="row">
+     {% endif %}
+    <div class="col-sm px-1 pt-2 hover-image">
+      <a href="{{ site.baseurl }}{{ image.path }}" alt="{{ image.basename }}"><img class="img-fluid" src="{{ site.baseurl }}{{ image.path }}" alt="{{ image.basename }}" /></a>
+    </div>
+    {% assign counter = counter | plus: 1 %}
+  {% endif %}
+{% endfor %}
+</div>
+
