@@ -2,28 +2,65 @@
 layout: home
 ---
 
-<div class="row justify-content-center align-items-center text-center">
+<div class="row justify-content-center align-items-center text-center my-4">
   <div class="col-sm">
-    <img src="{{ "assets/images/jumbo.png" | relative_url }}" class="img-fluid" alt="banner image">
+    <img style="border-radius:0.25rem;"src="{{ "assets/images/jumbo.png" | relative_url }}" class="img-fluid" alt="banner image">
     <p class="mb-0 mt-3">Hello! my name is Kevin Aktug.  Welcome to my page!</p>
-    <p>Check out a selection of my scribbles below:</p>
   </div>
 </div>
-{% assign counter = 0 %}
-{% for image in site.static_files %}
-  {% if image.path contains 'images/scribbles' %}
-    {% assign remainder = counter | modulo: 4 %}
-      {% if counter == 0 %}
-       <div class="row">
-      {% elsif remainder == 0 %}
-        </div>
-        <div class="row">
-     {% endif %}
-    <div class="col-sm px-1 pt-2 hover-image">
-      <a href="{{ site.baseurl }}{{ image.path }}" alt="{{ image.basename }}"><img class="img-fluid" src="{{ site.baseurl }}{{ image.path }}" alt="{{ image.basename }}" /></a>
-    </div>
-    {% assign counter = counter | plus: 1 %}
-  {% endif %}
-{% endfor %}
+
+<div class="card px-2 py-2">
+  <h4>See what I've been up to:</h4>
+  {% assign newpost = site.posts.last %}
+
+  {% capture pThumbnail %}
+    {{ newpost.thumbnail }}
+  {% endcapture %}
+
+  {% capture pTitle %}
+    {{ newpost.title }}
+  {% endcapture %}
+
+  {% capture pDescription %}
+    {{ newpost.description }}
+  {% endcapture %}
+
+  {% capture pUrl %}
+    {{ newpost.url }}
+  {% endcapture %}
+
+  {% include blog_card.html
+    post_thumbnail=pThumbnail
+    post_url=pUrl
+    post_title=pTitle
+    post_description=pDescription
+  %}
+</div>
+
+<div class="card mt-2 px-2 py-2">
+  <h4>Here are some of my scribbles</a></h4>
+  {% assign counter = 0 %}
+  {% for image in site.static_files %}
+    {% if image.path contains 'images/scribbles' %}
+      {% assign remainder = counter | modulo: 4 %}
+        {% if counter == 0 %}
+        <div class="row no-gutters">
+        {% elsif remainder == 0 %}
+          </div>
+          <div class="row no-gutters">
+      {% endif %}
+      <div class="col-sm px-1 pt-2 hover-image">
+        <a href="{{ site.baseurl }}{{ image.path }}" alt="{{ image.basename }}"><img class="img-fluid" src="{{ site.baseurl }}{{ image.path }}" alt="{{ image.basename }}" /></a>
+      </div>
+      {% assign counter = counter | plus: 1 %}
+      {% if counter >= 8 %}
+        {% break %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+  </div>
+  <div class="row no-gutters mt-2">
+    <a href="/scribbles">More scribbles ></a>
+  </div>
 </div>
 
