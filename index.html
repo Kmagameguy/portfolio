@@ -20,30 +20,10 @@ layout: home
 
 <div class="card mt-2 px-5 py-5">
   <h4>See what I've been up to:</h4>
-  {% assign newpost = site.posts.last %}
+  {% assign newpost = site.posts.first %}
 
-  {% capture pThumbnail %}
-    {{ newpost.thumbnail }}
-  {% endcapture %}
+  {% include blog_card.html postObject=newpost %}
 
-  {% capture pTitle %}
-    {{ newpost.title }}
-  {% endcapture %}
-
-  {% capture pDescription %}
-    {{ newpost.description }}
-  {% endcapture %}
-
-  {% capture pUrl %}
-    {{ newpost.url }}
-  {% endcapture %}
-
-  {% include blog_card.html
-    post_thumbnail=pThumbnail
-    post_url=pUrl
-    post_title=pTitle
-    post_description=pDescription
-  %}
 </div>
 
 <div class="card mt-2 px-5 py-5">

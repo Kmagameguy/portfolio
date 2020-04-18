@@ -1,7 +1,14 @@
+{% assign post = include.postObject %}
+{% assign post_thumbnail = post.thumbnail | default: "" %}
+{% assign post_title = post.title | default: "Post Title" %}
+{% assign post_url = post.url | default: "#" %}
+{% assign post_description = post.description | default: "" %}
+
 <div class="media">
-  <img class="img-fluid mr-3" style="min-width: 150px;" src="{{ include.post_thumbnail }}" alt="{{ include.post_title }}">
+  <img class="img-fluid mr-3" style="min-width: 150px;" src="{{ post_thumbnail }}" alt="{{ post_title }}">
   <div class="media-body">
-    <h6><a href="{{ include.post_url }}" target="_blank">{{ include.post_title }}</a></h6>
-    <p>{{ include.post_description }}</p>
+    <h6><a href="{{ post_url }}" target="_blank">{{ post_title }}</a></h6>
+    <p class="mb-2">{{ post_description }}</p>
+    <p class="blockquote-footer">Published: {{ post.date | date: "%B %-d, %Y" }}</p>
   </div>
 </div>
