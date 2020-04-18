@@ -1,14 +1,21 @@
-- name: Home
-  link: /
-- name: About
-  link: /about
-- name: Resume
-  link: /resume
-- name: Blog
-  link: http://kmagameguy.blogspot.com
-  target: _blank
-- name: Games
-  link: /games
-- name: Shop
-  link: https://www.society6.com/Kmagameguy
-  target: _blank
+main:
+  - name: Home
+    link: /
+  - name: About
+    link: /about/
+  - name: Resume
+    link: /resume/
+  - name: Blog
+    link: http://kmagameguy.blogspot.com
+    target: _blank
+  - name: Shop
+    link: https://www.society6.com/Kmagameguy
+    target: _blank
+
+projects:
+  - name: Scribbles
+    link: /scribbles/
+  - name: 3D
+    link: /3d/
+  - name: Games
+    link: /games/
