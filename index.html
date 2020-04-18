@@ -2,14 +2,16 @@
 layout: home
 ---
 
-<div class="row justify-content-center align-items-center text-center my-4">
-  <div class="col-sm">
-    <img style="border-radius:0.25rem;"src="{{ "assets/images/jumbo.png" | relative_url }}" class="img-fluid" alt="banner image">
-    <p class="mb-0 mt-3">Hello! my name is Kevin Aktug.  Welcome to my page!</p>
-  </div>
+<div class="row justify-content-center align-items-center mt-2 px-4 py-2">
+  <p class="mb-0" style="max-width: 500px;">
+    Hello! My name is Kevin Aktug. <br />
+    I'm a creative type that lives somewhere
+    between design & technology.  This site
+    has a sampling of my work across various fields of study.
+  </p>
 </div>
 
-<div class="card px-2 py-2">
+<div class="card mt-2 px-5 py-5">
   <h4>See what I've been up to:</h4>
   {% assign newpost = site.posts.last %}
 
@@ -37,7 +39,7 @@ layout: home
   %}
 </div>
 
-<div class="card mt-2 px-2 py-2">
+<div class="card mt-2 px-5 py-5">
   <h4>Here are some of my scribbles</a></h4>
   {% assign counter = 0 %}
   {% for image in site.static_files %}
