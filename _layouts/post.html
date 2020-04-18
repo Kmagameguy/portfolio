@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="{{ site.lang | default: "en-us" }}">
+  <head>
+    {% include head.html %}
+  </head>
+  <body class="bg-light">
+    <div class="container-fluid" style="max-width:900px;">
+      {% include nav.html %}
+      {{ content }}
+      {% include footer.html %}
+    </div>
+  </body>
+</html>
