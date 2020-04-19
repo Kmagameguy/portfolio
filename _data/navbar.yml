@@ -12,10 +12,12 @@ main:
     link: https://www.society6.com/Kmagameguy
     target: _blank
 
-projects:
+work:
   - name: Scribbles
     link: /scribbles/
   - name: 3D
     link: /3d/
   - name: Games
     link: /games/
+  - name: Mixed Media
+    link: /mixed_media/
