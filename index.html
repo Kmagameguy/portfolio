@@ -9,7 +9,9 @@ layout: home
     </div>
     <div class="col">
       <p>
-        Hello! My name is Kevin Aktug. <br />
+        Hello! My name is Kevin Aktug.
+      </p>
+      <p>
         I'm a creative type that lives somewhere
         between design & technology.  This site
         has a sampling of my work across various fields of study.
@@ -19,37 +21,26 @@ layout: home
 </div>
 
 <div class="card mt-2 px-5 py-5">
-  <h4>See what I've been up to:</h4>
+  <h4 class='mb-3'>See what I've been up to:</h4>
   {% assign newpost = site.posts.first %}
 
   {% include blog_card.html postObject=newpost %}
 
 </div>
 
-<div class="card mt-2 px-5 py-5">
-  <h4>Here are some of my scribbles</a></h4>
-  {% assign counter = 0 %}
-  {% for image in site.static_files %}
-    {% if image.path contains 'images/scribbles' %}
-      {% assign remainder = counter | modulo: 4 %}
-        {% if counter == 0 %}
-        <div class="row no-gutters">
-        {% elsif remainder == 0 %}
-          </div>
-          <div class="row no-gutters">
-      {% endif %}
-      <div class="col-sm px-1 pt-2 hover-image">
-        <a href="{{ site.baseurl }}{{ image.path }}" alt="{{ image.basename }}"><img class="img-fluid" src="{{ site.baseurl }}{{ image.path }}" alt="{{ image.basename }}" /></a>
-      </div>
-      {% assign counter = counter | plus: 1 %}
-      {% if counter >= 8 %}
-        {% break %}
-      {% endif %}
-    {% endif %}
-  {% endfor %}
-  </div>
-  <div class="row no-gutters mt-2">
-    <a href="/scribbles">More scribbles ></a>
-  </div>
-</div>
+{% include thumbnailCard.html
+  headerText = 'Here are some of my scribbles'
+  maxItems = 8
+  filePath = 'images/scribbles'
+  targetPage = '/scribbles'
+  linkText = 'More scribbles >'
+%}
+
+{% include thumbnailCard.html
+  headerText = 'Here are some of my 3D works'
+  maxItems = 4
+  filePath = 'images/3d'
+  targetPage = '/3d'
+  linkText = 'More 3D Work (Including animations) >'
+%}
 
