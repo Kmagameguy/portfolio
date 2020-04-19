@@ -3,37 +3,23 @@ layout: home
 permalink: /resume/
 ---
 
-<div class="row mb-2">
-  <div class="col">
-    <div class="card">
-      <div class="card-body">
-        <div class="container-fluid">
-          <div class="row justify-content-center align-items-center">
-            <div class="col-xs col-xs-2 px-1">
-              <a class="text-secondary" href="{{ site.data.resume.links.docx }}" download><i class="{{ site.data.resume.icons.docx }} fa-3x"></i></a>
-            </div>
-            <div class="col-xs col-xs-2 px-1">
-              <a class="text-secondary" href="{{ site.data.resume.links.pdf }}" download><i class="{{ site.data.resume.icons.pdf }} fa-3x"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="row">
-  <div class="col">
-    <div class="card">
-      <div class="card-body">
+<div class="card">
+  <div class="card-body">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-sm-9">
         <h3 class="card-title">{{ site.author }} - Resume</h3>
         <h5 class="card-text"><a href="mailto:{{ site.email }}">{{site.email}}</a></h5>
-        <div class="border-top my-3"></div>
-        <object data="{{ site.data.resume.links.gdoc }}" type="application/pdf" width="100%" height="800px">
-          <p>
-            No PDF plugin found.  <a href="{{ site.data.resume.links.pdf }}">Click here to download the PDF.</a>
-          </p>
-        </object>
+      </div>
+      <div class="col-sm-3">
+        <a class="text-secondary" href="{{ site.data.resume.links.docx }}" download><i class="{{ site.data.resume.icons.docx }} fa-3x"></i></a>
+        <a class="text-secondary" href="{{ site.data.resume.links.pdf }}" download><i class="{{ site.data.resume.icons.pdf }} fa-3x"></i></a>
       </div>
     </div>
+    <div class="border-top my-3"></div>
+    <object data="{{ site.data.resume.links.gdoc }}" type="application/pdf" width="100%" height="800px">
+      <p>
+        No PDF plugin found.  <a href="{{ site.data.resume.links.pdf }}">Click here to download the PDF.</a>
+      </p>
+    </object>
   </div>
 </div>
