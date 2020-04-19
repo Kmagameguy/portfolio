@@ -1,0 +1,46 @@
+{% assign headerText = include.headerText | default: "" %}
+{% assign secondaryText = include.secondaryText | default: "" %}
+{% assign filePath = include.filePath %}
+{% assign numColumns = include.numColumns | default: 4 %}
+{% assign maxItems = include.maxItems | default: "" %}
+{% assign targetPage = include.targetPage | default: "" %}
+{% assign linkText = include.linkText | default: "" %}
+
+<div class="card mt-2 px-5 py-5">
+  {% unless headerText == "" %}
+    <h4>{{ headerText }}</h4>
+  {% endunless %}
+  {% unless secondaryText == "" %}
+    <p class="text-secondary">{{ secondaryText }}</p>
+  {% endunless %}
+  <p class="text-secondary">(Click or Tap to see an enlarged view)</p>
+  {% assign counter = 0 %}
+  {% for image in site.static_files %}
+    {% if image.path contains filePath %}
+      {% assign remainder = counter | modulo: numColumns %}
+      {% if counter == 0 %}
+        <div class="row no-gutters">
+      {% elsif remainder == 0 %}
+        </div>
+        <div class="row no-gutters">
+      {% endif %}
+      <div class="col-sm px-1 pt-2 hover-image">
+        <a href="{{ site.baseurl }}{{ image.path }}" alt="{{ image.basename }}">
+          <img class="img-fluid" src="{{ site.baseurl }}{{ image.path }}" alt="{{ image.basename }}" />
+        </a>
+      </div>
+      {% assign counter = counter | plus: 1 %}
+      {% unless maxItems == "" %}
+        {% if counter >= maxItems %}
+          {% break %}
+        {% endif %}
+      {% endunless %}
+    {% endif %}
+  {% endfor %}
+  </div>
+  {% unless targetPage == "" %}
+  <div class="row no-gutters mt-2">
+    <a href="{{ targetPage }}">{{ linkText }}</a>
+  </div>
+  {% endunless %}
+</div>

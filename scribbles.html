@@ -12,25 +12,7 @@ permalink: /scribbles/
   </div>
 </div>
 
-<div class="card mt-2 px-5 py-3 text-center">
-  <p class="text-secondary">
-    (Click or Tap to see an enlarged view)
-  </p>
-  {% assign counter = 0 %}
-  {% for image in site.static_files %}
-    {% if image.path contains 'images/scribbles' %}
-      {% assign remainder = counter | modulo: 4 %}
-        {% if counter == 0 %}
-        <div class="row no-gutters">
-        {% elsif remainder == 0 %}
-          </div>
-          <div class="row no-gutters">
-      {% endif %}
-      <div class="col-sm px-1 pt-2 hover-image">
-        <a href="{{ site.baseurl }}{{ image.path }}" alt="{{ image.basename }}"><img class="img-fluid" src="{{ site.baseurl }}{{ image.path }}" alt="{{ image.basename }}" /></a>
-      </div>
-      {% assign counter = counter | plus: 1 %}
-    {% endif %}
-  {% endfor %}
-  </div>
-</div>
+{% include thumbnailCard.html
+  headerText = 'A Modest Collection of Scribbles'
+  filePath = 'images/scribbles'
+%}
