@@ -4,28 +4,26 @@ layout: home
 
 <div class="card px-5 py-5">
   <div class="row align-items-center">
-    <div class="col-auto">
-      <img class="align-self-center mr-3 mb-3" style="max-width: 200px;" src="/assets/images/main_prof.png" alt="selfie">
+    <div class="col-sm-3 mb-3">
+      <img class="img-fluid" src="/assets/images/main_prof.png" alt="selfie">
     </div>
-    <div class="col">
+    <div class="col-sm-6 order-first order-sm-0">
       <p>
         Hello! My name is Kevin Aktug.
       </p>
       <p>
         I'm a creative type that lives somewhere
         between design & technology.  This site
-        has a sampling of my work across various fields of study.
+        has a sampling of my work.
+      </p>
+      <p>
+        The cat is my buddy, Hobbes.
       </p>
     </div>
+    <div class="col-sm-3 mb-3">
+      <img class="img-fluid" src="/assets/images/hobbes.png" alt="hobbes">
+    </div>
   </div>
-</div>
-
-<div class="card mt-2 px-5 py-5">
-  <h4 class='mb-3'>See what I've been up to:</h4>
-  {% assign newpost = site.posts.first %}
-
-  {% include blog_card.html postObject=newpost %}
-
 </div>
 
 {% include thumbnailCard.html
@@ -35,6 +33,14 @@ layout: home
   targetPage = '/scribbles'
   linkText = 'More scribbles >'
 %}
+
+<div class="card mt-2 px-5 py-5">
+  <h4 class='mb-3'>See what I've been up to:</h4>
+  {% assign newpost = site.posts.first %}
+
+  {% include blog_card.html postObject=newpost %}
+
+</div>
 
 {% include thumbnailCard.html
   headerText = 'Here are some of my 3D works'

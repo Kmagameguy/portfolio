@@ -17,7 +17,7 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           {% for item in site.data.navbar.work %}
-            <a class="dropdown-item" href="{{ item.link }}">{{ item.name }}</a>
+            <a class="dropdown-item" href="{{ item.link }}" {%if item.target %} target="{{ item.target }}" {% endif %}>{{ item.name }}</a>
           {% endfor %}
         </div>
       </li>
