@@ -1,0 +1,8 @@
+links:
+  pdf: "../assets/documents/KevinAktugResume.pdf"
+  docx: "../assets/documents/KevinAktugResume.docx"
+  gdoc: "https://docs.google.com/document/d/e/2PACX-1vT5ntEwCY4BKCDdAf_AU5OJEVD8_xk7SymTpBwPW1dy5eRVJubMWBJCWOsxPwI-jAmx7gZC8GzC_rTy/pub?embedded=true"
+
+icons:
+  pdf: fas fa-file-pdf
+  docx: fas fa-file-word

@@ -1,0 +1,36 @@
+---
+layout: home
+permalink: /3d/
+---
+
+<div class="row justify-content-center align-items-center mt-2 px-4 py-2">
+  <div style="max-width: 500px;">
+    <p>
+      This is a collection of my 3D works.<br />
+      I hope you enjoy looking at them.
+    </p>
+  </div>
+</div>
+
+{% include thumbnailCard.html
+  headerText = '3D Scribbles'
+  secondaryText = 'Some concepts for these images were sourced from the web. Some are fan art.'
+  filePath = 'images/3d'
+%}
+
+<div class="card mt-2 px-5 py-5">
+  <h4>3D Animations</h4>
+  <p class="text-secondary">
+    Similar to above, inspiration for some of the animations below were sourced from the web.
+    Some consistute fan art.
+    All animations are traditionally hand-keyed.
+  </p>
+  <hr />
+  {% for item in site.data.videos.videos %}
+    <h5>{{ item.name }}</h5>
+    <p class="text-secondary">{{ item.description | default: "" }}</p>
+    <div class="embed-responsive embed-responsive-16by9 mb-5">
+      <iframe class="embed-responsive-item" src="{{ item.link }}" allowfullscreen></iframe>
+    </div>
+  {% endfor %}
+</div>

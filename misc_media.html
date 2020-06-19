@@ -1,0 +1,31 @@
+---
+layout: home
+permalink: /mixed_media/
+---
+
+<div class="row justify-content-center align-items-center mt-2 px-4 py-2">
+  <div style="max-width: 500px;">
+    <p>
+      Below is a collection of digital and non-digital creations.
+      Like a junk drawer.  A fun junk drawer!
+    </p>
+  </div>
+</div>
+
+<div class="card mt-2 px-5 py-5">
+  <h4>Music</h4>
+  <p class="text-secondary">
+    A few years ago, my best mate and I wrote an album.
+    The project was a two-man effort (+1 remote for the vocals on the final, cover track) with me working the drums.
+    You can listen to the never-released EP(?) exclusively below.
+  </p>
+  <div class="embed-responsive embed-responsive-16by9 mb-5">
+    <iframe class="embed-responsive-item" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1035479101&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>"
+  </div>
+</div>
+
+{% include thumbnailCard.html
+  headerText = 'Miscellania'
+  secondaryText = "Musings, illustrations, woodworking, and more."
+  filePath = 'images/mixed_media'
+%}
