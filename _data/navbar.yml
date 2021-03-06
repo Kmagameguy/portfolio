@@ -5,11 +5,8 @@ main:
     link: /about/
   - name: Resume
     link: /resume/
-  - name: Blog
-    link: http://kmagameguy.blogspot.com
-    target: _blank
-  - name: Shop
-    link: https://www.society6.com/Kmagameguy
+  - name: Music Blog
+    link: http://kmagameguy.github.io
     target: _blank
 
 work:
@@ -21,6 +18,3 @@ work:
     link: /games/
   - name: Mixed Media
     link: /mixed_media/
-  - name: Music Blog
-    link: https://kmagameguy.github.io
-    target: _blank

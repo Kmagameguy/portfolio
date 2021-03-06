@@ -31,35 +31,25 @@ lang: "en_US"
 social_links:
   - icon: fas fa-envelope-square
     link: mailto:kmaktug@gmail.com
-  - icon: fab fa-facebook-square
-    link: &facebook_link https://www.facebook.com/kmagameguy
   - icon: fab fa-linkedin
     link: &linkedin_link https://www.linkedin.com/in/kmagameguy
   - icon: fab fa-github-square
     link: &github_link https://github.com/kmagameguy
-  - icon: fab fa-instagram-square
-    link: &instagram_link https://www.instagram.com/kmagameguy
   - icon: fab fa-youtube-square
     link: &youtube_link https://www.youtube.com/kmagameguy
-  - icon: fab fa-steam-square
-    link: &steam_link https://steamcommunity.com/id/sgt_jerky
   - icon: fab fa-twitch
     link: &twitch_link https://twitch.tv/kmagameguy
-  - icon: fab fa-spotify
-    link: &spotify_link https://open.spotify.com/user/kmagameguy
   - icon: fab fa-soundcloud
     link: &soundcloud_link https://soundcloud.com/serpent_scales
 
 # SEO
 social:
   links:
-    - *facebook_link
     - *linkedin_link
     - *github_link
-    - *instagram_link
     - *youtube_link
-    - *steam_link
     - *twitch_link
+    - *soundcloud_link
 
 employer:
   name: Custom Ink
