@@ -10,7 +10,7 @@ permalink: /about/
       <div class="card-body">
         <div class="card-text">
           <p>
-            :wave: Hello! This is a picture of my face!
+            Hello! This is a picture of my face!
           </p>
         </div>
         <div class="card-text d-none d-sm-block">
@@ -18,12 +18,12 @@ permalink: /about/
           <h6>ID Card:</h6>
           <p>
             {% assign curDate='1990-05-24' | date: "%s" %}
-            :space_invader: Age: {{ "now" | date: "%s" | minus: curDate | divided_by: 31536000 | round }} Earth Years
+            Age: {{ "now" | date: "%s" | minus: curDate | divided_by: 31536000 | round }} Earth Years
           </p>
           <p>
-            :earth_americas: Location: Virginia, USA, Earth
+            Location: USA, Earth
           </p>
-          <span>:+1: Likes:</span>
+          <span>Things I Like:</span>
           <ul class="list-unstyled">
             {% for item in site.data.about.likes %}
               <li class="pl-3">{{ item }}</li>
@@ -36,26 +36,10 @@ permalink: /about/
       <div class="card-body p-5">
         <div class="card-text">
           <p>
-            My name is {{ site.author }}. I am a 3D Environment Artist.
-            I have 2 years of experience working in the gaming industry,
-            which is backed by 6+ years of experience in digital freelance work.
-            I graduated with honors from The Art Institute of Washington,
-            where I attained my BFA in Game Art and Design.
+            My name is {{ site.author }}. I graduated with honors from The Art Institute of Washington,
+            where I attained my BFA in Game Art and Design.  I am a former 3D Environment Artist, currently serving
+            as the {{ site.employer.job }} at <a href="{{ site.employer.url }}" target="_blank">{{ site.employer.name }}</a>.
           </p>
-          <p>
-            I currently serve as the {{ site.employer.job }} at <a href="{{ site.employer.url }}" target="_blank">{{ site.employer.name }}</a>.
-            I'm always on the lookout for the next big thing. I specialize in many aspects of 3D design,
-            with my current, primary duties being:
-          </p>
-          <ul>
-            <li>Hard Surface Modeling</li>
-            <li>Hi-poly to low-poly normal/spec map baking</li>
-            <li>Level &amp; Environmental Design</li>
-            <li>UDK/UE3 Level &amp; asset creation</li>
-            <li>Unwrapping &amp; texturing</li>
-            <li>Material & Shader creation</li>
-            <li>Lighting</li>
-          </ul>
         </div>
       </div>
     </div>
