@@ -15,6 +15,13 @@ img {
   border-radius: 0.2rem;
 }
 
+.center-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 .navbar-brand {
   -webkit-user-select: none;
   -moz-user-select: none;

@@ -1,0 +1,8 @@
+{% assign img_path = include.img_path  %}
+{% assign img_text = include.img_text | default: "" %}
+{% assign img_size = include.img_size | default: "320px" %}
+
+<div class="text-center my-2">
+  <a href="{{ img_path }}"><img class="center-img" src="{{ site.url}}{{ img_path }}" alt="{{ img_text }}" width="{{ img_size }}"></a>
+  <i>{{ img_text }}</i>
+</div>
