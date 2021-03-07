@@ -18,10 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Kevin Aktug &#124; 3D Environment Artist
+title: Kevin Aktug &#124; Portfolio
 email: kmaktug@gmail.com
 description: >- # this means to ignore newlines until "author:"
-  Kevin Aktug's 3D Portfolio
+  Kevin Aktug's Portfolio Site
 author: Kevin Aktug
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
