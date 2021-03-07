@@ -19,7 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Kevin Aktug's Portfolio
-email: kmaktug@gmail.com
+email: kevin@kmagameguy.com
 description: >- # this means to ignore newlines until "author:"
   Kevin Aktug's Portfolio Site
 author: Kevin Aktug
@@ -30,7 +30,7 @@ lang: "en_US"
 # For Pages
 social_links:
   - icon: fas fa-envelope-square
-    link: mailto:kmaktug@gmail.com
+    link: mailto:kevin@kmagameguy.com
   - icon: fab fa-linkedin
     link: &linkedin_link https://www.linkedin.com/in/kmagameguy
   - icon: fab fa-github-square
