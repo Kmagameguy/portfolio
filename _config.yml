@@ -63,6 +63,10 @@ plugins:
   - jekyll-autoprefixer
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-paginate
+
+paginate: 10
+paginate_path: "blog/page:num/"
 
 sass:
   sass_dir: assets/css

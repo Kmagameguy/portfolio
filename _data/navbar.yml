@@ -5,9 +5,9 @@ main:
     link: /about/
   - name: Resume
     link: /resume/
-  - name: Music Blog
-    link: http://kmagameguy.github.io
-    target: _blank
+  - name: Blog
+    link: /blog/
+
 
 work:
   - name: Scribbles
@@ -18,3 +18,6 @@ work:
     link: /games/
   - name: Mixed Media
     link: /mixed_media/
+  - name: Music Blog
+    link: http://kmagameguy.github.io
+    target: _blank

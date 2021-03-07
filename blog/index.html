@@ -1,0 +1,47 @@
+---
+layout: home
+---
+
+<div class="row justify-content-center align-items-center mt-2 px-4 py-2">
+  <div style="max-width: 500px;">
+    <p>
+      Read and view some things I have posted.
+    </p>
+  </div>
+</div>
+
+{% for post in paginator.posts %}
+  <div class="card px-5 py-5 my-2">
+    {% include blog_card.html postObject=post %}
+  </div>
+{% endfor %}
+
+
+{% if paginator.total_pages > 1 %}
+  <div class="card my-2 px-2 py-3">
+    <div class="pagination row justify-content-center">
+      {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a>  &nbsp;&nbsp;
+      {% else %}
+        <span>&laquo; Prev &nbsp;&nbsp;</span>
+      {% endif %}
+
+      {% for page in (1..paginator.total_pages) %}
+        {% if page == paginator.page %}
+          <em>{{ page }} &nbsp;&nbsp;</em>
+        {% elsif page == 1 %}
+          <a href="{{ 'blog/' | relative_url }}">{{ page }}</a> &nbsp;&nbsp;
+        {% else %}
+          <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a> &nbsp;&nbsp;
+        {% endif %}
+      {% endfor %}
+
+      {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
+      {% else %}
+        <span>Next &raquo;</span>
+      {% endif %}
+    </div>
+  </div>
+{% endif %}
+
