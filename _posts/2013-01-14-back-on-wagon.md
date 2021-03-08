@@ -1,10 +1,8 @@
 ---
 layout: post
-title: Back on the Wagon
-date: '2013-01-14T21:27:00.001-08:00'
-author: Kmagameguy
+title: Back to Basics
+author: Kevin
 tags:
-modified_time: '2013-01-14T21:27:13.023-08:00'
 thumbnail: /assets/images/posts/2013-01-14-back-on-the-wagon/thumb.jpg
 ---
 

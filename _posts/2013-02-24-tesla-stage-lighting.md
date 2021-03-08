@@ -1,10 +1,8 @@
 ---
 layout: post
 title: Tesla & Stage Lighting
-date: '2013-02-24T14:47:00.001-08:00'
-author: Kmagameguy
+author: Kevin
 tags: 
-modified_time: '2013-02-24T14:47:34.651-08:00'
 thumbnail: /assets/images/posts/2013-02-24-tesla-stage-lighting/thumb.png
 ---
 

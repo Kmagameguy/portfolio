@@ -1,10 +1,8 @@
 ---
 layout: post
 title: Exprimenting with Normal Maps
-date: '2013-02-01T21:06:00.001-08:00'
-author: Kmagameguy
+author: Kevin
 tags: 
-modified_time: '2013-02-01T21:06:16.299-08:00'
 thumbnail: /assets/images/posts/2013-02-01-exprimenting-with-normal-maps/thumb.jpg
 ---
 

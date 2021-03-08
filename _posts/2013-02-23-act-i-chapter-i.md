@@ -1,10 +1,8 @@
 ---
 layout: post
 title: Act I, Chapter I
-date: '2013-02-23T18:35:00.004-08:00'
-author: Kmagameguy
+author: Kevin
 tags: 
-modified_time: '2013-02-23T18:36:23.011-08:00'
 thumbnail: /assets/images/posts/2013-02-23-act-i-chapter-i/thumb.png
 ---
 

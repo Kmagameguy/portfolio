@@ -1,10 +1,8 @@
 ---
 layout: post
-title: Populating
-date: '2013-01-29T21:38:00.001-08:00'
-author: Kmagameguy
+title: Populating a 3D Scene
+author: Kevin
 tags: 
-modified_time: '2013-01-29T21:38:36.667-08:00'
 thumbnail: /assets/images/posts/2013-01-29-populating/thumb.jpg
 ---
 {% include lightboxImage.html
