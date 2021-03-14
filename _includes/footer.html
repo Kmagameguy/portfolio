@@ -1,6 +1,15 @@
 <footer class="page-footer font-small mt-4">
-  <div class="footer-copyright align-items-start py-3 text-secondary">
-    <p>&copy; Copyright <a class="mailto-me" href="#">{{ site.author }}</a>, {{ site.time | date: '%Y' }}</p>
+  <div class="row mx-3">
+    <div class="col-6">
+      <div class="footer-copyright text-secondary">
+        <p class="row text-left">&copy; Copyright <a class="mailto-me" href="#">{{ site.author }}</a>, {{ site.time | date: '%Y' }}</p>
+      </div>
+    </div>
+    <div class="col-6 d-flex">
+      <div class="footer-copyright ml-auto text-secondary">
+        <p><a href="/privacy_policy/">Privacy Policy</p>
+      </div>
+    </div>
   </div>
   <script src={{ "/assets/scripts/bootstrap/jquery-slim.min.js" | relative_url }}></script>
   <script src={{ "/assets/scripts/bootstrap/popper.min.js" | relative_url }}></script>
