@@ -1,6 +1,6 @@
 <footer class="page-footer font-small mt-4">
   <div class="footer-copyright align-items-start py-3 text-secondary">
-    <p>&copy; Copyright <a href="mailto:{{ site.email }}">{{ site.author }}</a>, {{ site.time | date: '%Y' }}</p>
+    <p>&copy; Copyright <a class="mailto-me" href="#">{{ site.author }}</a>, {{ site.time | date: '%Y' }}</p>
   </div>
   <script src={{ "/assets/scripts/bootstrap/jquery-slim.min.js" | relative_url }}></script>
   <script src={{ "/assets/scripts/bootstrap/popper.min.js" | relative_url }}></script>
@@ -8,4 +8,5 @@
   <!-- Make links to images into lightbox overlays; use no-lightbox class to disable-->
   <script src={{ "/assets/scripts/js/lightbox.js" | relative_url }}></script>
   <link rel="stylesheet" href="{{ "/assets/css/lightbox.css" | relative_url }}">
+  <script src={{ "/assets/scripts/js/main.js" | relative_url }}></script>
 </footer>

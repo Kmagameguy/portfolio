@@ -19,7 +19,8 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Kevin Aktug's Portfolio
-email: kevin@kmagameguy.com
+# base64 encoded
+email: a2V2aW5Aa21hZ2FtZWd1eS5jb20=
 description: >- # this means to ignore newlines until "author:"
   Kevin Aktug's Portfolio Site
 author: Kevin Aktug
@@ -30,7 +31,8 @@ lang: "en_US"
 # For Pages
 social_links:
   - name: email
-    link: mailto:kevin@kmagameguy.com
+    link: "#"
+    decodeFlag: true
   - name: linkedin
     link: &linkedin_link https://www.linkedin.com/in/kmagameguy
   - name: github
