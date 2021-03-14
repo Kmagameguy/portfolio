@@ -2,6 +2,6 @@ links:
   pdf: "../assets/documents/KevinAktugResume.pdf"
   docx: "../assets/documents/KevinAktugResume.docx"
 
-icons:
-  pdf: fas fa-file-pdf
-  docx: fas fa-file-word
+fallback:
+  pdf: PDF
+  docx: WORD
