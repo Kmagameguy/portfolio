@@ -2,12 +2,10 @@
   <div class="footer-copyright align-items-start py-3 text-secondary">
     <p>&copy; Copyright <a href="mailto:{{ site.email }}">{{ site.author }}</a>, {{ site.time | date: '%Y' }}</p>
   </div>
-  {% include cookie-banner.html %}
   <script src={{ "/assets/scripts/bootstrap/jquery-slim.min.js" | relative_url }}></script>
   <script src={{ "/assets/scripts/bootstrap/popper.min.js" | relative_url }}></script>
   <script src={{ "/assets/scripts/bootstrap/bootstrap.min.js" | relative_url }}></script>
   <!-- Make links to images into lightbox overlays; use no-lightbox class to disable-->
   <script src={{ "/assets/scripts/js/lightbox.js" | relative_url }}></script>
   <link rel="stylesheet" href="{{ "/assets/css/lightbox.css" | relative_url }}">
-  <script src={{ "/assets/scripts/js/cookie-banner.js" | relative_url }} crossorigin="anonymous"></script>
 </footer>
