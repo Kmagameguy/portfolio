@@ -29,20 +29,15 @@ lang: "en_US"
 
 # For Pages
 social_links:
-  - icon: fas fa-envelope-square
-    name: email
+  - name: email
     link: mailto:kevin@kmagameguy.com
-  - icon: fab fa-linkedin
-    name: linkedin
+  - name: linkedin
     link: &linkedin_link https://www.linkedin.com/in/kmagameguy
-  - icon: fab fa-github-square
-    name: github
+  - name: github
     link: &github_link https://github.com/kmagameguy
-  - icon: fab fa-youtube-square
-    name: youtube
+  - name: youtube
     link: &youtube_link https://www.youtube.com/kmagameguy
-  - icon: fab fa-soundcloud
-    name: soundcloud
+  - name: soundcloud
     link: &soundcloud_link https://soundcloud.com/serpent_scales
 
 # SEO
