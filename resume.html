@@ -8,11 +8,11 @@ permalink: /resume/
     <div class="row justify-content-center align-items-center">
       <div class="col-sm-9">
         <h3 class="card-title">{{ site.author }} - Resume</h3>
-        <p class="text-secondary"><i>Download a copy using the buttons on the right =></i></p>
+        <p class="text-secondary"><i>Download a copy using the links on the right =></i></p>
       </div>
-      <div class="col-sm-3">
-        <a class="text-secondary" href="{{ site.data.resume.links.docx }}" download><i class="{{ site.data.resume.icons.docx }} fa-3x"></i></a>
-        <a class="text-secondary" href="{{ site.data.resume.links.pdf }}" download><i class="{{ site.data.resume.icons.pdf }} fa-3x"></i></a>
+      <div class="col-sm-3 text-secondary font-weight-bold">
+        <a href="{{ site.data.resume.links.docx }}" download>{{ site.data.resume.fallback.docx }}</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="{{ site.data.resume.links.pdf }}" download>{{ site.data.resume.fallback.pdf }}</a>
       </div>
     </div>
     <div class="border-top my-3"></div>
