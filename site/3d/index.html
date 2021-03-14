@@ -29,8 +29,8 @@ permalink: /3d/
   {% for item in site.data.videos.videos %}
     <h5>{{ item.name }}</h5>
     <p class="text-secondary">{{ item.description | default: "" }}</p>
-    <div class="embed-responsive embed-responsive-16by9 mb-5">
-      <iframe class="embed-responsive-item" src="{{ item.link | relative_url }}" encrypted-media; allowfullscreen></iframe>
-    </div>
+    <video class="video-fluid z-depth-1 mb-5" controls muted>
+      <source src="{{ item.link | relative_url }}" type="video/mp4" />
+    </video>
   {% endfor %}
 </div>
