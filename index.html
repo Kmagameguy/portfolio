@@ -5,7 +5,7 @@ layout: home
 <div class="card px-5 py-5">
   <div class="row align-items-center">
     <div class="col-sm-3 mb-3">
-      <img class="img-fluid" src="/assets/images/main_prof.png" alt="selfie">
+      <img id="main-prof" class="img-fluid" src="/assets/images/main_prof_hidden.png" alt="selfie">
     </div>
     <div class="col-sm-6 order-first order-sm-0">
       <p>
@@ -21,10 +21,14 @@ layout: home
       </p>
     </div>
     <div class="col-sm-3 mb-3">
-      <img class="img-fluid" src="/assets/images/hobbes.png" alt="hobbes">
+      <img id="el-gato" class="img-fluid" src="/assets/images/hobbes_hidden.png" alt="hobbes">
     </div>
   </div>
 </div>
+<script>
+  document.getElementById("main-prof").src= atob("L2Fzc2V0cy9pbWFnZXMvbWFpbl9wcm9mLnBuZw==");
+  document.getElementById("el-gato").src = atob("L2Fzc2V0cy9pbWFnZXMvaG9iYmVzLnBuZw==");
+</script>
 
 {% include thumbnailCard.html
   headerText = 'Here are some of my scribbles'
