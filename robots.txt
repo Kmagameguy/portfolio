@@ -1,3 +1,11 @@
 User-agent: *
 Disallow: /assets/
 Disallow: /bin/
+Disallow: /_data/
+Disallow: /_includes/
+Disallow: /_layouts/
+Disallow: /_site/
+Disallow: /docs/
+Disallow: /site/
+Disallow: /blog/
+Disallow: /_posts/
