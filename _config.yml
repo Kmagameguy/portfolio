@@ -37,8 +37,6 @@ social_links:
     link: &linkedin_link https://www.linkedin.com/in/kmagameguy
   - name: github
     link: &github_link https://github.com/kmagameguy
-  - name: youtube
-    link: &youtube_link https://www.youtube.com/kmagameguy
   - name: soundcloud
     link: &soundcloud_link https://soundcloud.com/serpent_scales
 
@@ -47,7 +45,6 @@ social:
   links:
     - *linkedin_link
     - *github_link
-    - *youtube_link
     - *soundcloud_link
 
 employer:
