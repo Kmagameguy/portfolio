@@ -25,6 +25,4 @@ Nic Cage's movies.  This could not stand.
 So I buckled up, and for the better part of the month I did nothing but watch his movies during my downtime.  Some
 were legitimately difficult to find, especially the earlier ones which are out of print.  Unfortunately this meant breaking out the wallet when content wasn't available through my toolbelt of streaming services. In total I spent somewhere in the ballpark of ~$300 dollars.  Items that I couldn't simply purchase through streaming services were hunted down via price-gouged-eBay-DVDs (one of which made up 20% of my total spend on the Cage-ology, yikes).  Despite the cost it was worth it for the achievement.  Never say I'm not committed.
 
-With the right expectations, most movies featuring Nic Cage are great in their own right, but some definitely stand head-and-shoulders above the rest.  To wit, below is my definitive ranking of Nicolas Kim Coppola Cage's filmography.  While this list is obviously laden with personal opinion, I stand by my decisions here.  Give it a look if you want to see more of the man, the myth, the legend:
-
-[Cage% Speedrun on Letterboxd](https://letterboxd.com/kmamovieguy/list/cage-speed-run/)
+With the right expectations, most movies featuring Nic Cage are great in their own right, but some definitely stand head-and-shoulders above the rest.
