@@ -1,7 +1,5 @@
 links:
   pdf: "../assets/documents/KevinAktugResume.pdf"
-  docx: "../assets/documents/KevinAktugResume.docx"
 
 fallback:
   pdf: PDF
-  docx: WORD
