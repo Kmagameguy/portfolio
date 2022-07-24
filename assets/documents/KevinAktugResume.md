@@ -1,0 +1,123 @@
+<style>
+  html {
+    margin        : 0!important;
+  }
+  body {
+    margin        : 0;
+    width         : 80%!important;
+    font-family   : "Lato", sans-serif!important;
+  }
+
+  h2 {
+    margin        : 0!important;
+    margin-bottom : 0.5rem!important;
+    border-bottom : 1px solid grey!important;
+    font-size     : 1rem!important;
+    color         : #124559!important;
+  }
+
+  h3 {
+    margin        : 0!important;
+    margin-bottom : 0.5rem!important;
+    font-size     : 0.8rem!important;
+  }
+
+  h4 {
+    margin        : 0!important;
+    margin-left   : 1rem!important;
+    margin-bottom : 0.25rem!important;
+    font-size     : 0.7rem!important;
+    font-style    : italic!important;
+    color         : #598392!important;
+  }
+
+  p {
+    margin        : 0!important;
+    line-height   : 0.85rem!important;
+    font-size     : 0.65rem!important;
+  }
+
+  ul {
+    margin-bottom : 0.5rem!important;
+  }
+
+  li {
+    margin        : -0.2rem 1rem!important;
+    font-size     : 0.65rem!important;
+  }
+
+  hr {
+    margin        : 0.5rem 0!important;
+    border-bottom : 1px solid grey!important;
+    background-color: #fff!important;
+  }
+</style>
+
+<div style="text-align:right">
+  <p>Kevin Aktug</p>
+  <p><a href="kmagameguy.com">kmagameguy.com</a></p>
+  <p><a href="mailto:linkedin@mailontheinternet.com">linkedin@mailontheinternet.com</a></p>
+  <p>(571) 246-3902</p>
+</div>
+
+## Experience
+### 2013-Present | Custom Ink - Fairfax, VA
+#### 2020-Present &bullet; Customer Care Technology Manager
+  - Complete project proposals and ROI/Risk Analyses in pursuit of company goals.
+  - Advise on development efforts in coordination with product management and software engineering.
+  - Supervisor to the Customer Care Technology Analyst.
+  - Maintained all responsibilities from Customer Care Technology Specialist role.
+
+#### 2019-2020 &bullet; Customer Care Technology Specialist
+  - Prototyped and led initiatives that drove 20-60% automation rates within team workflows.
+  - Leveraged prior remote work program to rapidly adapt to needs during early Covid spread.
+  - Performed Jr-level rails and nodeJS software engineering tasks with software engineering manager oversight.
+  - Developed and maintained some Art & Licensing team web & desktop applications.
+  - Performed in-depth QA support for tech changes across departments.
+  - Maintained all responsibilities from Art Technology Specialist role.
+
+#### 2015-2019 &bullet; Art Technology Specialist
+  - Support launching new products in Custom Ink's catalog.
+  - Wrote ad-hoc scripts that reduced manual effort by ~80% for large-scale merchandising and imagery updates
+  - Acted as a product manager for Art Operations initiatives.
+  - Designed and implemented a robust remote-work program.
+  - Performed in-depth QA support for tech changes within the Art space.
+  - Led desktop hardware and software support for ~200 team members.
+  - Prepared hardware and software for team member onboarding.
+
+#### 2014-2015 &bullet; Production Art Development Coordinator
+  - Maintained knowledge resources and sent weekly communication summarizing upcoming tech/process changes.
+  - Coordinated cross-functionally to reduce process friction across teams.
+  - Helped lead new hiring training sessions.
+
+#### 2013-2014 &bullet; Production Artist
+  - Processed customer designs to meet printability requirements.
+  - Consistently exceeded productivity targets and maintained high accuracy.
+  - Cross-trained in Logistics role to support during peak volume periods.
+  - Provided merchandising and Adobe Suite support to Art Technology Specialist.
+
+<br />
+
+### 2011-2013 | Freelance Multimedia Artist - Fairfax, VA
+#### 2011-2013 &bullet; Firesabre Consulting, LLC
+  - Environment and Level Design contracting for Fortune 500 companies.
+
+#### Jun 2012-Jul 2012 &bullet; Fiteeza
+  - Terrain, Architectural, Prop, and Character modeling, texturing, unwrapping, and rigging.
+  - Graphical interface and user experience design for computers, consoles, and mobile devices.
+  Created and managed patent applications for UI/UX designs.
+
+#### Oct 2012 &bullet; Ave Media, LLC
+  -  Level Layout, Look Development, and 2D Art for the video game "Elite vs. Freedom".
+
+<br />
+
+## Education
+### 2008-2012 | The Art Institute of Washington
+  - Bachelor of Fine Arts in Game Art &amp; Design
+
+<br />
+
+## Awards & Achievements
+  - 10x nominated for internal "Inkademy" awards for Innovation at Custom Ink.
+  - Graduated Magna Cum Laude with Highest Achievement distinction

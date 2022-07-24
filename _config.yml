@@ -20,7 +20,7 @@
 
 title: Kevin Aktug's Portfolio
 # base64 encoded
-email: a2V2aW5Aa21hZ2FtZWd1eS5jb20=
+email: bGlua2VkaW5AbWFpbG9udGhlaW50ZXJuZXQuY29t
 description: >- # this means to ignore newlines until "author:"
   Kevin Aktug's Portfolio Site
 author: Kevin Aktug
@@ -37,15 +37,12 @@ social_links:
     link: &linkedin_link https://www.linkedin.com/in/kmagameguy
   - name: github
     link: &github_link https://github.com/kmagameguy
-  - name: soundcloud
-    link: &soundcloud_link https://soundcloud.com/serpent_scales
 
 # SEO
 social:
   links:
     - *linkedin_link
     - *github_link
-    - *soundcloud_link
 
 employer:
   name: Custom Ink
