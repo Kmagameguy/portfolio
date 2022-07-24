@@ -1,32 +1,55 @@
 <style>
+  html {
+    margin        : 0!important;
+  }
   body {
-    font-family   : sans-serif;
+    margin        : 0;
+    width         : 80%!important;
+    font-family   : "Lato", sans-serif!important;
   }
 
   h2 {
-    margin-top    : 2rem;
-    border-bottom : 1px solid grey;
-    color         : #124559
+    margin        : 0!important;
+    margin-bottom : 0.5rem!important;
+    border-bottom : 1px solid grey!important;
+    font-size     : 1rem!important;
+    color         : #124559!important;
+  }
+
+  h3 {
+    margin        : 0!important;
+    margin-bottom : 0.5rem!important;
+    font-size     : 0.8rem!important;
   }
 
   h4 {
-    margin-left   : 1.5rem;
-    font-style    : italic;
-    color         : #598392;
+    margin        : 0!important;
+    margin-left   : 1rem!important;
+    margin-bottom : 0.25rem!important;
+    font-size     : 0.7rem!important;
+    font-style    : italic!important;
+    color         : #598392!important;
   }
 
   p {
-    margin        : 0;
+    margin        : 0!important;
+    line-height   : 0.85rem!important;
+    font-size     : 0.65rem!important;
+  }
+
+  ul {
+    margin-bottom : 0.5rem!important;
   }
 
   li {
-    margin-left   : 1rem;
-    font-size     : 0.8rem;
+    margin        : -0.2rem 1rem!important;
+    font-size     : 0.65rem!important;
   }
 
   hr {
-    margin        : 1.5rem 0;
-    border-bottom : 1px solid grey;
+    margin        : 0.5rem 0!important;
+    border-bottom : 1px solid grey!important;
+    background-color: #fff!important;
   }
 </style>
 
@@ -40,51 +63,61 @@
 ## Experience
 ### 2013-Present | Custom Ink - Fairfax, VA
 #### 2020-Present &bullet; Customer Care Technology Manager
-  - Completes project proposals and ROI/Risk Analyses in pursuit of company goals.
-  - Supports launching new products in Custom Ink's catalog.
-  - Advises upcoming and in-flight development efforts in coordination with product management and software engineering.
-  - Leads desktop hardware and software support for ~200 team members.
-  - Supervisor to the Customer Care Technology Analyst
+  - Complete project proposals and ROI/Risk Analyses in pursuit of company goals.
+  - Advise on development efforts in coordination with product management and software engineering.
+  - Supervisor to the Customer Care Technology Analyst.
+  - Maintained all responsibilities from Customer Care Technology Specialist role.
+
 #### 2019-2020 &bullet; Customer Care Technology Specialist
-  - Prototyped and led initiatives that drove 20-60% process automation rates.
-  - Leveraged learnings from prior remote work program to rapidly expand remote work across departments during early Covid with minimal disruptions.
-  - Performed Jr-level software engineering skills with oversight from software engineering manager to develop and maintain Art & Licensing tools and automation.
+  - Prototyped and led initiatives that drove 20-60% automation rates within team workflows.
+  - Leveraged prior remote work program to rapidly adapt to needs during early Covid spread.
+  - Performed Jr-level rails and nodeJS software engineering tasks with software engineering manager oversight.
+  - Developed and maintained some Art & Licensing team web & desktop applications.
   - Performed in-depth QA support for tech changes across departments.
-  - Led desktop hardware and software support for ~200 team members.
+  - Maintained all responsibilities from Art Technology Specialist role.
+
 #### 2015-2019 &bullet; Art Technology Specialist
-  - Wrote ad-hoc scripts that reduced manual effort by ~80% for large-scale merchandising and imagery updates; shortlisted for internal "Inkademy" awards for Innovation.
+  - Support launching new products in Custom Ink's catalog.
+  - Wrote ad-hoc scripts that reduced manual effort by ~80% for large-scale merchandising and imagery updates
   - Acted as a product manager for Art Operations initiatives.
   - Designed and implemented a robust remote-work program.
   - Performed in-depth QA support for tech changes within the Art space.
   - Led desktop hardware and software support for ~200 team members.
+  - Prepared hardware and software for team member onboarding.
+
 #### 2014-2015 &bullet; Production Art Development Coordinator
-  - Maintained knowledge resources and authored weekly communication to team members with summaries of recent/upcoming technology and process changes.
+  - Maintained knowledge resources and sent weekly communication summarizing upcoming tech/process changes.
   - Coordinated cross-functionally to reduce process friction across teams.
+  - Helped lead new hiring training sessions.
+
 #### 2013-2014 &bullet; Production Artist
-  - Processed orders for apparel art-printability within pre-production timeline guidelines; consistently exceeded productivity targets while maintaining high accuracy.
-  - Cross-trained in logistics role to lend support during peak volume times.
+  - Processed customer designs to meet printability requirements.
+  - Consistently exceeded productivity targets and maintained high accuracy.
+  - Cross-trained in Logistics role to support during peak volume periods.
   - Provided merchandising and Adobe Suite support to Art Technology Specialist.
 
----
+<br />
 
 ### 2011-2013 | Freelance Multimedia Artist - Fairfax, VA
 #### 2011-2013 &bullet; Firesabre Consulting, LLC
   - Environment and Level Design contracting for Fortune 500 companies.
+
 #### Jun 2012-Jul 2012 &bullet; Fiteeza
   - Terrain, Architectural, Prop, and Character modeling, texturing, unwrapping, and rigging.
   - Graphical interface and user experience design for computers, consoles, and mobile devices.
   Created and managed patent applications for UI/UX designs.
+
 #### Oct 2012 &bullet; Ave Media, LLC
-  - Short-term Level Layout, Look Development, and 2D art for the video game "Elite vs. Freedom".
+  -  Level Layout, Look Development, and 2D Art for the video game "Elite vs. Freedom".
+
+<br />
 
 ## Education
 ### 2008-2012 | The Art Institute of Washington
-#### Bachelor of Fine Arts in Game Art &amp; Design
-  - Graduated Magna Cum Laude with Highest Achievement distinction
+  - Bachelor of Fine Arts in Game Art &amp; Design
 
-## Technical
-- Git
-- Javascript / NodeJS
-- Shell
-- Windows, MacOS, GNU/Linux
-- Confluence
+<br />
+
+## Awards & Achievements
+  - 10x nominated for internal "Inkademy" awards for Innovation at Custom Ink.
+  - Graduated Magna Cum Laude with Highest Achievement distinction
