@@ -77,8 +77,8 @@
   - Maintained all responsibilities from Art Technology Specialist role.
 
 #### 2015-2019 &bullet; Art Technology Specialist
-  - Support launching new products in Custom Ink's catalog.
-  - Wrote ad-hoc scripts that reduced manual effort by ~80% for large-scale merchandising and imagery updates
+  - Supported new product launches within Custom Ink's catalog.
+  - Wrote ad-hoc scripts that reduced manual effort by ~80% for large-scale merchandising and imagery updates.
   - Acted as a product manager for Art Operations initiatives.
   - Designed and implemented a robust remote-work program.
   - Performed in-depth QA support for tech changes within the Art space.
