@@ -74,8 +74,8 @@
   - Cross-trained to perform Jr-level rails and nodeJS software engineering tasks.
   - Developed and maintained Art & Licensing team web & desktop applications.
   - Performed in-depth QA support for tech changes across departments.
-  - Maintained all responsibilities from Art Technology Specialist role.
   - Supported launch and integration of 6 new lines of business.
+  - Maintained all responsibilities from Art Technology Specialist role.
 
 #### 2015-2019 &bullet; Art Technology Specialist
   - Supported new product launches within Custom Ink's catalog.
