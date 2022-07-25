@@ -71,8 +71,8 @@
 #### 2019-2020 &bullet; Customer Care Technology Specialist
   - Prototyped and led initiatives that drove 20-60% automation rates within team workflows.
   - Leveraged prior remote work program to rapidly adapt to needs during early Covid spread.
-  - Performed Jr-level rails and nodeJS software engineering tasks with software engineering manager oversight.
-  - Developed and maintained some Art & Licensing team web & desktop applications.
+  - Cross-trained to perform Jr-level rails and nodeJS software engineering tasks.
+  - Developed and maintained Art & Licensing team web & desktop applications.
   - Performed in-depth QA support for tech changes across departments.
   - Maintained all responsibilities from Art Technology Specialist role.
 
