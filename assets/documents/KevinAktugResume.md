@@ -62,13 +62,14 @@
 
 ## Experience
 ### 2013-Present | Custom Ink - Fairfax, VA
-#### 2020-Present &bullet; Customer Care Technology Manager
+#### 2020-Present &bullet; Technology Manager
   - Complete project proposals and ROI/Risk Analyses in pursuit of company goals.
   - Advise on development efforts in coordination with product management and software engineering.
   - Supervisor to the Customer Care Technology Analyst.
+  - Support MacOS in an Enterprise environment, working with IT Security to ensure latest security updates and OS standards are maintained on JAMF Pro-managed endpoint devices.
   - Maintained all responsibilities from Customer Care Technology Specialist role.
 
-#### 2019-2020 &bullet; Customer Care Technology Specialist
+#### 2015-2020 &bullet; Technology Specialist
   - Prototyped and led initiatives that drove 20-60% automation rates within team workflows.
   - Leveraged prior remote work program to rapidly adapt to needs during early Covid spread.
   - Cross-trained to perform Jr-level rails and nodeJS software engineering tasks.
@@ -76,10 +77,8 @@
   - Performed in-depth QA support for tech changes across departments.
   - Supported launch and integration of 6 new lines of business.
   - Maintained all responsibilities from Art Technology Specialist role.
-
-#### 2015-2019 &bullet; Art Technology Specialist
   - Supported new product launches within Custom Ink's catalog.
-  - Wrote ad-hoc scripts that reduced manual effort by ~80% for large-scale merchandising and imagery updates.
+  - Wrote and maintained Bash/Shell and Powershell scripts that automated workflows and assisted with system deployments and other maintenance.
   - Acted as a product manager for Art Operations initiatives.
   - Designed and implemented a robust remote-work program.
   - Performed in-depth QA support for tech changes within the Art space.
