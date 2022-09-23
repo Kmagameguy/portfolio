@@ -120,3 +120,19 @@
 ## Awards & Achievements
   - 10x nominated for internal "Inkademy" awards for Innovation at Custom Ink.
   - Graduated Magna Cum Laude with Highest Achievement distinction
+
+<br />
+
+## Skills
+- JAMF/Dell KACE/Panorama9
+- Bash/Shell
+- Javascript
+- Ruby on Rails
+- VBScript
+- Git/GitHub/Gitlab
+- Google Apps Script
+- Mac 10.8 "Mountain Lion" - Mac 13 "Ventura"/Windows
+- Linux
+- Ansible
+- Docker / Docker-Compose
+- PfSense
