@@ -64,6 +64,7 @@
 ### 2013-Present | Custom Ink - Fairfax, VA
 #### 2020-Present &bullet; Technology Manager
   - Complete project proposals and ROI/Risk Analyses in pursuit of company goals.
+  - Supported organizational change from Waterfall to Agile Development Methodology
   - Advise on development efforts in coordination with product management and software engineering.
   - Supervisor to the Customer Care Technology Analyst.
   - Support MacOS in an Enterprise environment, working with IT Security to ensure latest security updates and OS standards are maintained on JAMF Pro-managed endpoint devices.
