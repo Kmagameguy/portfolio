@@ -67,7 +67,7 @@
   - Advise on development efforts in coordination with product management and software engineering.
   - Supervisor to the Customer Care Technology Analyst.
   - Support MacOS in an Enterprise environment, working with IT Security to ensure latest security updates and OS standards are maintained on JAMF Pro-managed endpoint devices.
-  - Maintained all responsibilities from Customer Care Technology Specialist role.
+  - Maintained all responsibilities from Technology Specialist role.
 
 #### 2015-2020 &bullet; Technology Specialist
   - Prototyped and led initiatives that drove 20-60% automation rates within team workflows.
@@ -76,12 +76,10 @@
   - Developed and maintained Art & Licensing team web & desktop applications.
   - Performed in-depth QA support for tech changes across departments.
   - Supported launch and integration of 6 new lines of business.
-  - Maintained all responsibilities from Art Technology Specialist role.
   - Supported new product launches within Custom Ink's catalog.
   - Wrote and maintained Bash/Shell and Powershell scripts that automated workflows and assisted with system deployments and other maintenance.
   - Acted as a product manager for Art Operations initiatives.
   - Designed and implemented a robust remote-work program.
-  - Performed in-depth QA support for tech changes within the Art space.
   - Led desktop hardware and software support for ~200 team members.
   - Prepared hardware and software for team member onboarding.
 
