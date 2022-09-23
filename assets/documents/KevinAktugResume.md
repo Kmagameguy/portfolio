@@ -72,7 +72,7 @@
 
 #### 2015-2020 &bullet; Technology Specialist
   - Prototyped and led initiatives that drove 20-60% automation rates within team workflows.
-  - Leveraged prior remote work program to rapidly adapt to needs during early Covid spread.
+  - Created a remote-work program which later allowed for rapid adaptation to workforce management needs during early Covid spread.
   - Cross-trained to perform Jr-level rails and nodeJS software engineering tasks.
   - Developed and maintained Art & Licensing team web & desktop applications.
   - Performed in-depth QA support for tech changes across departments.
@@ -80,7 +80,6 @@
   - Supported new merchandise additions within Custom Ink's catalog.
   - Wrote and maintained Bash/Shell and Powershell scripts that automated workflows and assisted with system deployments and other maintenance.
   - Acted as a product manager for Art Operations initiatives.
-  - Designed and implemented a robust remote-work program.
   - Led desktop hardware and software support for ~200 team members.
   - Prepared hardware and software for team member onboarding.
 
