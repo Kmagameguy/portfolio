@@ -77,7 +77,7 @@
   - Developed and maintained Art & Licensing team web & desktop applications.
   - Performed in-depth QA support for tech changes across departments.
   - Supported launch and integration of 6 new lines of business.
-  - Supported new product launches within Custom Ink's catalog.
+  - Supported new merchandise additions within Custom Ink's catalog.
   - Wrote and maintained Bash/Shell and Powershell scripts that automated workflows and assisted with system deployments and other maintenance.
   - Acted as a product manager for Art Operations initiatives.
   - Designed and implemented a robust remote-work program.
@@ -132,7 +132,10 @@
 - Git/GitHub/Gitlab
 - Google Apps Script
 - Mac 10.8 "Mountain Lion" - Mac 13 "Ventura"/Windows
-- Linux
+- GNU/Linux
 - Ansible
 - Docker / Docker-Compose
 - PfSense
+- Zendesk Administration/Ticket Triage
+- Adobe Suite Deployment & Configuration
+- JIRA
