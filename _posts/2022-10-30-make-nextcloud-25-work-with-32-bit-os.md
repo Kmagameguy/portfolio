@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How To | Make Nextcloud 25 Work with 32-Bit Raspberry Pi OS
+title: Nextcloud 25 - Fix Broken File Browser on 32-bit OS 
 author: Kevin
 tags: 
 thumbnail: /assets/images/posts/2022-10-30-make-nextcloud-25-work-with-32-bit-os/thumb.png
