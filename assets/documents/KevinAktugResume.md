@@ -62,27 +62,24 @@
 
 ## Experience
 ### 2013-Present | Custom Ink - Fairfax, VA
-#### 2020-Present &bullet; Customer Care Technology Manager
+#### 2020-Present &bullet; Technology Manager
   - Complete project proposals and ROI/Risk Analyses in pursuit of company goals.
+  - Supported organizational change from Waterfall to Agile Development Methodology
   - Advise on development efforts in coordination with product management and software engineering.
   - Supervisor to the Customer Care Technology Analyst.
-  - Maintained all responsibilities from Customer Care Technology Specialist role.
+  - Support MacOS in an Enterprise environment, working with IT Security to ensure latest security updates and OS standards are maintained on JAMF Pro-managed endpoint devices.
+  - Maintained all responsibilities from Technology Specialist role.
 
-#### 2019-2020 &bullet; Customer Care Technology Specialist
+#### 2015-2020 &bullet; Technology Specialist
   - Prototyped and led initiatives that drove 20-60% automation rates within team workflows.
-  - Leveraged prior remote work program to rapidly adapt to needs during early Covid spread.
+  - Created a remote-work program which later allowed for rapid adaptation to workforce management needs during early Covid spread.
   - Cross-trained to perform Jr-level rails and nodeJS software engineering tasks.
   - Developed and maintained Art & Licensing team web & desktop applications.
   - Performed in-depth QA support for tech changes across departments.
   - Supported launch and integration of 6 new lines of business.
-  - Maintained all responsibilities from Art Technology Specialist role.
-
-#### 2015-2019 &bullet; Art Technology Specialist
-  - Supported new product launches within Custom Ink's catalog.
-  - Wrote ad-hoc scripts that reduced manual effort by ~80% for large-scale merchandising and imagery updates.
+  - Supported new merchandise additions within Custom Ink's catalog.
+  - Wrote and maintained Bash/Shell and Powershell scripts that automated workflows and assisted with system deployments and other maintenance.
   - Acted as a product manager for Art Operations initiatives.
-  - Designed and implemented a robust remote-work program.
-  - Performed in-depth QA support for tech changes within the Art space.
   - Led desktop hardware and software support for ~200 team members.
   - Prepared hardware and software for team member onboarding.
 
@@ -122,3 +119,22 @@
 ## Awards & Achievements
   - 10x nominated for internal "Inkademy" awards for Innovation at Custom Ink.
   - Graduated Magna Cum Laude with Highest Achievement distinction
+
+<br />
+
+## Skills
+- JAMF/Dell KACE/Panorama9
+- Bash/Shell
+- Javascript
+- Ruby on Rails
+- VBScript
+- Git/GitHub/Gitlab
+- Google Apps Script
+- Mac 10.8 "Mountain Lion" - Mac 13 "Ventura"/Windows
+- GNU/Linux
+- Ansible
+- Docker / Docker-Compose
+- PfSense
+- Zendesk Administration/Ticket Triage
+- Adobe Suite Deployment & Configuration
+- JIRA
