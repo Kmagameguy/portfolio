@@ -1,10 +1,10 @@
 ---
 layout: post
-title: How To | Tame a Stock Ender3 V2 Printer
+title: How To | Make Nextcloud 25 Work with 32-Bit Raspberry Pi OS
 author: Kevin
 tags: 
-thumbnail: /assets/images/posts/2022-01-31-ender3v2-prints/thumb.jpg
-image_path: /assets/images/posts/2022-01-31-ender3v2-prints
+thumbnail: /assets/images/posts/2022-10-30-make-nextcloud-25-work-with-32-bit-os/thumb.png
+image_path: /assets/images/posts/2022-10-30-make-nextcloud-25-work-with-32-bit-os
 ---
 
 # Nextcloud 25: Fix Missing Files on 32-bit OS  
