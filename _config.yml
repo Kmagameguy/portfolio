@@ -34,7 +34,7 @@ social_links:
     link: "#"
     decodeFlag: true
   - name: linkedin
-    link: &linkedin_link https://www.linkedin.com/in/kmagameguy
+    link: &linkedin_link https://www.linkedin.com/in/kmaktug
   - name: github
     link: &github_link https://github.com/kmagameguy
 
