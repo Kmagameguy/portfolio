@@ -4,12 +4,9 @@ title: Tesla & Stage Lighting
 author: Kevin
 tags: 
 thumbnail: /assets/images/posts/2013-02-24-tesla-stage-lighting/thumb.png
+thumbnail_alt: Nikola Tesla
+thumbnail_credit: Illustration by me
 ---
-
-{% include lightboxImage.html
-  img_path='/assets/images/posts/2013-02-24-tesla-stage-lighting/tesla.png'
-  img_text='Nikola Tesla'
-%}
 
 This is probably the most "character" models I've done in a long time.
 Moreso, it's definitely the most DRAWING I've done in a long time.
