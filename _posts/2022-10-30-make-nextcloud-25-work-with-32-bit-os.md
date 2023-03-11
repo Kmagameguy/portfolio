@@ -6,8 +6,6 @@ tags:
 thumbnail: /assets/images/posts/2022-10-30-make-nextcloud-25-work-with-32-bit-os/thumb.png
 image_path: /assets/images/posts/2022-10-30-make-nextcloud-25-work-with-32-bit-os
 ---
-
-# Nextcloud 25: Fix Broken File Browser on 32-bit OS  
   
 At time of writing it seems like the folks over at [Nextcloud][nextcloud] have [unintentionally dropped support for 32-bit architecture][issue-notes].  After performing the upgrade to Nextcloud 25 I realized the file browser no longer worked, as suggested by that open issue thread.  This is a huge bummer for me since my Nextcloud installation is on a bare metal Raspberry Pi 3B+, which doesn't support 64-bit Raspberry Pi OS.  
   
