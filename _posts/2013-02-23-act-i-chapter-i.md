@@ -4,12 +4,9 @@ title: Act I, Chapter I
 author: Kevin
 tags: 
 thumbnail: /assets/images/posts/2013-02-23-act-i-chapter-i/thumb.png
+thumbnail_alt: Main Character Evolution
+thumbnail_src: Illustration by me
 ---
-
-{% include lightboxImage.html
-  img_path='/assets/images/posts/2013-02-23-act-i-chapter-i/charevolution.png'
-  img_text='Main Character Evolution'
-%}
 
 Since I have the weekend off, I decided I'd try and make the best of it by finally
 putting to paper (or screen) the basic foundation for my point-and-click adventure/play game.
