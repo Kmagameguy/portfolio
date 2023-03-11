@@ -4,11 +4,9 @@ title: Populating a 3D Scene
 author: Kevin
 tags: 
 thumbnail: /assets/images/posts/2013-01-29-populating/thumb.jpg
+thumbnail_alt: A darkly lit nighttime scene seen from a first person perspective.  The player character is holding an oil lamp which illuminates a creepy well behind a rickety wooden fence.
+thumbnail_credit: Materials and rendering by me
 ---
-{% include lightboxImage.html
-  img_path='/assets/images/posts/2013-01-29-populating/preview.jpg'
-  img_text='In-Engine (UDK) demo'
-%}
 
 After a bit of inactivity, I spent some time crafting a few props today.
 It's always been difficult for me to kick off a project when it's in such a nebulous phase.
