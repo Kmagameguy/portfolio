@@ -4,19 +4,11 @@ title: Everything, Everywhere, All At Once (With Syncthing!)
 author: Kevin
 tags: 
 thumbnail: /assets/images/posts/2023-02-16-syncthing/thumb.png
+thumbnail_alt: A top-down photograph of four floppy-disks, each in a different color on a flat, orange background
+thumbnail_src: https://unsplash.com/photos/8FsybY-URs0
+thumbnail_credit: Photo by Behnam Norouzi on Unsplash 
 image_path: /assets/images/posts/2023-02-16-syncthing
 ---
-
-# Everything, Everywhere, All At Once (With Syncthing!)
-
-<br />
-<div class="row justify-content-center">
-  <a href="{{ page.thumbnail }}"><img src="{{ page.thumbnail }}" alt="A top-down photograph of four floppy-disks, each in a different color on a flat, orange background"></a>
-</div>
-<div class="row justify-content-center">
-  <i><small>Photo by <a href="https://unsplash.com/@behy_studio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Behnam Norouzi</a> on <a href="https://unsplash.com/photos/8FsybY-URs0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></small></i>
-</div>
-<br />
 
 In a [previous post][32bitnextcloud] I contemplated the idea of replacing [Nextcloud][nextcloud] with [Syncthing][syncthing].  Since then I've done exactly that.  Syncthing is a great piece of software and this post is going to take a surface-level look at how I've settled into it.
 
