@@ -4,6 +4,8 @@ title: Back to Basics
 author: Kevin
 tags:
 thumbnail: /assets/images/posts/2013-01-14-back-on-the-wagon/thumb.jpg
+thumbnail_alt: A grayscale rendering of an unlit candle
+thumbnail_credit: Materials and rendering by me
 ---
 
 Of course, right before a huuuuuge flare-up in my work schedule I'm feeling more zoned in than ever before.
@@ -13,11 +15,7 @@ I think this new project will be better suited to the UDK than POMI was since it
 
 Without going into the details of the project, one of the most immediate assets
 I need developed is a portable candle light, along with the hand that holds it.
-I started working on the candle asset today. Here is a rough of the low poly w/normal mapping applied:
-
-{% include lightboxImage.html
-  img_path =  '/assets/images/posts/2013-01-14-back-on-the-wagon/gray_candle.jpg'
-%}
+I started working on the candle asset today. Above is a rough of the low poly w/normal mapping applied.
 
 Averaging ~1k polys. A bit denser than I'd like but it should be fine.
 Once I had the geometry sorted out (though it's still under revisions), I crafted up a fairly basic diffuse
