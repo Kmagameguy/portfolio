@@ -4,14 +4,10 @@ title: Building an Air Quality Monitor
 author: Kevin
 tags: 
 thumbnail: /assets/images/posts/2022-01-23-diy-airquality-sensor/thumb.jpg
+thumbnail_alt: A photograph of the finished airquality sensor
+thumbnail_credit: Photo by me
 ---
 
-<div class="row justify-content-center">
-  <a href="{{ page.thumbnail }}"><img src="{{ page.thumbnail }}" alt="nic cage"></a>
-</div>
-<br />
-
-### Intro
 I was YouTube hopping recently when I clicked on an interesting-sounding video from Tom Scott titled: [This Is Your Brain on Stale Air][stale-air] (6 mins)  
   
 Those familiar with Tom's channel will probably say: "No duh! Every video is interesting!", and guess what? I agree!  What struck me about this video, though, was that the symptoms Kurtis Baute described (headaches, sleepiness, poor concentration) describe me pretty well.  I had written this off as work-from-home induced distractedness...but I've been working from home for two years now so surely I've had enough time to settle in, right?  Not long ago I refreshed my sleep routine & gadgets so I know I'm sleeping a lot better but I still get the afternoon/evening brain fog.  The video got me thinking -- maybe the air is to blame!  I have all my windows sealed up because they bleed heat in the winter, meaning the only ingress/egress for fresh air is my AC system...which I usually keep off to save on the heating bill.  

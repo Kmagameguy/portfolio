@@ -4,18 +4,10 @@ title: How To | Tame a Stock Ender3 V2 Printer
 author: Kevin
 tags: 
 thumbnail: /assets/images/posts/2022-01-31-ender3v2-prints/thumb.jpg
+thumbnail_alt: 3D Printed low-poly dinosaur, a lucky cat, and pint-sized, modular storage drawers
+thumbnail_credit: Photo by me
 image_path: /assets/images/posts/2022-01-31-ender3v2-prints
 ---
-
-<div class="row justify-content-center">
-  <a href="{{ page.image_path }}/sample_prints.jpg"><img src="{{ page.image_path }}/sample_prints.jpg" alt="3D Printed low-poly dinosaur, a lucky cat, and pint-sized, modular storage drawers"></a>
-</div>
-<div class="row justify-content-center">
-  <i><small>A few prints produced by my Ender3 V2</small></i>
-</div>
-<br />
-
-## Intro  
   
 My first exposure to 3D printing was in High School.  At that time, our shop had a [Z Corp Z402][zcorp] - an early 3D printing unit that was about the size of a vending machine.  A rapid-prototyping machine, it would deposit a liquid binding material onto a bed of powder.  After each pass a fresh layer of powder would get spread on top and more binding material was laid down.  Slowly this would build up into your final model.  Once the print was finished you'd unearth your print from the leftover powder like you were retrieving a rare artifact from an archeological dig.  
   

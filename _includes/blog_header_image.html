@@ -1,0 +1,11 @@
+<div class="row justify-content-center">
+  <a href="{{ page.thumbnail }}"><img class="header-image" src="{{ page.thumbnail }}" alt="{{ page.thumbnail_alt }}"></a>
+</div>
+<div class="row justify-content-center">
+  {% if page.thumbnail_src %}
+    <i><small><a href="{{ page.thumbnail_src }}" class="no-lightbox">{{ page.thumbnail_credit }}</a></small></i>
+  {% else %}
+    <i><small>{{ page.thumbnail_credit }}</small></i>
+  {% endif %}
+</div>
+<br />

@@ -4,14 +4,9 @@ title: I Made 2-Million-Scoville Pickles...
 author: Kevin
 tags: 
 thumbnail: /assets/images/posts/2022-01-27-pickles-for-chilliheads/thumb.jpg
+thumbnail_alt: A photograph of the finished pickles in several jars
+Thumbnail_credit: Photo by me
 ---
-
-<div class="row justify-content-center">
-  <a href="{{ page.thumbnail }}"><img src="{{ page.thumbnail }}" alt="nic cage"></a>
-</div>
-<br />
-
-## Intro  
   
 About a year ago I was gifted a local cache of spicy pickles.  I was immediately in love with them and finished off the batch in record time.  Over the past winter break I was reminded of them and started fiending for that sweet heat again.  Unfortunately I couldn't find anything similar in any of the nearby shops so I decided to see if I could make my own.  This time, though, I wanted to take the heat up to 11.  
   

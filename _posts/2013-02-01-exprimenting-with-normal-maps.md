@@ -4,11 +4,9 @@ title: Exprimenting with Normal Maps
 author: Kevin
 tags: 
 thumbnail: /assets/images/posts/2013-02-01-exprimenting-with-normal-maps/thumb.jpg
+thumbnail_alt: 3D rendering of a dark well with a bucket sitting on top
+thumbnail_credit: Materials and rendering by me
 ---
-
-{% include lightboxImage.html
-  img_path='/assets/images/posts/2013-02-01-exprimenting-with-normal-maps/preview.jpg'
-%}
 
 Finished a couple new assets today. I've always been intrigued by the amount of detail in Epic's
 (and really any other AAA studio's) normal maps. Usually I lift my normal maps straight from my diffuse maps.
