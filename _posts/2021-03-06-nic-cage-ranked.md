@@ -4,16 +4,11 @@ title: Nicolas Cage Films RANKED
 author: Kevin
 tags: 
 thumbnail: /assets/images/posts/2021-03-07-nic-cage-ranked/thumb.png
+thumbnail_alt: Nic Cage
+thumbnail_src: https://commons.wikimedia.org/wiki/File:Nicolas_Cage_Deauville_2013_2.jpg
+thumbnail_credit: Photo by Georges Biard, licensed under CC BY-SA 3.0
 ---
 
-<div class="row justify-content-center">
-  <a href="{{ page.thumbnail }}"><img src="{{ page.thumbnail }}" alt="nic cage"></a>
-</div>
-<div class="row justify-content-center">
-  <i><small><a href="https://commons.wikimedia.org/wiki/File:Nicolas_Cage_Deauville_2013_2.jpg">Photo by Georges Biard</a>,
-  licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.en">CC BY-SA 3.0</a></small></i>
-</div>
-<br />
 One year into COVID-quarantine has done wonders for my "to-watch" list.  Since January 1st I've watched 233 films.
 Some of these are rewatches (there's something nice about revisiting _HARRY POTTER_ and _THE LORD OF THE RINGS_ around the holidays), though the majority are new-to-me.  That is -- I've been seeking out films which have escaped me over the years for one reason or another.  This has been supported by [Letterboxd](https://letterboxd.com) which I can't recommend highly enough if you're a fan of cataloging your movies.
 
