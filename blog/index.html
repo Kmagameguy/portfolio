@@ -11,7 +11,7 @@ layout: home
 </div>
 
 {% for post in paginator.posts %}
-  <div class="card px-5 py-5 my-2">
+  <div class="card my-2">
     {% include blog_card.html postObject=post %}
   </div>
 {% endfor %}
