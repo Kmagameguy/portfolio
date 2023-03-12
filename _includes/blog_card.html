@@ -9,7 +9,7 @@
   <div class="media-body">
     <h6><a href="{{ post_url }}">{{ post_title }}</a></h6>
     <p class="mb-2">{{ post_description }}</p>
-    <p class="mb-2">{{ post.content | strip_html | truncatewords: 40 }}</p>
+    <p class="mb-2">{{ post.content | markdownify | strip_html | truncatewords: 40 }}</p>
     <p class="blockquote-footer">Published: {{ post.date | date: "%B %-d, %Y" }}</p>
   </div>
 </div>
