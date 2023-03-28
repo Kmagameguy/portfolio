@@ -62,6 +62,11 @@
 
 ## Experience
 ### 2013-Present | Custom Ink - Fairfax, VA
+#### 2023-Present &bullet; Associate Software Engineer
+  - Develop, test, and document code changes in support of company goals
+  - Participated in code reviews and provided notes to improve code quality
+  - Worked with Ruby on Rails and JavaScript
+  - Used Git/GitHub for software version control
 #### 2020-Present &bullet; Technology Manager
   - Complete project proposals and ROI/Risk Analyses in pursuit of company goals.
   - Supported organizational change from Waterfall to Agile Development Methodology
@@ -125,7 +130,7 @@
 ## Skills
 - JAMF/Dell KACE/Panorama9
 - Bash/Shell
-- Javascript
+- JavaScript
 - Ruby on Rails
 - VBScript
 - Git/GitHub/Gitlab
