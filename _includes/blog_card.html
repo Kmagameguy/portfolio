@@ -6,10 +6,10 @@
 
 <div class="media">
   <div class="row">
-    <div class="col-md-3">
-      <img class="img-fluid mr-4 mb-3" src="{{ post_thumbnail }}" alt="{{ post_title }}">
+    <div class="col-md-4 mb-3">
+      <img class="img-fluid" src="{{ post_thumbnail }}" alt="{{ post_title }}">
     </div>
-    <div class="media-body col-md-6">
+    <div class="media-body col-md-8">
       <h6><a href="{{ post_url }}">{{ post_title }}</a></h6>
       <p class="mb-2">{{ post_description }}</p>
       <p class="mb-2">{{ post.content | markdownify | strip_html | truncatewords: 40 }}</p>
