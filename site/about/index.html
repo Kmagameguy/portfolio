@@ -40,7 +40,7 @@ permalink: /about/
           <p>
             My name is {{ site.author }}. I graduated with honors from The Art Institute of Washington,
             where I attained my BFA in Game Art and Design.  I am a former 3D Environment Artist, currently serving
-            as an {{ site.employer.job }} at <a href="{{ site.employer.url }}" target="_blank">{{ site.employer.name }}</a>.
+            as an {{ site.employer.job }} at <a href="{{ site.employer.url }}" target="_blank" rel="noopener noreferrer">{{ site.employer.name }}</a>.
           </p>
           <hr />
           <h5>About this Site:</h5>
@@ -70,7 +70,7 @@ permalink: /about/
           <div class="row justify-content-center">
         {% endif %}
         <div class="col-xs-3 m-1">
-          <a class="text-secondary {% if item.decodeFlag %} mailto-me {% endif %}" href="{{ item.link }}" {% if item.decodeFlag == false %} target="_blank" {% endif %}>{{ item.name }}</a>
+          <a class="text-secondary {% if item.decodeFlag %} mailto-me {% endif %}" href="{{ item.link }}" {% if item.decodeFlag == false %} target="_blank" rel="noopener noreferrer" {% endif %}>{{ item.name }}</a>
         </div>
       {% endfor %}
     </div>

@@ -24,7 +24,7 @@ clean up the mess!
 
 Anyway, I was fortunate that some very generous people over at the UDN had done a ton of the
 legwork for me already in creating the basis for an adventure game point-and-click system.
-<a href="http://udn.epicgames.com/Three/DevelopmentKitGemsCreatingAMouseInterface.html" target="_blank">Creating A Mouse Interface with UDK</a>
+<a href="http://udn.epicgames.com/Three/DevelopmentKitGemsCreatingAMouseInterface.html" target="_blank" rel="noopener noreferrer">Creating A Mouse Interface with UDK</a>
 After loading up those resources, I was really happy to see that I didn't need to tweak much
 (the sinfully ugly default cursor is on the top of the priorities list).
 The above kismet setup is pretty much the extent of the entire system.
@@ -32,7 +32,7 @@ One thing I'll need to do is implement a verb system, and the ability to switch 
 (eg grab/touch, speak to/with, look at). I'll probably stick to those three, and I'm not sure
 if I want to work on an inventory system or not. If I do, I'll probably do it in scaleform vs an
 unrealscript solution (or maybe even with the prebuilt Hourences kismet-based
-<a href="http://www.hourences.com/tutorials-ue3-kismet-interface/" target="_blank">interface</a>).
+<a href="http://www.hourences.com/tutorials-ue3-kismet-interface/" target="_blank" rel="noopener noreferrer">interface</a>).
 In terms of gameplay, I'll probably divide it up into 3-4 Acts, which will have around 2-3 chapters each
 (with each chapter featuring 1-2 puzzles).
 

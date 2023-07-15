@@ -17,7 +17,7 @@ permalink: /big-movie-list/
   <p class="text-secondary">Note: this list is in no particular order</p>
   <ol>
     {% for item in site.data.movie_list.big_movie_list %}
-      <li><a href="{{ item.link }}" target="_blank">{{ item.name }}</a></li>
+      <li><a href="{{ item.link }}" target="_blank" rel="noopener noreferrer">{{ item.name }}</a></li>
     {% endfor %}
   </ol>
 </div>
