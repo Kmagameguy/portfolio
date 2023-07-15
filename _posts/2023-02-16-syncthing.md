@@ -42,9 +42,9 @@ In my network I am using Syncthing to mesh together three devices:
 1. Gaming Desktop
 1. Android phone
 
-As mentioned above, Syncthing doesn't *require* a server.  Instead, clients can talk directly with one another.  Despite this I opted to create a hub-and-spoke model.  My media server acts as the hub into which all my other devices (the spokes, to keep up the analogy) share their files.
+As mentioned above, Syncthing doesn't *require* a server.  Instead, clients can talk directly with one another.  Despite this I opted to create a hub-and-spoke model.  My NAS acts as the hub into which all my other devices (the spokes, to keep up the analogy) share their files.
 
-I went with this architecture because my media server is built to be resilient - I run [mergerfs][mergerfs] to evenly distribute files onto two disks, which are parity-checked nightly on a third disk with [snapraid][snapraid] to avoid bit-rot.  Each disk is 8TB, providing a total of 16TB of usable storage.  The media server is also backed up nightly with [restic][restic].  So, by serving as a hub my connected devices get free nightly parity checks and encrypted, _versioned_ backups.  Accidentally delete a file? No worries, my backups will likely have a record of it -- even if I've performed a backup _after_ deleting said file!
+I went with this architecture because my NAS is built to be resilient - I run [mergerfs][mergerfs] to evenly distribute files onto two disks, which are parity-checked nightly on a third disk with [snapraid][snapraid] to avoid bit-rot.  Each disk is 8TB, providing a total of 16TB of usable storage.  The NAS is also backed up nightly with [restic][restic].  So, by serving as a hub my connected devices get free nightly parity checks and encrypted, _versioned_ backups.  Accidentally delete a file? No worries, my backups will likely have a record of it -- even if I've performed a backup _after_ deleting said file!
 
 ## Configuration Tips
 Installing and configuring Syncthing could be a blog post all on its own.  Instead, here are a few interesting notes I took while configuring my Syncthing network.
@@ -90,7 +90,7 @@ So far my use case is small-but-mighty.  If you aren't sure how Syncthing could 
 1. Not all games available through [Steam][steam] are compatible with its cloud save feature.  I use Syncthing to fill that gap, allowing me to play a game on my Chromebook and pick up where I left off on my Gaming Desktop (and vice versa).
 1. I maintain a large collection of notes covering a variety of topics, such as my address book, to-dos, recipes, gift ideas, and other general purpose forget-me-nots.  With Syncthing I can make a note while I'm on-the-go and review it on any of my other devices once I get home.
 1. I auto-export my browser bookmarks nightly so I can reference them from any of my devices.
-1. I use a selective sync pattern like the one noted in the section above to get some of the music from my media server onto my phone.  The phone's music folder is set to `receive only` mode to avoid accidental file deletions.  As a bonus, the `.stignore` file is checked into a dotfiles-style git repo.  If I ever change phones I can simply copy over my `.stignore` file and Syncthing will re-download my music selections.  Some day I will ansible-ize my Android installation and become all powerful.
+1. I use a selective sync pattern like the one noted in the section above to get some content/configuration files from my NAS onto my phone (stuff like important documents or photos, that kind of thing).  The phone's folders are set to `receive only` mode to avoid accidental file deletions.  As a bonus, the `.stignore` file is checked into a dotfiles-style git repo.  If I ever change phones I can simply copy over my `.stignore` file and Syncthing will re-download my selections.  Some day I will ansible-ize my Android installation and become all powerful.
 
 # Wrapping Up
 
