@@ -57,7 +57,6 @@
   <p>Kevin Aktug</p>
   <p><a href="kmagameguy.com">kmagameguy.com</a></p>
   <p><a href="mailto:linkedin@mailontheinternet.com">linkedin@mailontheinternet.com</a></p>
-  <p>(571) 246-3902</p>
 </div>
 
 ## Experience
@@ -135,7 +134,8 @@
 - VBScript
 - Git/GitHub/Gitlab
 - Google Apps Script
-- Mac 10.8 "Mountain Lion" - Mac 13 "Ventura"/Windows
+- Mac 10.8 "Mountain Lion" - Mac 13 "Ventura"
+- Windows
 - GNU/Linux
 - Ansible
 - Docker / Docker-Compose
