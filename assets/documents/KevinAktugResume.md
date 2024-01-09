@@ -61,12 +61,12 @@
 
 ## Experience
 ### 2013-Present | Custom Ink - Fairfax, VA
-#### 2023-Present &bullet; Associate Software Engineer
+#### 2023-Present &bullet; Software Engineer
   - Develop, test, and document code changes in support of company goals
   - Participated in code reviews and provided notes to improve code quality
   - Worked with Ruby on Rails and JavaScript
-  - Used Git/GitHub for software version control
-#### 2020-Present &bullet; Technology Manager
+  - Use Git/GitHub for software version control
+#### 2020-2023 &bullet; Technology Manager
   - Complete project proposals and ROI/Risk Analyses in pursuit of company goals.
   - Supported organizational change from Waterfall to Agile Development Methodology
   - Advise on development efforts in coordination with product management and software engineering.
@@ -134,9 +134,9 @@
 - VBScript
 - Git/GitHub/Gitlab
 - Google Apps Script
-- Mac 10.8 "Mountain Lion" - Mac 13 "Ventura"
+- Mac 10.8 "Mountain Lion" - Present macOS
 - Windows
-- GNU/Linux
+- GNU/Linux (Debian, Fedora)
 - Ansible
 - Docker / Docker-Compose
 - PfSense
