@@ -1,18 +1,25 @@
 <style>
+  :root {
+    --primary-header  : rgb(80, 140, 125);
+    --secondary-header: #aaa;
+    --subheading-bg   : #444;
+    --subheading-color: #555;
+  }
+
   html {
-    box-sizing    : border-box;
+    box-sizing      : border-box;
   }
 
   *,
   *::before,
   *::after {
-    box-sizing    : inherit;
+    box-sizing      : inherit;
   }
 
   body {
-    margin        : 0;
-    font-size     : 0.5rem;
-    font-family   : "Lato", sans-serif!important;
+    margin          : 0;
+    font-size       : 0.5rem;
+    font-family     : "Lato", sans-serif!important;
   }
 
   h1,
@@ -20,87 +27,95 @@
   h3,
   h4,
   h5 {
-    margin        : 0.2rem 0;
+    margin          : 0.2rem 0;
+    font-weight     : bold;
   }
 
   h2 {
-    border-bottom: 1px solid grey;
+    color           : var(--primary-header);
+    border-bottom   : 1px solid lightgrey;
+  }
+
+  h3,
+  h4,
+  h5 {
+    color           : var(--subheading-bg);
   }
 
   #header-container {
-    display       : flex;
-    width         : 100%;
-    flex-direction: column;
-    align-items   : center;
+    display         : flex;
+    width           : 100%;
+    flex-direction  : column;
+    align-items     : center;
   }
   
   #header-name {
-    color: #444;
-    letter-spacing: 1rem;
-    text-transform: uppercase;
-    margin        : 0;
-    padding       : 0;
-    border        : none;
+    color           : var(--primary-header);
+    letter-spacing  : 1rem;
+    text-transform  : uppercase;
+    margin          : 0;
+    padding         : 0;
+    border          : none;
   }
 
   #header-title {
-    color         : #aaa;
-    letter-spacing: 0.1rem;
-    text-transform: uppercase;
-    font-size     : 1rem;
-    margin        : 1rem 0 1.1rem 0;
-    padding       : 0;
-    border        : none;
+    color           : var(--secondary-header);
+    letter-spacing  : 0.1rem;
+    text-transform  : uppercase;
+    font-size       : 1rem;
+    margin          : 1rem 0 1.1rem 0;
+    padding         : 0;
+    border          : none;
   }
 
   #subheader {
-    display       : flex;
-    justify-content: center;
-    margin        : 0 0 1rem 0;
-    padding       : 0.5rem 0;
-    width         : 100%;
-    font-size     : 0.7rem;
+    display         : flex;
+    justify-content : center;
+    margin          : 0 0 1rem 0;
+    padding         : 0.5rem 0;
+    width           : 100%;
+    font-size       : 0.7rem;
     background-color: whitesmoke;
   }
 
   #subheader a {
-    color         : #555;
+    color           : var(--subheading-color);
   }
 
   #body-container {
-    display       : flex;
+    display         : flex;
   }
 
   #side-panel {
-    padding       : 1rem;
-    flex          : 0;
-    min-width: 200px;
-    display       : flex;
-    flex-direction: column;
-    border-right  : 1px solid lightgrey;
+    padding         : 1rem;
+    flex            : 0;
+    min-width       : 200px;
+    display         : flex;
+    flex-direction  : column;
+    border-right    : 1px solid lightgrey;
   }
 
   #main-content {
-    padding       : 1rem;
-    flex          : 1;
-    display       : flex;
-    flex-direction: column;
-    margin-right  : 10px;
+    padding         : 1rem;
+    flex            : 1;
+    display         : flex;
+    flex-direction  : column;
+    margin-right    : 10px;
   }
 
   .skills {
-    margin        : 0;
-    padding       : 0;
-    list-style-type: none;
+    margin          : 0;
+    padding         : 0;
+    list-style-type : none;
   }
 
   .details {
-    margin: 0;
-    line-height: 0.9rem;
+    margin          : 0;
+    line-height     : 0.9rem;
   }
 
   .skills li {
-    margin        : 0.25rem 0;
+    margin          : 0.25rem 0;
   }
 </style>
 
@@ -125,7 +140,9 @@
         <li>GitHub/Gitlab</li>
         <li>JAMF</li>
         <li>JIRA</li>
-        <li>pfSense</li>
+        <li>NewRelic</li>
+        <li>Rollbar</li>
+        <li>Sidekiq</li>
         <li>Zendesk (Administration & Ticket Triage)</li>
       </ul>
       <h2>Languages</h2>
@@ -133,7 +150,7 @@
         <li>Google Apps Script</li>
         <li>JavaScript</li>
         <li>Ruby on Rails</li>
-        <li>Shell</li>
+        <li>Shell/Bash/Zsh Scripting</li>
         <li>VBScript</li>
       </ul>
       <h2>Platforms</h2>
@@ -151,7 +168,7 @@
     <div>
       <h2>Awards & Achievements</h2>
       <p>10x nominated for internal "Inkademy" awards for Innovation at Custom Ink.</p>
-      <p>Graduated Magna Cum Laude with Highest Achievement distinction</p>
+      <p>Graduated Magna Cum Laude with Highest Achievement distinction.</p>
     </div>
   </div>
   <div id="main-content">
@@ -161,16 +178,25 @@
       <h4>2023-Present &bullet; Software Engineer</h4>
       <ul class="details">
         <li>
-          Develop, test, and document code changes in support of company goals
+          Develop, test, and document code changes in support of company goals.
         </li>
         <li>
-          Participated in code reviews and provided notes to improve code quality
+          Develop routines which fully automated complex business processes.
         </li>
         <li>
-          Worked with Ruby on Rails and JavaScript
+          Help spearhead initiative to directly integrate with industry suppliers via PromoStandards-compliant APIs.
         </li>
         <li>
-          Use Git/GitHub for software version control
+          Use tools such as Rollbar and NewRelic to identify and resolve system performance bottlenecks.
+        </li>
+        <li>
+          Participate in code reviews and provided notes to improve code quality.
+        </li>
+        <li>
+          Work with Ruby on Rails and JavaScript.
+        </li>
+        <li>
+          Use Git/GitHub for software version control.
         </li>
       </ul>
       <h4>2020-2023 &bullet; Technology Manager</h4>
@@ -179,7 +205,7 @@
           Complete project proposals and ROI/Risk Analyses in pursuit of company goals.
         </li>
         <li>
-          Supported organizational change from Waterfall to Agile Development Methodology
+          Supported organizational change from Waterfall to Agile Development Methodology.
         </li>
         <li>
           Advise on development efforts in coordination with product management and software engineering.
@@ -203,7 +229,7 @@
           Created a remote-work program which later allowed for rapid adaptation to workforce management needs during early Covid spread.
         </li>
         <li>
-          Cross-trained to perform Jr-level rails and nodeJS software engineering tasks.
+          Cross-trained to perform Jr-level Ruby on Rails and NodeJS software engineering tasks.
         </li>
         <li>
           Developed and maintained Art & Licensing team web & desktop applications.
