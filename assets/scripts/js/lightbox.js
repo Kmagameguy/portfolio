@@ -2,10 +2,12 @@ function is_youtubelink(url) {
   var p = /^(?:https?:\/\/)?(?:www\.)?(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))((\w|-){11})(?:\S+)?$/;
   return (url.match(p)) ? RegExp.$1 : false;
 }
+
 function is_imagelink(url) {
   var p = /([a-z\-_0-9\/\:\.]*\.(jpg|jpeg|png|gif))/i;
   return (url.match(p)) ? true : false;
 }
+
 function is_vimeolink(url,el) {
   var id = false;
   var xmlhttp = new XMLHttpRequest();
@@ -20,9 +22,9 @@ function is_vimeolink(url,el) {
 
               el.addEventListener("click", function(event) {
                   event.preventDefault();
-                  document.getElementById('lightbox').innerHTML = '<a id="close"></a><a id="next">&rsaquo;</a><a id="prev">&lsaquo;</a><div class="videoWrapperContainer"><div class="videoWrapper"><iframe src="https://player.vimeo.com/video/'+el.getAttribute('data-id')+'/?autoplay=1&byline=0&title=0&portrait=0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div></div>';
-                  document.getElementById('lightbox').style.display = 'block';
+                  var url = 'https://player.vimeo.com/video/' + el.getAttribute('data-id') + '/?autoplay=1&byline=0&title=0&portrait=0';
 
+                  createVideoLightbox(url);
                   setGallery(this);
               });
           }
@@ -37,43 +39,104 @@ function is_vimeolink(url,el) {
   xmlhttp.open("GET", 'https://vimeo.com/api/oembed.json?url='+url, true);
   xmlhttp.send();
 }
+
 function setGallery(el) {
   var elements = document.body.querySelectorAll(".gallery");
   elements.forEach(element => {
       element.classList.remove('gallery');
-});
-if(el.closest('ul, p')) {
-  var link_elements = el.closest('ul, p').querySelectorAll("a[class*='lightbox-']");
-  link_elements.forEach(link_element => {
-    link_element.classList.remove('current');
   });
-  link_elements.forEach(link_element => {
-    if(el.getAttribute('href') == link_element.getAttribute('href')) {
-      link_element.classList.add('current');
-    }
-  });
-  if(link_elements.length>1) {
-    document.getElementById('lightbox').classList.add('gallery');
+
+  if(el.closest('ul, p')) {
+    var link_elements = el.closest('ul, p').querySelectorAll("a[class*='lightbox-']");
     link_elements.forEach(link_element => {
-      link_element.classList.add('gallery');
+      link_element.classList.remove('current');
+    });
+    link_elements.forEach(link_element => {
+      if(el.getAttribute('href') == link_element.getAttribute('href')) {
+        link_element.classList.add('current');
+      }
+    });
+    if(link_elements.length>1) {
+      document.getElementById('lightbox').classList.add('gallery');
+      link_elements.forEach(link_element => {
+        link_element.classList.add('gallery');
+      });
+    }
+    var currentkey;
+    var gallery_elements = document.querySelectorAll('a.gallery');
+    Object.keys(gallery_elements).forEach(function (k) {
+      if(gallery_elements[k].classList.contains('current')) currentkey = k;
+    });
+    if(currentkey==(gallery_elements.length-1)) var nextkey = 0;
+    else var nextkey = parseInt(currentkey)+1;
+    if(currentkey==0) var prevkey = parseInt(gallery_elements.length-1);
+    else var prevkey = parseInt(currentkey)-1;
+    document.getElementById('next').addEventListener("click", function() {
+      gallery_elements[nextkey].click();
+    });
+    document.getElementById('prev').addEventListener("click", function() {
+      gallery_elements[prevkey].click();
     });
   }
-  var currentkey;
-  var gallery_elements = document.querySelectorAll('a.gallery');
-  Object.keys(gallery_elements).forEach(function (k) {
-    if(gallery_elements[k].classList.contains('current')) currentkey = k;
-  });
-  if(currentkey==(gallery_elements.length-1)) var nextkey = 0;
-  else var nextkey = parseInt(currentkey)+1;
-  if(currentkey==0) var prevkey = parseInt(gallery_elements.length-1);
-  else var prevkey = parseInt(currentkey)-1;
-  document.getElementById('next').addEventListener("click", function() {
-    gallery_elements[nextkey].click();
-  });
-  document.getElementById('prev').addEventListener("click", function() {
-    gallery_elements[prevkey].click();
-  });
 }
+
+function lightbox() {
+  return document.getElementById('lightbox');
+}
+
+function closeLink() {
+  return createLink('close');
+}
+
+function nextLink() {
+  return createLink('next', '&rsaquo;');
+}
+
+function prevLink() {
+  return createLink('prev', '&lsaquo;');
+}
+
+function videoWrapperContainer() {
+  var videoWrapperContainer = document.createElement('div');
+  videoWrapperContainer.className = 'videoWrapperContainer';
+
+  return videoWrapperContainer;
+}
+
+function videoWrapper() {
+  var videoWrapper = document.createElement('div');
+  videoWrapper.className = 'videoWrapper';
+
+  return videoWrapper;
+}
+
+function iframe(src) {
+  var iframe = document.createElement('iframe');
+  iframe.src = src;
+  iframe.setAttribute('webkitallowfullscreen', '');
+  iframe.setAttribute('mozallowfullscreen', '');
+  iframe.setAttribute('allowfullscreen', '');
+}
+
+function createLink(id, display='') {
+  var link = document.createElement('a');
+  link.id = id;
+  link.innerHTML = display;
+
+  return link;
+}
+
+function createVideoLightbox(url) {
+  var videoWrapperContainer = videoWrapperContainer();
+  var videoWrapper = videoWrapper();
+  var iframe = iframe(url);
+
+  videoWrapper.appendChild(iframe);
+  videoWrapperContainer.appendChild(videoWrapper);
+  lightbox().appendChild(closeLink());
+  lightbox().appendChild(nextLink());
+  lightbox().appendChild(prevLink());
+  lightbox().style.display = 'block';
 }
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -107,10 +170,10 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   //remove the clicked lightbox
-  document.getElementById('lightbox').addEventListener("click", function(event) {
+  lightbox().addEventListener("click", function(event) {
       if(event.target.id != 'next' && event.target.id != 'prev'){
           this.innerHTML = '';
-          document.getElementById('lightbox').style.display = 'none';
+          lightbox().style.display = 'none';
       }
   });
 
@@ -119,9 +182,9 @@ document.addEventListener("DOMContentLoaded", function() {
   elements.forEach(element => {
       element.addEventListener("click", function(event) {
           event.preventDefault();
-          document.getElementById('lightbox').innerHTML = '<a id="close"></a><a id="next">&rsaquo;</a><a id="prev">&lsaquo;</a><div class="videoWrapperContainer"><div class="videoWrapper"><iframe src="https://www.youtube-nocookie.com/embed/'+this.getAttribute('data-id')+'?autoplay=1&showinfo=0&rel=0"></iframe></div>';
-          document.getElementById('lightbox').style.display = 'block';
+          var url = 'https://www.youtube-nocookie.com/embed' + this.getAttribute('data-id') + '?autoplay=1&showinfo=0&rel=0';
 
+          createVideoLightbox(url);
           setGallery(this);
       });
   });
@@ -131,11 +194,31 @@ document.addEventListener("DOMContentLoaded", function() {
   elements.forEach(element => {
       element.addEventListener("click", function(event) {
           event.preventDefault();
-          document.getElementById('lightbox').innerHTML = '<a id="close"></a><a id="next">&rsaquo;</a><a id="prev">&lsaquo;</a><div class="img" style="background: url(\''+this.getAttribute('href')+'\') center center / contain no-repeat;" title="'+this.getAttribute('title')+'" ><img src="'+this.getAttribute('href')+'" alt="'+this.getAttribute('title')+'" /></div><span>'+this.getAttribute('title')+'</span>';
-          document.getElementById('lightbox').style.display = 'block';
+
+          lightbox().innerHTML = '';
+
+          var imageContainer = document.createElement('div');
+          imageContainer.className = 'img';
+          imageContainer.style.background = 'url("' + this.getAttribute('href') + '") center center / contain no-repeat';
+          imageContainer.title = this.getAttribute('title');
+
+          var image = document.createElement('img');
+          image.src = this.getAttribute('href');
+          image.alt = this.getAttribute('title');
+
+          var span = document.createElement('span');
+          span.innerHTML = this.getAttribute('title');
+
+          imageContainer.appendChild(image);
+          lightbox().appendChild(closeLink());
+          lightbox().appendChild(nextLink());
+          lightbox().appendChild(prevLink());
+          lightbox().appendChild(imageContainer);
+          lightbox().appendChild(span);
+
+          lightbox().style.display = 'block';
 
           setGallery(this);
       });
   });
-
 });
