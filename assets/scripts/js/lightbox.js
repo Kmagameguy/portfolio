@@ -207,7 +207,7 @@ document.addEventListener("DOMContentLoaded", function() {
           image.alt = this.getAttribute('title');
 
           var span = document.createElement('span');
-          span.innerHTML = this.getAttribute('title');
+          span.textContent = this.getAttribute('title');
 
           imageContainer.appendChild(image);
           lightbox().appendChild(closeLink());
