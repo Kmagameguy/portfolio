@@ -1,5 +1,4 @@
 ---
----
 
 function decryptIt() {
   let decodedEmail = atob("{{ site.email }}");
