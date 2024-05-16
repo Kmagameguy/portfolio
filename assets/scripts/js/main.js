@@ -1,5 +1,3 @@
----
-
 function decryptIt() {
   let decodedEmail = atob("{{ site.email }}");
   let protectedEmail = document.querySelectorAll('.mailto-me');
