@@ -135,13 +135,14 @@
       <ul class="sidebar-list">
         <li>Adobe Suite Deployment & Configuration</li>
         <li>Ansible</li>
+        <li>Auth0</li>
         <li>CircleCI</li>
         <li>Docker</li>
         <li>Git</li>
         <li>GitHub/Gitlab</li>
         <li>JAMF</li>
         <li>JIRA</li>
-        <li>MySQL</li>
+        <li>MariaDB/MySQL</li>
         <li>NewRelic</li>
         <li>Rollbar</li>
         <li>Sidekiq</li>
@@ -213,7 +214,7 @@
       <h4>2014-2015 &bullet; Production Art Development Coordinator</h4>
       <ul class="details">
         <li>
-          Fostered the Customer Care Technology Analyst's growth and skill development through regular one-on-one meetings, performance reviews, and project assignments.
+          Managed the Customer Care Technology Analyst, fostering their growth and skill development through regular one-on-one meetings, performance reviews, and project assignments.
         </li>
         <li>
           Maintained and organized our internal knowledgebase and produced weekly, informational summaries of tech/process changes for team member benefit. Helped improve knowledge retention through guided demos, in-person presentations, and regular knowledge quizzes.
@@ -228,7 +229,7 @@
           Supported and championed organizational change from Waterfall to Agile Development Methodology.
         </li>
         <li>
-          Support MacOS and Windows hardware/software for ~500 team members in an Enterprise environment, working with IT Security to ensure latest security updates and OS standards are maintained on JAMF Pro/Dell KACE/P9-managed endpoint devices.
+          Supported MacOS and Windows hardware/software for ~500 team members in an Enterprise environment, working with IT Security to ensure latest security updates and OS standards are maintained on JAMF Pro/Dell KACE/P9-managed endpoint devices.
         </li>
         <li>
           Created and championed a remote-work program which later allowed for rapid response to workforce management needs during early Covid spread.
