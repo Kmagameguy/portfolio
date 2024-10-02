@@ -1,5 +1,6 @@
 
 [comment]: # (Convert this to PDF using vscode markdown-pdf.  Disable display header footer and include default styles in extension settings.)
+
 <style>
   :root {
     --primary-header  : rgb(80, 140, 125);
@@ -25,12 +26,12 @@
   }
 
   h1,
-  h2,
   h3,
   h4,
   h5 {
     margin          : 0.5rem 0 0.25rem 0;
     font-weight     : bold;
+    color           : var(--subheading-bg);
   }
 
   h2 {
@@ -42,15 +43,8 @@
     margin-left: 0.5rem;
   }
 
-  h3,
-  h4,
-  h5 {
-    color           : var(--subheading-bg);
-  }
-
   #header-container {
     display         : flex;
-    width           : 100%;
     flex-direction  : column;
     align-items     : center;
   }
@@ -110,19 +104,19 @@
     margin-right    : 10px;
   }
 
-  .skills {
+  .sidebar-list {
     margin          : 0;
     padding         : 0;
     list-style-type : none;
   }
 
+  .sidebar-list li {
+    margin          : 0.25rem 0;
+  }
+
   .details {
     margin          : 0;
     line-height     : 0.9rem;
-  }
-
-  .skills li {
-    margin          : 0.25rem 0;
   }
 </style>
 
@@ -138,7 +132,7 @@
   <div id="side-panel">
     <div>
       <h2>Software</h2>
-      <ul class="skills">
+      <ul class="sidebar-list">
         <li>Adobe Suite Deployment & Configuration</li>
         <li>Ansible</li>
         <li>CircleCI</li>
@@ -154,7 +148,7 @@
         <li>Zendesk (Administration & Ticket Triage)</li>
       </ul>
       <h2>Languages</h2>
-      <ul class="skills">
+      <ul class="sidebar-list">
         <li>Google Apps Script</li>
         <li>HTML/CSS</li>
         <li>JavaScript</li>
@@ -164,7 +158,7 @@
         <li>VBScript</li>
       </ul>
       <h2>Platforms</h2>
-      <ul class="skills">
+      <ul class="sidebar-list">
         <li>Apple MacOS</li>
         <li>GNU/Linux (Fedora, Debian)</li>
         <li>Microsoft Windows</li>
@@ -172,13 +166,17 @@
     </div>
     <div>
       <h2>Education</h2>
-      <p>Bachelor of Fine Arts in Game Art &amp; Design</p>
-      <p>The Art Institute of Washington | 2012</p>
+      <ul class="sidebar-list">
+        <li>Bachelor of Fine Arts in Game Art &amp; Design</li>
+        <li>The Art Institute of Washington | 2012</li>
+      </ul>
     </div>
     <div>
       <h2>Awards & Achievements</h2>
-      <p>10x nominated for internal "Inkademy" awards for Innovation at Custom Ink.</p>
-      <p>Graduated Magna Cum Laude with Highest Achievement distinction.</p>
+      <ul class="sidebar-list">
+        <li>10x nominated for internal "Inkademy" awards for Innovation at Custom Ink.</li>
+        <li>Graduated Magna Cum Laude with Highest Achievement distinction.</li>
+      </ul>
     </div>
   </div>
   <div id="main-content">
