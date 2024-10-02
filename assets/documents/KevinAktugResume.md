@@ -93,6 +93,7 @@
     display         : flex;
     flex-direction  : column;
     border-right    : 1px solid lightgrey;
+    line-height     : 0.75rem;
   }
 
   #main-content {
