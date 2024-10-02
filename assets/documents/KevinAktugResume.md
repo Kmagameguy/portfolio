@@ -1,3 +1,5 @@
+
+[comment]: # (Convert this to PDF using vscode markdown-pdf.  Disable display header footer and include default styles in extension settings.)
 <style>
   :root {
     --primary-header  : rgb(80, 140, 125);
@@ -27,13 +29,17 @@
   h3,
   h4,
   h5 {
-    margin          : 0.2rem 0;
+    margin          : 0.5rem 0 0.25rem 0;
     font-weight     : bold;
   }
 
   h2 {
     color           : var(--primary-header);
     border-bottom   : 1px solid lightgrey;
+  }
+
+  h4 {
+    margin-left: 0.5rem;
   }
 
   h3,
@@ -48,7 +54,7 @@
     flex-direction  : column;
     align-items     : center;
   }
-  
+
   #header-name {
     color           : var(--primary-header);
     letter-spacing  : 1rem;
@@ -150,6 +156,7 @@
       <h2>Languages</h2>
       <ul class="skills">
         <li>Google Apps Script</li>
+        <li>HTML/CSS</li>
         <li>JavaScript</li>
         <li>Ruby on Rails</li>
         <li>Shell/Bash/Zsh Scripting</li>
@@ -179,7 +186,7 @@
       <h2>Professional Experience</h2>
       <h3>2013-Present | Custom Ink - Fairfax, VA</h3>
       <h4>October 2023-Present &bullet; Software Engineer</h4>
-      <h4>April 2023-October 2023 &bullet; Associate Software Engineer
+      <h4>April 2023-October 2023 &bullet; Associate Software Engineer</h4>
       <ul class="details">
         <li>
           Perform full-stack Ruby on Rails & Javascript development on from-scratch applications, microservices, & monoliths.
@@ -203,8 +210,8 @@
           Use Git/GitHub for software version control, collaboration, and continuous integration/continuous deployment pipelines.
         </li>
       </ul>
-      <h4>2020-2023 &bullet; Technology Manager</h4>
-      <h4>2015-June 2020 &bullet; Technology Specialist</h4>
+      <h4>2020-April 2023 &bullet; Technology Manager</h4>
+      <h4>2015-2020 &bullet; Technology Specialist</h4>
       <h4>2014-2015 &bullet; Production Art Development Coordinator</h4>
       <ul class="details">
         <li>
