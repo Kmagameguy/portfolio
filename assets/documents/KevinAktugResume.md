@@ -175,7 +175,8 @@
     <div id="experience">
       <h2>Professional Experience</h2>
       <h3>2013-Present | Custom Ink - Fairfax, VA</h3>
-      <h4>2023-Present &bullet; Software Engineer</h4>
+      <h4>October 2023-Present &bullet; Software Engineer</h4>
+      <h4>April 2023-October 2023 &bullet; Associate Software Engineer
       <ul class="details">
         <li>
           Develop, test, and document code changes in support of company goals.
@@ -200,9 +201,13 @@
         </li>
       </ul>
       <h4>2020-2023 &bullet; Technology Manager</h4>
+      <h4>2015-June 2020 &bullet; Technology Specialist</h4>
       <ul class="details">
         <li>
-          Complete project proposals and ROI/Risk Analyses in pursuit of company goals.
+          Supervisor to the Customer Care Technology Analyst.
+        </li>
+        <li>
+          Complete project proposals and Return on Investment/Risk Analyses in pursuit of company goals.
         </li>
         <li>
           Supported organizational change from Waterfall to Agile Development Methodology.
@@ -211,28 +216,13 @@
           Advise on development efforts in coordination with product management and software engineering.
         </li>
         <li>
-          Supervisor to the Customer Care Technology Analyst.
-        </li>
-        <li>
           Support MacOS in an Enterprise environment, working with IT Security to ensure latest security updates and OS standards are maintained on JAMF Pro-managed endpoint devices.
         </li>
         <li>
-          Maintained all responsibilities from Technology Specialist role.
-        </li>
-      </ul>
-      <h4>2015-2020 &bullet; Technology Specialist</h4>
-      <ul class="details">
-        <li>
-          Prototyped and led initiatives that drove 20-60% automation rates within team workflows.
+          Prototyped and led initiatives that drove 20-60% automation rates of order processing tasks.
         </li>
         <li>
-          Created a remote-work program which later allowed for rapid adaptation to workforce management needs during early Covid spread.
-        </li>
-        <li>
-          Cross-trained to perform Jr-level Ruby on Rails and NodeJS software engineering tasks.
-        </li>
-        <li>
-          Developed and maintained Art & Licensing team web & desktop applications.
+          Created a remote-work program which later allowed for rapid response to workforce management needs during early Covid spread.
         </li>
         <li>
           Performed in-depth QA support for tech changes across departments.
@@ -247,13 +237,14 @@
           Wrote and maintained Bash/Shell and Powershell scripts that automated workflows and assisted with system deployments and other maintenance.
         </li>
         <li>
-          Led desktop hardware and software support for ~200 team members.
+          Led desktop hardware (Mac OS, Windows) and software support for ~500 team members.
         </li>
         <li>
           Prepared hardware and software for team member onboarding.
         </li>
       </ul>
       <h4>2014-2015 &bullet; Production Art Development Coordinator</h4>
+      <h4>2013-2014 &bullet; Production Artist</h4>
       <ul class="details">
         <li>
           Maintained knowledge resources and sent weekly communication summarizing upcoming tech/process changes.
@@ -261,9 +252,6 @@
         <li>
           Coordinated cross-functionally to reduce process friction across teams.
         </li>
-      </ul>
-      <h4>2013-2014 &bullet; Production Artist</h4>
-      <ul class="details">
         <li>
           Processed customer designs to meet printability requirements.
         </li>
@@ -271,18 +259,17 @@
           Consistently exceeded productivity targets and maintained high accuracy.
         </li>
         <li>
-          Provided merchandising and Adobe Suite support to Art Technology Specialist.
+          Provided merchandising and Adobe Suite support to department Technology Specialist.
         </li>
       </ul>
       <h3>2011-2013 | Freelance Multimedia Artist - Fairfax, VA</h3>
       <h4>2011-2013 &bullet; Firesabre Consulting, LLC</h4>
+      <h4>Jun 2012-Jul 2012 &bullet; Fiteeze</h4>
+      <h4>Oct 2012 &bullet; Ave Media, LLC</h4>
       <ul class="details">
         <li>
           Environment and Level Design contracting for Fortune 500 companies.
         </li>
-      </ul>
-      <h4>Jun 2012-Jul 2012 &bullet; Fiteeza</h4>
-      <ul class="details">
         <li>
           Terrain, Architectural, Prop, and Character modeling, texturing, unwrapping, and rigging.
         </li>
@@ -292,9 +279,6 @@
         <li>
           Created and managed patent applications for UI/UX designs.
         </li>
-      </ul>
-      <h4>Oct 2012 &bullet; Ave Media, LLC</h4>
-      <ul class="details">
         <li>
           Level Layout, Look Development, and 2D Art for the video game "Elite vs. Freedom".
         </li>
