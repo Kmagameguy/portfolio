@@ -1,3 +1,6 @@
+
+[comment]: # (Convert this to PDF using vscode markdown-pdf.  Disable display header footer and include default styles in extension settings.)
+
 <style>
   :root {
     --primary-header  : rgb(80, 140, 125);
@@ -23,12 +26,12 @@
   }
 
   h1,
-  h2,
   h3,
   h4,
   h5 {
-    margin          : 0.2rem 0;
+    margin          : 0.5rem 0 0.25rem 0;
     font-weight     : bold;
+    color           : var(--subheading-bg);
   }
 
   h2 {
@@ -36,19 +39,16 @@
     border-bottom   : 1px solid lightgrey;
   }
 
-  h3,
-  h4,
-  h5 {
-    color           : var(--subheading-bg);
+  h4 {
+    margin-left: 0.5rem;
   }
 
   #header-container {
     display         : flex;
-    width           : 100%;
     flex-direction  : column;
     align-items     : center;
   }
-  
+
   #header-name {
     color           : var(--primary-header);
     letter-spacing  : 1rem;
@@ -93,6 +93,7 @@
     display         : flex;
     flex-direction  : column;
     border-right    : 1px solid lightgrey;
+    line-height     : 0.75rem;
   }
 
   #main-content {
@@ -103,19 +104,19 @@
     margin-right    : 10px;
   }
 
-  .skills {
+  .sidebar-list {
     margin          : 0;
     padding         : 0;
     list-style-type : none;
   }
 
+  .sidebar-list li {
+    margin          : 0.25rem 0;
+  }
+
   .details {
     margin          : 0;
     line-height     : 0.9rem;
-  }
-
-  .skills li {
-    margin          : 0.25rem 0;
   }
 </style>
 
@@ -131,30 +132,34 @@
   <div id="side-panel">
     <div>
       <h2>Software</h2>
-      <ul class="skills">
+      <ul class="sidebar-list">
         <li>Adobe Suite Deployment & Configuration</li>
         <li>Ansible</li>
+        <li>Auth0</li>
         <li>CircleCI</li>
         <li>Docker</li>
         <li>Git</li>
         <li>GitHub/Gitlab</li>
         <li>JAMF</li>
         <li>JIRA</li>
+        <li>MariaDB/MySQL</li>
         <li>NewRelic</li>
         <li>Rollbar</li>
         <li>Sidekiq</li>
         <li>Zendesk (Administration & Ticket Triage)</li>
       </ul>
       <h2>Languages</h2>
-      <ul class="skills">
+      <ul class="sidebar-list">
         <li>Google Apps Script</li>
+        <li>HTML/CSS</li>
         <li>JavaScript</li>
         <li>Ruby on Rails</li>
         <li>Shell/Bash/Zsh Scripting</li>
+        <li>SQL</li>
         <li>VBScript</li>
       </ul>
       <h2>Platforms</h2>
-      <ul class="skills">
+      <ul class="sidebar-list">
         <li>Apple MacOS</li>
         <li>GNU/Linux (Fedora, Debian)</li>
         <li>Microsoft Windows</li>
@@ -162,77 +167,72 @@
     </div>
     <div>
       <h2>Education</h2>
-      <p>Bachelor of Fine Arts in Game Art &amp; Design</p>
-      <p>The Art Institute of Washington | 2012</p>
+      <ul class="sidebar-list">
+        <li>Bachelor of Fine Arts in Game Art &amp; Design</li>
+        <li>The Art Institute of Washington | 2012</li>
+      </ul>
     </div>
     <div>
       <h2>Awards & Achievements</h2>
-      <p>10x nominated for internal "Inkademy" awards for Innovation at Custom Ink.</p>
-      <p>Graduated Magna Cum Laude with Highest Achievement distinction.</p>
+      <ul class="sidebar-list">
+        <li>10x nominated for internal "Inkademy" awards for Innovation at Custom Ink.</li>
+        <li>Graduated Magna Cum Laude with Highest Achievement distinction.</li>
+      </ul>
     </div>
   </div>
   <div id="main-content">
     <div id="experience">
       <h2>Professional Experience</h2>
       <h3>2013-Present | Custom Ink - Fairfax, VA</h3>
-      <h4>2023-Present &bullet; Software Engineer</h4>
+      <h4>October 2023-Present &bullet; Software Engineer</h4>
+      <h4>April 2023-October 2023 &bullet; Associate Software Engineer</h4>
       <ul class="details">
         <li>
-          Develop, test, and document code changes in support of company goals.
+          Perform full-stack Ruby on Rails & Javascript development on from-scratch applications, microservices, & monoliths.
         </li>
         <li>
-          Develop routines which fully automated complex business processes.
+          Develop and improve automated routines that streamlined complex business processes, reducing manual efforts up to 90% in some cases, to increase operational efficiency.
         </li>
         <li>
           Help spearhead initiative to directly integrate with industry suppliers via PromoStandards-compliant APIs.
         </li>
         <li>
+          Improved security and user management by migrating various applications away from bespoke authentication/authorization mechanisms to a consistent experience using Auth0 & OKTA.
+        </li>
+        <li>
           Use tools such as Rollbar and NewRelic to identify and resolve system performance bottlenecks.
         </li>
         <li>
-          Participate in code reviews and provided notes to improve code quality.
+          Actively participate in code reviews (pull requests), providing constructive feedback to enhance code quality and encourage continuous improvement within the development team.
         </li>
         <li>
-          Work with Ruby on Rails and JavaScript.
-        </li>
-        <li>
-          Use Git/GitHub for software version control.
+          Use Git/GitHub for software version control, collaboration, and continuous integration/continuous deployment pipelines.
         </li>
       </ul>
-      <h4>2020-2023 &bullet; Technology Manager</h4>
-      <ul class="details">
-        <li>
-          Complete project proposals and ROI/Risk Analyses in pursuit of company goals.
-        </li>
-        <li>
-          Supported organizational change from Waterfall to Agile Development Methodology.
-        </li>
-        <li>
-          Advise on development efforts in coordination with product management and software engineering.
-        </li>
-        <li>
-          Supervisor to the Customer Care Technology Analyst.
-        </li>
-        <li>
-          Support MacOS in an Enterprise environment, working with IT Security to ensure latest security updates and OS standards are maintained on JAMF Pro-managed endpoint devices.
-        </li>
-        <li>
-          Maintained all responsibilities from Technology Specialist role.
-        </li>
-      </ul>
+      <h4>2020-April 2023 &bullet; Technology Manager</h4>
       <h4>2015-2020 &bullet; Technology Specialist</h4>
+      <h4>2014-2015 &bullet; Production Art Development Coordinator</h4>
       <ul class="details">
         <li>
-          Prototyped and led initiatives that drove 20-60% automation rates within team workflows.
+          Managed the Customer Care Technology Analyst, fostering their growth and skill development through regular one-on-one meetings, performance reviews, and project assignments.
         </li>
         <li>
-          Created a remote-work program which later allowed for rapid adaptation to workforce management needs during early Covid spread.
+          Maintained and organized our internal knowledgebase and produced weekly, informational summaries of tech/process changes for team member benefit. Helped improve knowledge retention through guided demos, in-person presentations, and regular knowledge quizzes.
         </li>
         <li>
-          Cross-trained to perform Jr-level Ruby on Rails and NodeJS software engineering tasks.
+          Developed comprehensive project proposals backed by detailed Return on Investment and Risk Analyses.  These were achieved using business intelligence tools (Metabase), custom SQL queries, and visual aids to support decision-making and inform project prioritization in alignment with company goals.
         </li>
         <li>
-          Developed and maintained Art & Licensing team web & desktop applications.
+          Collaborated closely with cross-functional teams, including Product Managers, UI/UX designers, Software Engineers, Quality Assurance engineers, and Business Stakeholders to improve customer and team member satisfaction with site features and internal tools.
+        </li>
+        <li>
+          Supported and championed organizational change from Waterfall to Agile Development Methodology.
+        </li>
+        <li>
+          Supported MacOS and Windows hardware/software for ~500 team members in an Enterprise environment, working with IT Security to ensure latest security updates and OS standards are maintained on JAMF Pro/Dell KACE/P9-managed endpoint devices.
+        </li>
+        <li>
+          Created and championed a remote-work program which later allowed for rapid response to workforce management needs during early Covid spread.
         </li>
         <li>
           Performed in-depth QA support for tech changes across departments.
@@ -247,56 +247,37 @@
           Wrote and maintained Bash/Shell and Powershell scripts that automated workflows and assisted with system deployments and other maintenance.
         </li>
         <li>
-          Led desktop hardware and software support for ~200 team members.
-        </li>
-        <li>
-          Prepared hardware and software for team member onboarding.
-        </li>
-      </ul>
-      <h4>2014-2015 &bullet; Production Art Development Coordinator</h4>
-      <ul class="details">
-        <li>
-          Maintained knowledge resources and sent weekly communication summarizing upcoming tech/process changes.
-        </li>
-        <li>
-          Coordinated cross-functionally to reduce process friction across teams.
+          Helped lead new team member training/onboarding by provisioning hardware, software, and accounts, alongside on-site classroom support.
         </li>
       </ul>
       <h4>2013-2014 &bullet; Production Artist</h4>
       <ul class="details">
         <li>
-          Processed customer designs to meet printability requirements.
+          Processed customer designs to meet printability requirements while consistently exceeding productivity and accuracy targets.
         </li>
         <li>
-          Consistently exceeded productivity targets and maintained high accuracy.
-        </li>
-        <li>
-          Provided merchandising and Adobe Suite support to Art Technology Specialist.
+          Provided merchandising and Adobe Suite support to department Technology Specialist.
         </li>
       </ul>
       <h3>2011-2013 | Freelance Multimedia Artist - Fairfax, VA</h3>
       <h4>2011-2013 &bullet; Firesabre Consulting, LLC</h4>
+      <h4>Jun 2012-Jul 2012 &bullet; Fiteeze</h4>
+      <h4>Oct 2012 &bullet; Ave Media, LLC</h4>
       <ul class="details">
         <li>
           Environment and Level Design contracting for Fortune 500 companies.
         </li>
-      </ul>
-      <h4>Jun 2012-Jul 2012 &bullet; Fiteeza</h4>
-      <ul class="details">
         <li>
-          Terrain, Architectural, Prop, and Character modeling, texturing, unwrapping, and rigging.
+          Performed 3D terrain, architecture, prop, and character modeling, including texturing, uv unwrapping, and rigging.
         </li>
         <li>
-          Graphical interface and user experience design for computers, consoles, and mobile devices.
+          Created cross-platform graphical interfaces and user experience design for computers, consoles, and mobile devices.
         </li>
         <li>
           Created and managed patent applications for UI/UX designs.
         </li>
-      </ul>
-      <h4>Oct 2012 &bullet; Ave Media, LLC</h4>
-      <ul class="details">
         <li>
-          Level Layout, Look Development, and 2D Art for the video game "Elite vs. Freedom".
+          Completed level layout, look development, and 2D Art for the video game "Elite vs. Freedom".
         </li>
       </ul>
     </div>
