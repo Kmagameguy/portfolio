@@ -19,11 +19,6 @@ h4 {
   padding         : 0;
 }
 
-#subheader {
-  margin          : 0 0 1rem 0;
-  padding         : 0.5rem 0;
-}
-
 #body-container {
   flex-direction: row-reverse;
 }

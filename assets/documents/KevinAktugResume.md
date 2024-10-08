@@ -8,15 +8,23 @@
     -- 1 Column Layout: For Job Applications (hopefully for better compatibility with ATS systems)
     -- 2 Column Layout: A prettier presentation for portfolio site's "About" page.
   -->
-  <link rel="stylesheet" href="1-column-resume.css">
-  <!-- <link rel="stylesheet" href="2-column-resume.css"> -->
+  <!-- <link rel="stylesheet" href="1-column-resume.css"> -->
+  <link rel="stylesheet" href="2-column-resume.css">
 </head>
 
 <div id="header-container">
   <h1 id="header-name">Kevin Aktug</h1>
   <h1 id="header-title">Software Engineer</h1>
-  <p  id="subheader">
-    <a href="mailto:linkedin@mailontheinternet.com">linkedin@mailontheinternet.com</a>
+  <div id="subheader">
+    <ul>
+      <li>
+        <a href="mailto:linkedin@mailontheinternet.com">Email: linkedin@mailontheinternet.com</a>
+      </li>
+      <li>&nbsp;&nbsp;</li>
+      <li>
+        <a href="https://www.linkedin.com/in/kmaktug">LinkedIn: https://www.linkedin.com/in/kmaktug</a>
+      </li>
+    </ul>
   </p>
 </div>
 

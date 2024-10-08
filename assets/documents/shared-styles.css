@@ -61,6 +61,15 @@ h2 {
   width             : 100%;
   font-size         : 0.7rem;
   background-color  : whitesmoke;
+  padding           : 0.5rem 0;
+}
+
+#subheader ul {
+  list-style-type: none;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 #subheader a {
