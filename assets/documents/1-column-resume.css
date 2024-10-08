@@ -1,0 +1,81 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin          : 0.25rem 0 0.25rem 0;
+}
+
+h4 {
+  margin-left     : 0.5rem;
+}
+
+#header-name {
+  margin          : 0;
+  padding         : 0;
+}
+
+#header-title {
+  margin          : 0.5rem 0 0.6rem 0;
+  padding         : 0;
+}
+
+#body-container {
+  flex-direction  : column;
+  line-height     : 0.75rem;
+}
+
+#main-content {
+  padding         : 1rem;
+}
+
+.sidebar-list {
+  display         : inline;
+  margin          : 0;
+  padding         : 0;
+  list-style-type : none;
+}
+
+/*
+ * Everything below here is to reformat the various sidebar sections
+ * into a single "Skills" section.  This is to save space and hopefully work
+ * better with ATS systems.
+ */
+.sidebar-list li {
+  display         : inline;
+}
+
+#side-panel {
+  padding: 1rem;
+}
+
+#side-panel > div:first-of-type ul li:after {
+  content         : ", ";
+}
+
+#side-panel > div:first-of-type ul li:last-child:after {
+  content         : ".";
+}
+
+.sidebar-list > div:first-child > ul:last-child > li:last-child:after {
+  content         : "";
+}
+
+/* This and the next block are a hack to replace the first sidebar H2's
+ * text content with "Skills" text.  Most of this is here to mimic the
+ * formatting of a real H2 element.
+ */
+#side-panel div:first-of-type h2 {
+  display         : none;
+}
+
+#side-panel div:first-of-type:before {
+  display           : block;
+  color             : var(--primary-header);
+  border-bottom     : 1px solid lightgrey;
+  content           : "Skills";
+  font-weight       : 700;
+  font-size         : 0.75rem;
+  margin            : 0.25rem 0 0.25rem 0;
+  cursor            : text;
+}
