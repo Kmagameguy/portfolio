@@ -34,7 +34,7 @@
       <h2>Professional Experience</h2>
       <h3>2013-Present | Custom Ink - Fairfax, VA</h3>
     <h4>February 2025-Present &bullet; Senior Software Engineer</h4>
-      <h4>October 2023-February 2024 &bullet; Software Engineer</h4>
+      <h4>October 2023-February 2025 &bullet; Software Engineer</h4>
       <h4>April 2023-October 2023 &bullet; Associate Software Engineer</h4>
       <ul class="details">
         <li>
