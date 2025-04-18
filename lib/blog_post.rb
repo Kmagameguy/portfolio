@@ -11,7 +11,7 @@ class BlogPost
   DEFAULT_THUMBNAIL_FILENAME = "thumb.jpg"
   VALID_FILE_EXTENSIONS = [ DEFAULT_FILE_EXTENSION, ".txt", ".rtf" ].freeze
 
-  def initialize(title:, file_extension: DEFAULT_FILE_EXTENSION, author: DEFAULT_AUTHOR, tags: [], thumbnail: DEFAULT_THUMBNAIL_FILENAME)
+  def initialize(title:, author: DEFAULT_AUTHOR, file_extension: DEFAULT_FILE_EXTENSION, tags: [], thumbnail: DEFAULT_THUMBNAIL_FILENAME)
     @title          = title.to_s
     @file_extension = file_extension.to_s
     @author         = author.to_s
@@ -24,12 +24,12 @@ class BlogPost
 
   def create!
     raise ArgumentError, "Title cannot be blank!" if title.blank?
+    raise ArgumentError, "Author cannot be blank!" if author.blank?
     raise ArgumentError, "File Extension must be one of these: #{VALID_FILE_EXTENSIONS.join(", ") }" unless valid_file_extension?
     raise ArgumentError, "Post: #{file_name} already exists!" if new_post_path.exist?
-    raise ArgumentError, "Author cannot be blank!" if author.blank?
-    
+
     new_post_path.write(post_header)
-    new_images_path
+    create_images_path
 
     puts "Created template: #{new_post_path}."
     puts "Created asset directory: #{images_path}"
@@ -45,12 +45,12 @@ class BlogPost
               :thumbnail_src,
               :thumbnail_credit
 
-  def new_post_path
-    posts_path.join("#{file_name}#{file_extension}")
+  def valid_file_extension?
+    VALID_FILE_EXTENSIONS.include?(file_extension)
   end
 
-  def new_images_path
-    FileUtils.mkdir_p(images_path.to_s)
+  def new_post_path
+    posts_path.join("#{file_name}#{file_extension}")
   end
 
   def posts_path
@@ -65,8 +65,12 @@ class BlogPost
     Time.current.strftime("%Y-%m-%d")
   end
 
-  def valid_file_extension?
-    VALID_FILE_EXTENSIONS.include?(file_extension)
+  def create_images_path
+    FileUtils.mkdir_p(images_path.to_s)
+  end
+
+  def relative_images_path
+    "/#{images_path.relative_path_from(project_root)}"
   end
 
   def relative_thumbnail_path
@@ -77,22 +81,18 @@ class BlogPost
     project_root.join("assets", "images", "posts", file_name)
   end
 
-  def relative_images_path
-    "/#{images_path.relative_path_from(project_root)}"
-  end
-
   def project_root
     Pathname.new(__dir__).join("..")
   end
 
   def post_header
     <<~MARKDOWN
-      #{frontmatter.to_yaml.strip}
+      #{post_frontmatter.to_yaml.strip}
       ---
     MARKDOWN
   end
 
-  def frontmatter
+  def post_frontmatter
     {
       layout: "post",
       title: title.titleize,
