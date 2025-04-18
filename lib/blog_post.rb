@@ -20,7 +20,6 @@ class BlogPost
     @thumbnail_alt  = nil
     @thumbnail_src  = nil
     @thumbnail_credit = nil
-    @image_path     = nil
   end
 
   def create!
@@ -31,13 +30,20 @@ class BlogPost
     
     new_post_path.write(post_header)
     new_images_path
+
     puts "Created template: #{new_post_path}."
     puts "Created asset directory: #{images_path}"
   end
 
   private
 
-  attr_reader :title, :file_extension, :author, :thumbnail, :thumbnail_alt, :thumbnail_src, :thumbnail_credit, :image_path
+  attr_reader :title,
+              :file_extension,
+              :author,
+              :thumbnail,
+              :thumbnail_alt,
+              :thumbnail_src,
+              :thumbnail_credit
 
   def new_post_path
     posts_path.join("#{file_name}#{file_extension}")
@@ -48,7 +54,7 @@ class BlogPost
   end
 
   def posts_path
-    Pathname.new(__dir__).join("..", "_posts").expand_path
+    project_root.join("_posts").expand_path
   end
 
   def file_name
@@ -63,12 +69,20 @@ class BlogPost
     VALID_FILE_EXTENSIONS.include?(file_extension)
   end
 
-  def thumbnail_path
-    images_path.join(thumbnail)
+  def relative_thumbnail_path
+    "/#{images_path.join(thumbnail).relative_path_from(project_root)}"
   end
 
   def images_path
-    Pathname.new(__dir__).join("..", "assets", "images", "posts", file_name)
+    project_root.join("assets", "images", "posts", file_name)
+  end
+
+  def relative_images_path
+    "/#{images_path.relative_path_from(project_root)}"
+  end
+
+  def project_root
+    Pathname.new(__dir__).join("..")
   end
 
   def post_header
@@ -84,11 +98,11 @@ class BlogPost
       title: title.titleize,
       author: author,
       tags: tags,
-      thumbnail: thumbnail,
+      thumbnail: relative_thumbnail_path,
       thumbnail_alt: thumbnail_alt,
       thumbnail_src: thumbnail_src,
       thumbnail_credit: thumbnail_credit,
-      image_path: image_path
+      image_path: relative_images_path
     }.transform_keys(&:to_s)
   end
 
