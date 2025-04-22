@@ -23,10 +23,8 @@ class BlogPost
   end
 
   def create!
-    raise ArgumentError, "Title cannot be blank!" if title.blank?
-    raise ArgumentError, "Author cannot be blank!" if author.blank?
-    raise ArgumentError, "File Extension must be one of these: #{VALID_FILE_EXTENSIONS.join(", ") }" unless valid_file_extension?
-    raise ArgumentError, "Post: #{file_name} already exists!" if new_post_path.exist?
+    validate_arguments!
+    ensure_unique_post!
 
     new_post_path.write(post_header)
     create_images_path
@@ -44,6 +42,19 @@ class BlogPost
               :thumbnail_alt,
               :thumbnail_src,
               :thumbnail_credit
+
+
+  def validate_arguments!
+    raise ArgumentError, "Title cannot be blank!" if title.blank?
+    raise ArgumentError, "Author cannot be blank!" if author.blank?
+    raise ArgumentError, "File Extension must be one of these: #{VALID_FILE_EXTENSIONS.join(", ") }" unless valid_file_extension?
+    true
+  end
+
+  def ensure_unique_post!
+    raise ArgumentError, "Post: #{file_name} already exists!" if new_post_path.exist?
+    true
+  end
 
   def valid_file_extension?
     VALID_FILE_EXTENSIONS.include?(file_extension)
@@ -97,7 +108,7 @@ class BlogPost
       layout: "post",
       title: title.titleize,
       author: author,
-      tags: tags,
+      tags: tags_to_s,
       thumbnail: relative_thumbnail_path,
       thumbnail_alt: thumbnail_alt,
       thumbnail_src: thumbnail_src,
@@ -106,7 +117,7 @@ class BlogPost
     }.transform_keys(&:to_s)
   end
 
-  def tags
+  def tags_to_s
     temp_tags = Array(@tags).join(", ")
     temp_tags.blank? ? nil : temp_tags
   end
