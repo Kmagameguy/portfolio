@@ -8,21 +8,21 @@
     <ul class="navbar-nav ml-auto align-items-center">
       {% for item in site.data.navbar.main %}
       <li class="nav-item">
-        <a class="{% if item.link == page.url %} active {% endif %} nav-link" href="{{ item.link }}" {% if item.target %} target="{{ item.target }}" {% endif %}> {{ item.name }}</a>
+        <a class="{% if item.link == page.url %} active {% endif %} nav-link text-secondary" href="{{ item.link }}" {% if item.target %} target="{{ item.target }}" {% endif %}> {{ item.name }}</a>
       </li>
       {% endfor %}
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle text-secondary" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Work
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           {% for item in site.data.navbar.work %}
-            <a class="dropdown-item" href="{{ item.link }}" {%if item.target %} target="{{ item.target }}" {% endif %}>{{ item.name }}</a>
+            <a class="dropdown-item text-secondary" href="{{ item.link }}" {%if item.target %} target="{{ item.target }}" {% endif %}>{{ item.name }}</a>
           {% endfor %}
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/blog.feed.xml" target="_blank" rel="noopener noreferrrer">RSS</a>
+        <a class="nav-link text-secondary" href="/blog.feed.xml" target="_blank" rel="noopener noreferrrer">RSS</a>
       </li>
     </ul>
   </div>
