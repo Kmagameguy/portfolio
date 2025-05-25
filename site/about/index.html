@@ -16,7 +16,7 @@ permalink: /about/
         </div>
         <div class="card-text d-none d-sm-block">
           <hr>
-          <h6>ID Card:</h6>
+          <h3>ID Card:</h3>
           <p>
             {% assign curDate='1990-05-24' | date: "%s" %}
             Age: {{ "now" | date: "%s" | minus: curDate | divided_by: 31536000 | round }} Earth Years
@@ -36,14 +36,14 @@ permalink: /about/
     <div class="card">
       <div class="card-body">
         <div class="card-text">
-          <h5>About Me:</h5>
+          <h1>About Me:</h1>
           <p>
             My name is {{ site.author }}. I graduated with honors from The Art Institute of Washington,
             where I attained my BFA in Game Art and Design.  I am a former 3D Environment Artist, currently serving
             as a {{ site.employer.job }} at <a href="{{ site.employer.url }}" target="_blank" rel="noopener noreferrer">{{ site.employer.name }}</a>.
           </p>
           <hr />
-          <h5>About this Site:</h5>
+          <h2>About this Site:</h2>
           <p>
             Code used to build this blog is released under the <a href="https://choosealicense.com/licenses/mit/">MIT License.</a>
           </p>
