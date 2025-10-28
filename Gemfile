@@ -18,7 +18,11 @@ group :jekyll_plugins do
 end
 
 group :development, :test do
+  gem "rake"
   gem "rubocop", require: false
   gem "rubocop-rake"
   gem "rubocop-minitest"
+  gem "minitest"
+  gem "minitest-focus"
+  gem "mocha"
 end
