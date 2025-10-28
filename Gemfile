@@ -16,3 +16,9 @@ group :jekyll_plugins do
   gem "jekyll-autoprefixer"
   gem "jekyll-paginate"
 end
+
+group :development, :test do
+  gem "rubocop", require: false
+  gem "rubocop-rake"
+  gem "rubocop-minitest"
+end

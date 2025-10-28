@@ -11,7 +11,19 @@ class BlogPost
   DEFAULT_THUMBNAIL_FILENAME = "thumb.jpg"
   VALID_FILE_EXTENSIONS = [ DEFAULT_FILE_EXTENSION, ".txt", ".rtf" ].freeze
 
-  def initialize(title:, author: DEFAULT_AUTHOR, file_extension: DEFAULT_FILE_EXTENSION, tags: [], thumbnail: DEFAULT_THUMBNAIL_FILENAME)
+  def self.create!(title:,
+                   author: DEFAULT_AUTHOR,
+                   file_extension: DEFAULT_FILE_EXTENSION,
+                   tags: [],
+                   thumbnail: DEFAULT_THUMBNAIL_FILENAME)
+    new(title: title, author: author, file_extension: file_extension, tags: tags, thumbnail: thumbnail)
+  end
+
+  def initialize(title:,
+                 author: DEFAULT_AUTHOR,
+                 file_extension: DEFAULT_FILE_EXTENSION,
+                 tags: [],
+                 thumbnail: DEFAULT_THUMBNAIL_FILENAME)
     @title          = title.to_s
     @file_extension = file_extension.to_s
     @author         = author.to_s
@@ -43,16 +55,20 @@ class BlogPost
               :thumbnail_src,
               :thumbnail_credit
 
-
   def validate_arguments!
     raise ArgumentError, "Title cannot be blank!" if title.blank?
     raise ArgumentError, "Author cannot be blank!" if author.blank?
-    raise ArgumentError, "File Extension must be one of these: #{VALID_FILE_EXTENSIONS.join(", ") }" unless valid_file_extension?
+
+    unless valid_file_extension?
+      raise ArgumentError, "File Extension must be one of these: #{VALID_FILE_EXTENSIONS.join(', ')}"
+    end
+
     true
   end
 
   def ensure_unique_post!
     raise ArgumentError, "Post: #{file_name} already exists!" if new_post_path.exist?
+
     true
   end
 

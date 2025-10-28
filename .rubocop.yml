@@ -1,0 +1,33 @@
+inherit_mode:
+  merge:
+    - Exclude
+
+plugins:
+  - rubocop-minitest
+  - rubocop-rake
+
+AllCops:
+  TargetRubyVersion: 3.4
+  NewCops: enable
+  Exclude:
+    - Gemfile
+    - Gemfile.lock
+    - _site/**/*
+
+Layout/SpaceInsideArrayLiteralBrackets:
+  Enabled: false
+
+Metrics/ClassLength:
+  Max: 200
+
+Metrics/MethodLength:
+  Max: 20
+
+Naming/PredicateMethod:
+  Enabled: false
+
+Style/StringLiterals:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
