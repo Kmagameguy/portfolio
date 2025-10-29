@@ -53,30 +53,11 @@ class BlogPost
     validate_arguments!
     ensure_unique_post!
 
-    new_post_path.write(post_header)
+    new_post_path.write(header)
     create_images_path
 
     puts "Created template: #{new_post_path}."
     puts "Created asset directory: #{images_path}"
-  end
-
-  private
-
-  def validate_arguments!
-    raise ArgumentError, "Title cannot be blank!" if title.blank?
-    raise ArgumentError, "Author cannot be blank!" if author.blank?
-
-    unless valid_file_extension?
-      raise ArgumentError, "File Extension must be one of these: #{VALID_FILE_EXTENSIONS.join(', ')}"
-    end
-
-    true
-  end
-
-  def ensure_unique_post!
-    raise ArgumentError, "Post: #{file_name} already exists!" if post_exists?
-
-    true
   end
 
   def valid_file_extension?
@@ -96,11 +77,11 @@ class BlogPost
   end
 
   def file_name
-    "#{post_timestamp}-#{title.to_s.parameterize}"
+    "#{timestamp}-#{title.to_s.parameterize}"
   end
 
-  def post_timestamp
-    Time.current.strftime("%Y-%m-%d")
+  def timestamp
+    @timestamp ||= Time.current.strftime("%Y-%m-%d")
   end
 
   def create_images_path
@@ -123,14 +104,14 @@ class BlogPost
     Pathname.new(__dir__).join("..")
   end
 
-  def post_header
+  def header
     <<~MARKDOWN
-      #{post_frontmatter.to_yaml.strip}
+      #{frontmatter.to_yaml.strip}
       ---
     MARKDOWN
   end
 
-  def post_frontmatter
+  def frontmatter
     {
       layout: "post",
       title: title.titleize,
@@ -142,5 +123,24 @@ class BlogPost
       thumbnail_credit: thumbnail_credit,
       image_path: relative_images_path
     }.transform_keys(&:to_s)
+  end
+
+  private
+
+  def validate_arguments!
+    raise ArgumentError, "Title cannot be blank!" if title.blank?
+    raise ArgumentError, "Author cannot be blank!" if author.blank?
+
+    unless valid_file_extension?
+      raise ArgumentError, "File Extension must be one of these: #{VALID_FILE_EXTENSIONS.join(', ')}"
+    end
+
+    true
+  end
+
+  def ensure_unique_post!
+    raise ArgumentError, "Post: #{file_name} already exists!" if post_exists?
+
+    true
   end
 end

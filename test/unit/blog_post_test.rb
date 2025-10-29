@@ -100,5 +100,33 @@ class BlogPostTest < Minitest::Test
         assert_equal "Post: #{file_name} already exists!", error.message
       end
     end
+
+    describe "#valid_file_extension?" do
+      it "is true if the file extension is included in the allowlist" do
+        @described_class::VALID_FILE_EXTENSIONS.each do |extension|
+          assert_predicate(
+            @described_class.new(title: "My Blog Post", file_extension: extension),
+            :valid_file_extension?
+          )
+        end
+      end
+
+      it "is false if the file extension is not included in the allowlist" do
+        refute_predicate(
+          @described_class.new(title: "My Blog Post", file_extension: ".doc"),
+          :valid_file_extension?
+        )
+      end
+    end
+
+    describe "#file_name" do
+      it "safely converts the title to a hyphen-separated string" do
+        post = @described_class.new(title: "  My    Blog' & Post ")
+        date_part = post.timestamp
+        expected_file_name = "#{date_part}-my-blog-post"
+
+        assert_equal expected_file_name, post.file_name
+      end
+    end
   end
 end
