@@ -13,16 +13,24 @@ AllCops:
     - Gemfile
     - Gemfile.lock
     - Rakefile
+    - bin/**/*
     - _site/**/*
 
 Layout/SpaceInsideArrayLiteralBrackets:
   Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+    - test/**/*
 
 Metrics/ClassLength:
   Max: 200
 
 Metrics/MethodLength:
   Max: 20
+
+Minitest/MultipleAssertions:
+  Max: 10
 
 Naming/PredicateMethod:
   Enabled: false

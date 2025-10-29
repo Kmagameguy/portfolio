@@ -23,6 +23,9 @@ group :development, :test do
   gem "rubocop-rake"
   gem "rubocop-minitest"
   gem "minitest"
+  gem "minitest-hooks"
+  gem "minitest-reporters"
   gem "minitest-focus"
+  gem "minitest-stub-const"
   gem "mocha"
 end
