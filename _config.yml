@@ -53,19 +53,17 @@ employer:
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-autoprefixer
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-paginate
-future: true
-markdown: kramdown
-kramdown:
-  input: GFM
 
 paginate: 10
 paginate_path: "blog/page:num/"
 
 sass:
   sass_dir: assets/css
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
