@@ -8,8 +8,9 @@ main:
   - name: Blog
     link: /blog/
 
-
 work:
+  - name: Code
+    link: /code/
   - name: Scribbles
     link: /scribbles/
   - name: 3D

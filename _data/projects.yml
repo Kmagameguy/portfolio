@@ -1,0 +1,147 @@
+- title: This portfolio site!
+  link: https://github.com/kmagameguy/portfolio
+  status_short: active
+  project_type: static site
+  started_at: 2017
+  overview: >
+    Just a simple, static website to host my stuff on the internet.
+    I've been maintaining/re-inventing it since 2017.
+  tech_stack:
+    - name: Ruby
+      url: https://www.ruby-lang.org
+    - name: Jekyll
+      url: https://jekyllrb.com
+    - name: Bootstrap
+      url: https://getbootstrap.com
+    - name: GitHub Actions
+      url: https://docs.github.com/en/actions
+    - name: GitHub Pages
+      url: https://docs.github.com/en/pages
+  tech_stack_comments: >
+    This project is always evolving. The latest change was migrating away
+    from the github-pages gem-based deployment to a native jekyll build
+    in GitHub Actions. I've also written some ruby-based helper scripts
+    to make blog post management a bit less manual.
+- title: Ocarina of Time Collectibles Tracker
+  status_short: active
+  project_type: static website
+  started_at: February 2026
+  link: https://kmagameguy.github.io/oot-collectibles
+  overview: >
+    A simple static site to help make Heart Piece collection in
+    The Legend of Zelda: Ocarina of Time a bit more organized. While
+    playing through the game recently I was having a hard time keeping
+    track of the Heart Piece collectibles. I wanted some kind of
+    tracking system to make it easier to see which Heart Pieces I'd
+    already collected, and a grouping of them by region (to optimize a
+    collection run). I created this simple static site with those goals in mind.
+  features:
+    - Session-based collection tracking
+    - All 36 collectible Heart Pieces cataloged
+    - Filters to narrow down Heart Pieces by region, age, and time of day required to collect them
+  tech_stack:
+    - name: TypeScript
+      url: https://www.typescriptlang.org/
+    - name: Vite
+      url: https://vite.dev/
+    - name: React
+      url: https://react.dev/
+    - name: GitHub Actions
+      url: https://docs.github.com/en/actions
+    - name: GitHub Pages
+      url: https://docs.github.com/en/pages
+  tech_stack_comments: >
+    Most of my (current) programming is done in Ruby or Ruby on Rails,
+    so this project seemed like a good opportunity to get acquainted with
+    TypeScript, Vite, and React. Those technologies are definitely overkill
+    for this but since I knew what the "vanilla" HTML/CSS/JS code could look
+    like it made it a bit easier to approach/translate those concepts into
+    this specific tech stack. The project uses the localStorage browser API
+    as a bonus so you can leave and come back to the site between sessions and
+    it will remember where you left off with your collection.
+- title: Restiby
+  status_short: active
+  project_type: CLI
+  started_at: July 2025
+  link: https://github.com/kmagameguy/restiby
+  overview: >
+    I manage a self-hosted combination NAS/media server. As part of my maintenance
+    routine I take snapshots of the data with [Restic](https://github.com/restic/restic).
+    Restic is great, but I find it's interface a bit kludgy. To automate the backup
+    process I wrote a small ruby utility, Restic (Ruby + Restic). The script is heavily
+    influenced by [autorestic](https://github.com/cupcakearmy/autorestic) and some other
+    folks' restic scripts from around the web. The project is still a work in progress but it's
+    in good enough shape for me to use daily. There is preliminary support for restoring snapshots, but
+    only for the latest snapshot of a backend.
+  features:
+    - Easy configuration with a YAML file(s)
+    - "Simple installation: Just run bin/install"
+    - Built-in Restic auto-updates
+    - Automatic backend initialization
+    - Automatic integrity checking post-backup
+    - Automatic snapshot rotation/cleanup via "forget" policies
+    - Support for post-run diffs delivered as notifications to Healthchecks.io or Discord
+  tech_stack:
+    - name: Ruby
+      url: https://ruby-lang.org/
+    - name: Restic
+      url: https://github.com/restic/restic
+  tech_stack_comments: >
+    I wanted this project to be super lightweight, so aside from the dependency
+    on restic itself the only thing you'll need to use this utility is the
+    core Ruby library.  The idea is to use really simple CLI commands to perform
+    all the complex restic operations (e.g. restiby --action backup runs a backup snapshot
+    for all your ocnfigured sources/destinations).
+- title: Subscriptions Tracker
+  status_short: active
+  project_type: Web Application
+  started_at: October 2024
+  link: https://github.com/kmagameguy/subscriptions
+  overview: >
+    Frustrated by yet another streaming service cost increase I realized I
+    wanted an easy way to track subscription pricing changes over time.
+    Partially for morbid curiosity, but also in hopes to get a better sense
+    for the worst offenders so I could either search for an alternative
+    or drop them entirely. Those goals resulted in this simple
+    subscription tracker.
+  features:
+    - Individual user accounts
+    - Track your subscriptions in the currency of your choice
+    - Supports monthly, quarterly, semi-annually (twice a year), annually, and biennially (every two years) recurring subscriptions
+    - Track price change history; Each edit to an existing subscription is cataloged so you can see the % increase since you first signed up
+  tech_stack:
+    - name: Ruby on Rails
+      url: https://rubyonrails.org/
+    - name: Hotwire
+      url: https://hotwired.dev/
+    - name: Docker
+      url: https://www.docker.com/
+    - name: PostgreSQL
+      url: https://www.postgresql.org/
+  tech_stack_comments: >
+    Most of the Rails work I do in my day job is on smoewhat legacy systems
+    so for this project I really wanted to try a fresher version of the Rails
+    stack.  It started with Rails 7 and the (at the time) new Hotwire framework.
+    For some reason I chose PostgreSQL for the database, mainly just to check it
+    out, though the project doesn't really take advantage of any of its unique
+    selling points.  You should be able to deploy it on bare metal or with Docker.
+- title: Internet Games Database Client
+  status_short: active
+  project_type: CLI / Ruby Gem
+  started_at: August 2024
+  link: https://github.com/Kmagameguy/igdb_client
+  overview: >
+    A ruby gem designed around the <a href="https://www.igdb.com">IGDB API</a>.
+    It helps facilitate data retrieval from teh API by abstracting some
+    of the more complex query parameters the API expects.
+  tech_stack:
+    - name: Ruby
+      url: https://www.ruby-lang.org
+    - name: RuboCop
+      url: https://rubocop.org
+    - name: Minitest
+      url: https://docs.seattlerb.org/minitest/
+  tech_stack_comments: >
+    This was the (first?) ruby gem I've built outside of my day job.
+    While working on a project related to game-tracking I decided
+    to spin this code off as a compartmentalized gem.

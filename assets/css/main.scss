@@ -1,29 +1,36 @@
 ---
 ---
-@import 'bootstrap/bootstrap';
+
+@import "bootstrap/bootstrap";
 
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url('../fonts/Montserrat/Montserrat-Thin.woff2') format('woff2');
+  src: url("../fonts/Montserrat/Montserrat-Thin.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url('../fonts/Montserrat/Montserrat-Regular.woff2') format('woff2');
+  src: url("../fonts/Montserrat/Montserrat-Regular.woff2") format("woff2");
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
 }
 
-h1, h2, h3, h4, h5, h6, .navbar {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar {
   font-weight: 500;
 }
 
@@ -77,12 +84,12 @@ img {
 
 .hover-image {
   opacity: 1;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 
 .hover-image:hover {
   opacity: 0.3;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 
 code {
@@ -91,7 +98,7 @@ code {
 }
 
 pre {
-  background:#f4f4f4;
+  background: #f4f4f4;
   border: 1px solid darkgrey;
   border-left: 3px solid darkgrey;
   color: #666;
@@ -109,5 +116,71 @@ pre {
 }
 
 #about-prof {
-  border: 1px solid rgba(0,0,0,0.5);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+}
+
+.project-meta .meta-pill {
+  display: inline-block;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  background-color: #f8f9fa;
+  color: #495057;
+  border: 1px solid #e9ecef;
+  line-height: 1.2;
+  white-space: nowrap;
+  cursor: default;
+}
+
+.project-meta .status-active {
+  background-color: #e6f4ea;
+  color: #1e7e34;
+  border-color: #c3e6cb;
+}
+
+.project-meta .status-experimental {
+  background-color: #fff3cd;
+  color: #856404;
+  border-color: #ffeeba;
+}
+
+.project-meta .status-archived {
+  background-color: #e2e3e5;
+  color: #383d41;
+  border-color: #d6d8db;
+}
+
+.project-meta .meta-link {
+  text-decoration: none;
+  font-weight: 500;
+  color: #0056b3;
+  background-color: #eef4ff;
+  border-color: #cfe2ff;
+  cursor: pointer;
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    transform 0.1s ease;
+}
+
+.project-meta .meta-link:hover {
+  background-color: #e2ecff;
+  border-color: #b6d4fe;
+  text-decoration: none;
+}
+
+.project-meta .meta-link:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.15rem rgba(0, 123, 255, 0.25);
+}
+
+.project-meta .meta-link:active {
+  transform: translateY(1px);
 }
