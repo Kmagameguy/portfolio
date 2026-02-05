@@ -1,0 +1,55 @@
+<div class="card mb-4">
+  <div class="card-body">
+    <h4 class="card-title">{{ project.title }}</h4>
+
+    <div class="project-meta">
+      {% if project.link %}
+      <a href="{{ project.link }}" class="meta-pill meta-link" target="_blank">
+        {% if project.link contains "github.com" %} View on GitHub -> {% else %}
+        Project Site -> {% endif %}
+      </a>
+      {% endif %} {% if project.status_short %}
+      <span class="meta-pill status-{{ project.status_short | downcase }}">
+        {{ project.status_short }}
+      </span>
+      {% endif %} {% if project.project_type %}
+      <span class="meta-pill"> {{ project.project_type}} </span>
+      {% endif %} {% if project.started_at %}
+      <span class="meta-pill"> Since {{ project.started_at }} </span>
+      {% endif %}
+    </div>
+
+    {% if project.overview %}
+    <div class="card-text mb-4">
+      <h5 class="card-subtitle">Overview</h5>
+      <p>{{ project.overview }}</p>
+    </div>
+    {% endif %} {% if project.features %}
+    <div class="card-text mb-4">
+      <h5 class="card-subtitle">Features / Highlights</h5>
+      <ul>
+        {% for feature in project.features %}
+        <li>{{ feature }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %} {% if project.tech_stack %}
+    <div class="card-text mb-4">
+      <h5 class="card-subtitle">Tech Stack</h5>
+      <ul>
+        {% for tech in project.tech_stack %} {% if tech.url %}
+        <li>
+          <a href="{{ tech.url }}">{{ tech.name }}</a>
+        </li>
+        {% else %}
+        <li>{{ tech.name }}</li>
+        {% endif %} {% endfor %}
+      </ul>
+
+      {% if project.tech_stack_comments %}
+      <p>{{ project.tech_stack_comments }}</p>
+      {% endif %}
+    </div>
+    {% endif %}
+  </div>
+</div>
