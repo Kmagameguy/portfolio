@@ -1,79 +1,68 @@
-<nav
-  class="navbar sticky-top navbar-expand-md navbar-light bg-light my-5 text-uppercase border-bottom"
->
+<nav class="navbar sticky-top navbar-light bg-light my-5 text-uppercase border-bottom">
   <span class="navbar-brand mb-0 h1" href="#">Kevin Aktug</span>
-  <button
-    class="navbar-toggler"
-    type="button"
-    data-bs-toggle="collapse"
-    data-bs-target="#navbarNavAltMarkup"
-    aria-controls="navbarNavAltMarkup"
-    aria-expanded="false"
-    aria-label="Toggle navigation"
-  >
-    <span class="navbar-toggler-icon"></span>
-  </button>
 
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <ul class="navbar-nav ml-auto align-items-center">
-      {% for item in site.data.navbar.main %}
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <ul id="nav-menu" class="ml-auto align-items-center">
+    {% for item in site.data.navbar.main %}
       <li class="nav-item">
         <a
           class="{% if item.link == page.url %} active {% endif %} nav-link text-secondary"
           href="{{ item.link }}"
-          {%
-          if
-          item.target
-          %}
-          target="{{ item.target }}"
-          {%
-          endif
-          %}
-        >
-          {{ item.name }}</a
-        >
-      </li>
-      {% endfor %}
-      <li class="nav-item dropdown">
-        <a
-          class="nav-link dropdown-toggle text-secondary"
-          href="#"
-          id="navbarDropdown"
-          role="button"
-          data-bs-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          Work
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          {% for item in site.data.navbar.work %}
-          <a
-            class="dropdown-item text-secondary"
-            href="{{ item.link }}"
-            {%if
-            item.target
-            %}
+          {% if item.target %}
             target="{{ item.target }}"
-            {%
-            endif
-            %}
-            >{{ item.name }}</a
-          >
-          {% endfor %}
-        </div>
+          {% endif %}
+        >
+          {{ item.name }}
+        </a>
       </li>
-      <li class="nav-item">
+    {% endfor %}
+    <li class="work-item nav-item">
+      <a class="nav-link text-secondary" href="#">Work</a>
+      <ul>
+        {% for item in site.data.navbar.work %}
+          <li class="nav-item">
+            <a
+              class="nav-link text-secondary"
+              href="{{ item.link }}"
+              {% if item.target %}
+                target="{{ item.target }}"
+              {% endif %}
+            >
+              {{ item.name }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </li>
+    {% for item in site.data.navbar.work %}
+      <li class="work-subitems nav-item">
         <a
           class="nav-link text-secondary"
-          href="/blog.feed.xml"
-          target="_blank"
-          rel="noopener noreferrrer"
-          >RSS</a
+          href="{{ item.link }}"
+          {% if item.target %}
+            target="{{ item.target }}"
+          {% endif %}
         >
+          Work - {{ item.name }}
+        </a>
       </li>
-    </ul>
-  </div>
+    {% endfor %}
+    <li class="nav-item">
+      <a
+        class="nav-link text-secondary"
+        href="/blog.feed.xml"
+        target="_blank"
+        rel="noopener noreferrrer"
+      >
+        RSS
+      </a>
+    </li>
+  </ul>
 </nav>
 
 <noscript>
