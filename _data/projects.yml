@@ -22,11 +22,13 @@
     from the github-pages gem-based deployment to a native jekyll build
     in GitHub Actions. I've also written some ruby-based helper scripts
     to make blog post management a bit less manual.
+
 - title: Ocarina of Time Collectibles Tracker
   status_short: active
   project_type: static website
   started_at: February 2026
   link: https://kmagameguy.github.io/oot-collectibles
+  image_preview: /assets/images/code/oot_heart_piece_tracker.png
   overview: >
     A simple static site to help make Heart Piece collection in
     The Legend of Zelda: Ocarina of Time a bit more organized. While
@@ -59,6 +61,7 @@
     this specific tech stack. The project uses the localStorage browser API
     as a bonus so you can leave and come back to the site between sessions and
     it will remember where you left off with your collection.
+
 - title: Restiby
   status_short: active
   project_type: CLI
@@ -92,11 +95,22 @@
     core Ruby library.  The idea is to use really simple CLI commands to perform
     all the complex restic operations (e.g. restiby --action backup runs a backup snapshot
     for all your ocnfigured sources/destinations).
+  code_example: |
+    # Symlink the restiby script to /usr/local/bin/
+    bin/install
+
+    # Run integrity check against the configured backends
+    restiby --action check
+
+    # Create a new restic snapshot for every configured source/backend
+    restiby --action backup
+
 - title: Subscriptions Tracker
   status_short: active
   project_type: Web Application
   started_at: October 2024
   link: https://github.com/kmagameguy/subscriptions
+  image_preview: /assets/images/code/subscriptions_tracker_preview.png
   overview: >
     Frustrated by yet another streaming service cost increase I realized I
     wanted an easy way to track subscription pricing changes over time.
@@ -125,6 +139,7 @@
     For some reason I chose PostgreSQL for the database, mainly just to check it
     out, though the project doesn't really take advantage of any of its unique
     selling points.  You should be able to deploy it on bare metal or with Docker.
+
 - title: Internet Games Database Client
   status_short: active
   project_type: CLI / Ruby Gem
@@ -145,3 +160,26 @@
     This was the (first?) ruby gem I've built outside of my day job.
     While working on a project related to game-tracking I decided
     to spin this code off as a compartmentalized gem.
+  code_example: |
+    client = IdgbClient::Api.new
+    games = client.get(:games,
+      search: "Burger Time",
+      fields: "name,game_type.type,platforms.name")
+
+    games.find { |game| game&.game_type&.type == "Main Game" }
+
+    =>
+    #<OpenStruct id=4609,
+      name="Burger Time",
+      platforms:
+        [#<OpenStruct id=68, name="ColecoVision">,
+        #<OpenStruct id=52,  name="Arcade">,
+        #<OpenStruct id=125, name="PC-8800 Series">,
+        #<OpenStruct id=77,  name="Sharp X1">,
+        #<OpenStruct id=67,  name="Intellivision">,
+        #<OpenStruct id=13,  name="DOS">,
+        #<OpenStruct id=75,  name="Apple II">,
+        #<OpenStruct id=374, name="Sharp MZ-2200">,
+        #<OpenStruct id=129, name="Texas Instruments TI-99">,
+        #<OpenStruct id=27,  name="MSX">],
+      game_type=#<OpenStruct id=0, type="Main Game">>
