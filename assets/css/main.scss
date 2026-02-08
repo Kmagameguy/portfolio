@@ -184,3 +184,17 @@ pre {
 .project-meta .meta-link:active {
   transform: translateY(1px);
 }
+
+.code-example {
+  background: #f2f4f6;
+  color: #1a1f24;
+  font-family: "Fira Mono", "Courier New", monospace;
+  font-size: 0.9rem;
+  letter-spacing: 0.01em;
+  tab-size: 2;
+  line-height: 1.8;
+  padding: 1rem 1.2rem;
+  border-left: 4px solid #5b7c99;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+}

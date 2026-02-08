@@ -13,8 +13,7 @@ layout: home
         My name is Kevin Aktug.
       </p>
       <p>
-        I'm a creative type that lives somewhere
-        between design & technology.  This site
+        I'm a {{ site.employer.job }} with a background in the arts.  This site
         has a sampling of my work.
       </p>
       <p>
@@ -30,6 +29,13 @@ layout: home
   document.getElementById("main-prof").src= atob("L2Fzc2V0cy9pbWFnZXMvbWFpbl9wcm9mLnBuZw==");
   document.getElementById("el-gato").src = atob("L2Fzc2V0cy9pbWFnZXMvaG9iYmVzLnBuZw==");
 </script>
+
+<div class="card mt-2">
+  <h2 class="mb-3">Software Projects</h2>
+  <p>
+    You can view some of my personal projects here: <a href="/code/">Code Samples</a>.
+  </p>
+</div>
 
 {% include thumbnailCard.html
   headerText = 'Here are some of my scribbles'

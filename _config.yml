@@ -45,9 +45,7 @@ social:
     - *github_link
 
 employer:
-  name: Custom Ink
   job: Senior Software Engineer
-  url: https://www.customink.com
 
 # Build settings
 theme: minima
