@@ -31,10 +31,18 @@ h4 {
   line-height     : 0.75rem;
 }
 
+#side-panel br {
+  display: none;
+}
+
 #main-content {
   padding         : 1rem;
   flex            : 1;
   margin-right    : 10px;
+}
+
+.skill-category {
+  display: none;
 }
 
 .sidebar-list {
