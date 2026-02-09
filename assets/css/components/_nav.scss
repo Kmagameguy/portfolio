@@ -78,6 +78,9 @@
 }
 
 @media (max-width: 768px) {
+  .navbar {
+    align-items: center;
+  }
   .navbar ul {
     flex-direction: column;
     width: 100%;
