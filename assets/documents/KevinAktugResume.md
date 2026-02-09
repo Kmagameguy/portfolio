@@ -30,33 +30,40 @@
 
 <div id="body-container">
   <div id="main-content">
+    <div id="summary">
+      <h2>Professional Summary</h2>
+      <p>
+        Senior Software Engineer with unique background, combining 10+ years of business and technical leadership with 2 years of formal software engineering experience. Rapidly advanced from Associate to Senior Engineer through demonstrated ability to architect complex systems, lead cross-functional initiatives, and bridge technical and business stakeholders.
+      </p>
+    </div>
     <div id="experience">
       <h2>Professional Experience</h2>
       <h3>2013-Present | Custom Ink - Fairfax, VA</h3>
-    <h4>February 2025-Present &bullet; Senior Software Engineer</h4>
-      <h4>October 2023-February 2025 &bullet; Software Engineer</h4>
-      <h4>April 2023-October 2023 &bullet; Associate Software Engineer</h4>
+    <h4>April 2023-Present &bullet; Software Engineer (Promoted to Senior, February 2025)</h4>
       <ul class="details">
         <li>
-          Perform full-stack Ruby on Rails & Javascript development on from-scratch applications, microservices, & monoliths.
+          Architect and maintain business-critical automation system that processes hundreds of orders daily, reducing manual effort by 90%.  Serve as primary on-call engineer for incidents affecting core business operations.
         </li>
         <li>
-          Develop and improve automated routines that streamlined complex business processes, reducing manual efforts up to 90% in some cases, to increase operational efficiency.
+          Currently leading the technical implementation of Salesforce CRM integration with our legacy systems, designing RESTful API architecture and contracts, coordinating cross-functional requirements, and managing delivery roadmap.
         </li>
         <li>
-          Help spearhead initiative to directly integrate with industry suppliers via PromoStandards-compliant APIs.
+          Built services to integrate with industry suppliers via PromoStandards-compliant APIs, expanding platform capabilities and reducing vendor friction.  Successfully delivered integrations with 2 suppliers before transitioning project to dedicated team.
         </li>
         <li>
-          Improved security and user management by migrating various applications away from bespoke authentication/authorization mechanisms to a consistent experience using Auth0 & OKTA.
+          Support NetSuite ERP integration through issue triage, code fixes for financial reporting accuracy, and collaboration with finance team on production stabilization.
         </li>
         <li>
-          Use tools such as Rollbar and NewRelic to identify and resolve system performance bottlenecks.
+          Partner with Product Managers and business stakeholders to translate requirements into technical solutions, leveraging deep understanding of business workflows to anticipate edge cases and make informed architectural decisions.
         </li>
         <li>
-          Actively participate in code reviews (pull requests), providing constructive feedback to enhance code quality and encourage continuous improvement within the development team.
+          Conduct daily code reviews, including hands-on integration testing via CLI and UI validation, while providing constructive feedback to enhance code quality and encourage continuous improvement within the development team.  Participate in on-call rotation for production incident response and emergency fixes.
         </li>
         <li>
-          Use Git/GitHub for software version control, collaboration, and continuous integration/continuous deployment pipelines.
+          Perform full-stack Ruby on Rails & JavaScript development across microservices and monolithic applications, maintaining production systems using Rollbar/NewRelic/AWS CloudWatch for performance monitoring and incident resolution.
+        </li>
+        <li>
+          Improved security and user management by migrating multiple applications away from bespoke authentication/authorization mechanisms to a consistent experience using Auth0 & OKTA.
         </li>
       </ul>
       <h4>2020-April 2023 &bullet; Technology Manager</h4>
@@ -64,108 +71,78 @@
       <h4>2014-2015 &bullet; Production Art Development Coordinator</h4>
       <ul class="details">
         <li>
-          Managed the Customer Care Technology Analyst, fostering their growth and skill development through regular one-on-one meetings, performance reviews, and project assignments.
+          Developed comprehensive project proposals backed by detailed Return on Investment and Risk analyses.  These were achieved using business intelligence tools (Metabase), custom SQL queries, application codebase review, and visual aids to support technical decision-making and inform project prioritization in alignment with company goals.
         </li>
         <li>
-          Maintained and organized our internal knowledgebase and produced weekly, informational summaries of tech/process changes for team member benefit. Helped improve knowledge retention through guided demos, in-person presentations, and regular knowledge quizzes.
+          Collaborated closely with Software Engineering team (later joined as an engineer) to translate business requirements into technical specifications, reviewing application codebases to identify implementation needs and coordinate cross-functional delivery with Product Managers, UI/UX designers, and QA engineers.
         </li>
         <li>
-          Developed comprehensive project proposals backed by detailed Return on Investment and Risk Analyses.  These were achieved using business intelligence tools (Metabase), custom SQL queries, and visual aids to support decision-making and inform project prioritization in alignment with company goals.
+          Wrote and maintained automation scripts (Bash, Adobe Extendscript) that streamlined production workflows and reduced manual processing time.
         </li>
         <li>
-          Collaborated closely with cross-functional teams, including Product Managers, UI/UX designers, Software Engineers, Quality Assurance engineers, and Business Stakeholders to improve customer and team member satisfaction with site features and internal tools.
+          Managed the Customer Care Technology Analyst, fostering their growth and skill development through regular one-on-one meetings, performance reviews, and project assignments while supporting ~500 team members with enterprise macOS/Windows environments (JAMF Pro, Dell KACE).
         </li>
         <li>
           Supported and championed organizational change from Waterfall to Agile Development Methodology.
-        </li>
-        <li>
-          Supported MacOS and Windows hardware/software for ~500 team members in an Enterprise environment, working with IT Security to ensure latest security updates and OS standards are maintained on JAMF Pro/Dell KACE/P9-managed endpoint devices.
-        </li>
-        <li>
-          Created and championed a remote-work program which later allowed for rapid response to workforce management needs during early Covid spread.
-        </li>
-        <li>
-          Performed in-depth QA support for tech changes across departments.
-        </li>
-        <li>
-          Supported launch and integration of 6 new lines of business.
-        </li>
-        <li>
-          Supported new merchandise additions within Custom Ink's catalog.
-        </li>
-        <li>
-          Wrote and maintained Bash/Shell and Powershell scripts that automated workflows and assisted with system deployments and other maintenance.
-        </li>
-        <li>
-          Helped lead new team member training/onboarding by provisioning hardware, software, and accounts, alongside on-site classroom support.
         </li>
       </ul>
       <h4>2013-2014 &bullet; Production Artist</h4>
       <ul class="details">
         <li>
-          Processed customer designs to meet printability requirements while consistently exceeding productivity and accuracy targets.
-        </li>
-        <li>
-          Provided merchandising and Adobe Suite support to department Technology Specialist.
+          Processed customer designs to meet printability requirements and provided Adobe Suite technical support.
         </li>
       </ul>
       <h3>2011-2013 | Freelance Multimedia Artist - Fairfax, VA</h3>
       <h4>2011-2013 &bullet; Firesabre Consulting, LLC</h4>
-      <h4>Jun 2012-Jul 2012 &bullet; Fiteeze</h4>
       <h4>Oct 2012 &bullet; Ave Media, LLC</h4>
       <ul class="details">
         <li>
-          Environment and Level Design contracting for Fortune 500 companies.
-        </li>
-        <li>
-          Performed 3D terrain, architecture, prop, and character modeling, including texturing, uv unwrapping, and rigging.
-        </li>
-        <li>
-          Created cross-platform graphical interfaces and user experience design for computers, consoles, and mobile devices.
-        </li>
-        <li>
-          Created and managed patent applications for UI/UX designs.
-        </li>
-        <li>
-          Completed level layout, look development, and 2D Art for the video game "Elite vs. Freedom".
+          Created 3D environment art & level layout/look development for Fortune 500 companies and the video game "Elite vs. Freedom".
         </li>
       </ul>
     </div>
   </div>
   <div id="side-panel">
     <div>
-      <h2>Software</h2>
+      <h2>Core Technologies</h2>
+      <span class="skill-category">Core Technologies: </span>
       <ul class="sidebar-list">
-        <li>Adobe Suite Deployment & Configuration</li>
-        <li>Ansible</li>
-        <li>Auth0</li>
-        <li>CircleCI</li>
-        <li>Docker</li>
-        <li>Git</li>
-        <li>GitHub/Gitlab</li>
-        <li>JAMF</li>
-        <li>JIRA</li>
-        <li>MariaDB/MySQL</li>
-        <li>NewRelic</li>
-        <li>Rollbar</li>
-        <li>Sidekiq</li>
-        <li>Zendesk (Administration & Ticket Triage)</li>
-      </ul>
-      <h2>Languages</h2>
-      <ul class="sidebar-list">
-        <li>Google Apps Script</li>
-        <li>HTML/CSS</li>
-        <li>JavaScript</li>
         <li>Ruby on Rails</li>
-        <li>Shell/Bash/Zsh Scripting</li>
-        <li>SQL</li>
-        <li>VBScript</li>
+        <li>JavaScript</li>
+        <li>HTML/CSS</li>
+        <li>SQL (MySQL/MariaDB)</li>
+        <li>Git/GitHub</li>
+        <li>RESTful API Design</li>
       </ul>
-      <h2>Platforms</h2>
+      <br/ >
+      <h2>Tools and Platforms</h2>
+      <span class="skill-category">Tools and Platforms: </span>
       <ul class="sidebar-list">
-        <li>Apple MacOS</li>
-        <li>GNU/Linux (Fedora, Debian)</li>
-        <li>Microsoft Windows</li>
+        <li>AWS (CloudWatch, RDS, Parameter Store, EventBridge)</li>
+        <li>Docker/Kubernetes</li>
+        <li>CircleCI</li>
+        <li>Auth0/OKTA</li>
+        <li>NewRelic/Rollbar</li>
+        <li>Sidekiq</li>
+        <li>Minitest/RSpec</li>
+        <li>JIRA</li>
+      </ul>
+      <br/ >
+      <h2>Additional Skills</h2>
+      <span class="skill-category">Additional Skills: </span>
+      <ul class="sidebar-list">
+        <li>Shell/Bash scripting</li>
+        <li>ERP Integration (Boomi/NetSuite)</li>
+        <li>MacOS/Linux/Windows</li>
+      </ul>
+    </div>
+    <div>
+      <h2>Personal Projects</h2>
+      <ul class="sidebar-list">
+        <li>igdb_client - Ruby Gem</li>
+        <li>Restiby - CLI-based backup automation</li>
+        <li>Multiple self-hosted Rails apps</li>
+        <li><a href="https://github.com/Kmagameguy">github.com/Kmagameguy</a></li>
       </ul>
     </div>
     <div>
@@ -178,10 +155,10 @@
     <div>
       <h2>Awards & Achievements</h2>
       <ul class="sidebar-list">
+        <li>Promoted twice in &lt;2 years (Associate > Senior Engineer)</li>
         <li>10x nominated for internal "Inkademy" awards for Innovation at Custom Ink.</li>
         <li>Graduated Magna Cum Laude with Highest Achievement distinction.</li>
       </ul>
     </div>
   </div>
 </div>
-

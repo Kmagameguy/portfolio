@@ -57,6 +57,11 @@ h4 {
   content         : ".";
 }
 
+.skill-category {
+  display: inline;
+  font-weight: 600 !important;
+}
+
 .sidebar-list > div:first-child > ul:last-child > li:last-child:after {
   content         : "";
 }
