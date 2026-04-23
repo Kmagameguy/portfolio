@@ -42,7 +42,7 @@ class BlogPost
     @title          = title.to_s
     @file_extension = file_extension.to_s
     @author         = author.to_s
-    @tags           = Array(tags).map(&:to_s).join(", ").presence
+    @tags           = Array(tags).join(", ").presence
     @thumbnail      = thumbnail
     @thumbnail_alt  = nil
     @thumbnail_src  = nil
