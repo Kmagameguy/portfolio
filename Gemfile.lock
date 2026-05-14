@@ -64,13 +64,13 @@ GEM
     jekyll-paginate (1.1.0)
     jekyll-sass-converter (1.5.2)
       sass (~> 3.4)
-    jekyll-seo-tag (2.8.0)
+    jekyll-seo-tag (2.9.0)
       jekyll (>= 3.8, < 5.0)
     jekyll-sitemap (1.4.0)
       jekyll (>= 3.7, < 5.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
-    json (2.19.4)
+    json (2.19.5)
     kramdown (2.5.2)
       rexml (>= 3.4.4)
     kramdown-parser-gfm (1.1.0)
@@ -88,12 +88,12 @@ GEM
       jekyll (>= 3.5, < 5.0)
       jekyll-feed (~> 0.9)
       jekyll-seo-tag (~> 2.1)
-    minitest (6.0.5)
+    minitest (6.0.6)
       drb (~> 2.0)
       prism (~> 1.5)
     minitest-focus (1.4.1)
       minitest (> 5.0)
-    minitest-hooks (1.5.3)
+    minitest-hooks (1.5.4)
       minitest (> 5.3)
     minitest-reporters (1.8.0)
       ansi
@@ -103,7 +103,7 @@ GEM
     minitest-stub-const (0.6)
     mocha (3.1.0)
       ruby2_keywords (>= 0.0.5)
-    parallel (2.0.1)
+    parallel (2.1.0)
     parser (3.3.11.1)
       ast (~> 2.4.1)
       racc
@@ -195,7 +195,7 @@ DEPENDENCIES
   webrick
 
 RUBY VERSION
-  ruby 4.0.3
+  ruby 4.0.4
 
 BUNDLED WITH
-  4.0.10
+  4.0.11
