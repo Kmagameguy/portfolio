@@ -42,7 +42,7 @@ GEM
     ffi (1.17.4-x86_64-linux-musl)
     forwardable-extended (2.6.0)
     http_parser.rb (0.8.1)
-    i18n (1.14.8)
+    i18n (1.15.2)
       concurrent-ruby (~> 1.0)
     jekyll (3.10.0)
       addressable (~> 2.4)
@@ -70,7 +70,7 @@ GEM
       jekyll (>= 3.7, < 5.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
-    json (2.19.5)
+    json (2.20.0)
     kramdown (2.5.2)
       rexml (>= 3.4.4)
     kramdown-parser-gfm (1.1.0)
@@ -120,7 +120,7 @@ GEM
     regexp_parser (2.12.0)
     rexml (3.4.4)
     rouge (3.30.0)
-    rubocop (1.86.1)
+    rubocop (1.88.0)
       json (~> 2.3)
       language_server-protocol (~> 3.17.0.2)
       lint_roller (~> 1.1.0)
@@ -195,7 +195,7 @@ DEPENDENCIES
   webrick
 
 RUBY VERSION
-  ruby 4.0.4
+  ruby 4.0.5
 
 BUNDLED WITH
-  4.0.11
+  4.0.15
