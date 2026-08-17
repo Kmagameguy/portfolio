@@ -5,7 +5,6 @@ ruby "4.0.6"
 gem "activesupport"
 gem "jekyll"
 gem "kramdown-parser-gfm"
-gem "minima"
 
 group :jekyll_plugins do
   gem "jekyll-feed"
