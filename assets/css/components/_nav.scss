@@ -31,7 +31,8 @@
   line-height: 2rem;
 }
 
-.navbar li:hover > ul {
+.navbar li:hover > ul,
+.navbar li.open > ul {
   display: flex;
 }
 
@@ -51,6 +52,7 @@
   padding: 0.5rem;
   border: 1px solid #dee2e6;
   border-radius: 0.35rem;
+  background: transparent;
 }
 
 .hamburger span {
@@ -60,7 +62,15 @@
   display: block;
 }
 
-.work-item > a::after {
+.work-toggle {
+  background: transparent;
+  border: 0;
+  font: inherit;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.work-item > .work-toggle::after {
   display: inline-block;
   width: 0;
   height: 0;
@@ -88,7 +98,8 @@
 
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease;
+    visibility: hidden;
+    transition: max-height 0.3s ease, visibility 0.3s;
   }
 
   .navbar ul li {
@@ -99,6 +110,7 @@
   .navbar ul.mobile-show {
     display: flex;
     max-height: 500px;
+    visibility: visible;
   }
 
   .navbar li ul {

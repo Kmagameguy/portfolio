@@ -1,11 +1,11 @@
 <nav class="navbar sticky-top navbar-light bg-light my-5 text-uppercase border-bottom">
   <span class="navbar-brand mb-0 h1" href="#">Kevin Aktug</span>
 
-  <div class="hamburger" id="hamburger">
+  <button type="button" class="hamburger" id="hamburger" aria-label="Menu" aria-controls="nav-menu" aria-expanded="false">
     <span></span>
     <span></span>
     <span></span>
-  </div>
+  </button>
 
   <ul id="nav-menu" class="ml-auto align-items-center">
     {% for item in site.data.navbar.main %}
@@ -22,8 +22,15 @@
       </li>
     {% endfor %}
     <li class="work-item nav-item">
-      <a class="nav-link text-secondary" href="#">Work</a>
-      <ul>
+      <button
+        type="button"
+        class="nav-link text-secondary work-toggle"
+        aria-expanded="false"
+        aria-controls="work-menu"
+      >
+        Work
+      </button>
+      <ul id="work-menu">
         {% for item in site.data.navbar.work %}
           <li class="nav-item">
             <a
