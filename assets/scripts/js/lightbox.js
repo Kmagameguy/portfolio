@@ -84,8 +84,36 @@ function lightbox() {
   return document.getElementById('lightbox');
 }
 
+var lastFocused = null;
+
+function openLightbox() {
+  lastFocused = document.activeElement;
+  lightbox().style.display = 'block';
+  var closeButton = document.getElementById('close');
+  if (closeButton) {
+    closeButton.focus();
+  }
+}
+
+function closeLightbox() {
+  lightbox().innerHTML = '';
+  lightbox().style.display = 'none';
+  if (lastFocused) {
+    lastFocused.focus();
+  }
+}
+
 function closeLink() {
-  return createLink('close');
+  var link = createLink('close');
+  link.setAttribute('tabindex', '0');
+  link.addEventListener("keydown", function(event) {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      closeLightbox();
+    }
+  });
+
+  return link;
 }
 
 function nextLink() {
@@ -136,7 +164,9 @@ function createVideoLightbox(url) {
   lightbox().appendChild(closeLink());
   lightbox().appendChild(nextLink());
   lightbox().appendChild(prevLink());
-  lightbox().style.display = 'block';
+  lightbox().appendChild(videoWrapperContainer);
+
+  openLightbox();
 }
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -144,6 +174,8 @@ document.addEventListener("DOMContentLoaded", function() {
   //create lightbox div in the footer
   var newdiv = document.createElement("div");
   newdiv.setAttribute('id',"lightbox");
+  newdiv.setAttribute('role','dialog');
+  newdiv.setAttribute('aria-modal','true');
   document.body.appendChild(newdiv);
 
   //add classes to links to be able to initiate lightboxes
@@ -171,10 +203,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
   //remove the clicked lightbox
   lightbox().addEventListener("click", function(event) {
-      if(event.target.id != 'next' && event.target.id != 'prev'){
-          this.innerHTML = '';
-          lightbox().style.display = 'none';
-      }
+    if(event.target.id != 'next' && event.target.id != 'prev'){
+      closeLightbox();
+    }
+  });
+
+  document.addEventListener("keydown", function(event) {
+    if (event.key === 'Escape' && lightbox().style.display === 'block') {
+      closeLightbox();
+    }
   });
 
   //add the youtube lightbox on click
@@ -216,8 +253,7 @@ document.addEventListener("DOMContentLoaded", function() {
           lightbox().appendChild(imageContainer);
           lightbox().appendChild(span);
 
-          lightbox().style.display = 'block';
-
+          openLightbox();
           setGallery(this);
       });
   });
